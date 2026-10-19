@@ -102,6 +102,18 @@
     }
     .concept-box p em { color: #7dd3fc; font-style: normal; }
 
+    /* Équipe */
+    .team-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 20px;
+    }
+    .team-member {
+      font-size: 13px; color: #64748b;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
     /* ── QR CARD ── */
     .qr-card {
       background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);

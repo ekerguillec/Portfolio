@@ -70,21 +70,37 @@
               </ul>
             </div>
             <div class="nav-item dropdown">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a>
-              <button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience">
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg>
-              </button>
+              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                <li><a class="dropdown-item" href="../Experience/SNU.html">SNU</a></li>
-                <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
+                  <ul class="dropdown-menu dropdown-submenu-menu">
+                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
+                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
+                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
+                  <ul class="dropdown-menu dropdown-submenu-menu">
+                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
+                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
+                  <ul class="dropdown-menu dropdown-submenu-menu">
+                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
+                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
               </ul>
             </div>
             <div class="nav-item dropdown">
@@ -268,7 +284,7 @@
           <div class="cv-entry">
             <span class="cv-entry-bullet">•</span>
             <div class="cv-entry-body">
-              <div class="cv-entry-title">Vice-Présidente <span class="cv-entry-meta">| 4 mois | 2026</span></div>
+              <div class="cv-entry-title">Vice-Présidente <span class="cv-entry-meta">| <span class="cv-duration" data-start="2026-03-01" data-end-cap="2027-04-01">4 mois</span> | 2026</span></div>
               <p class="cv-org">Forum Ingénib</p>
               <p class="cv-detail">Organisation d'un forum entreprises-étudiants : <strong>gestion et coordination</strong> du forum, <strong>ressources humaines</strong> et relations avec les 80 entreprises partenaires.</p>
             </div>
@@ -276,7 +292,7 @@
           <div class="cv-entry">
             <span class="cv-entry-bullet">•</span>
             <div class="cv-entry-body">
-              <div class="cv-entry-title">Comptable <span class="cv-entry-meta">| 6 mois | 2026</span></div>
+              <div class="cv-entry-title">Comptable <span class="cv-entry-meta">| <span class="cv-duration" data-start="2026-01-01" data-end-cap="2027-02-01">6 mois</span> | 2026</span></div>
               <p class="cv-org">i2c – Junior-Entreprise de l'ENSC</p>
               <p class="cv-detail">Suivi comptable et financier d'une Junior-Entreprise : <strong>écritures comptables</strong>, rapprochements bancaires, contrôle de la TVA, <strong>facturation électronique</strong>...</p>
             </div>
@@ -345,5 +361,6 @@
   <script src="../../js/navbar.js"></script>
   <script src="../../config/contact.js"></script>
   <script src="../../js/contact-init.js"></script>
+  <script src="../../js/experience-duration.js"></script>
 </body>
 </html>

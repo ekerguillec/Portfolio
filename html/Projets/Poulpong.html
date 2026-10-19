@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projet Poul'Pong — jeu interactif physiologique, ENSC 2024-2025 — Emma Kerguillec">
+  <meta name="description" content="Projet Poul'Pong — jeu interactif physiologique, ENSC 2025-2026 — Emma Kerguillec">
   <meta name="author" content="Emma Kerguillec">
   <link rel="stylesheet" href="../../style/common/base.css">
   <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
@@ -59,14 +59,33 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                <li><a class="dropdown-item" href="../Experience/SNU.html">SNU</a></li>
-                <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
+                  <ul class="dropdown-menu dropdown-submenu-menu">
+                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
+                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
+                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
+                  <ul class="dropdown-menu dropdown-submenu-menu">
+                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
+                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
+                  <ul class="dropdown-menu dropdown-submenu-menu">
+                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
+                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
               </ul>
             </div>
             <div class="nav-item dropdown">
@@ -112,23 +131,24 @@
 
       <!-- ── HERO ── -->
       <div class="hero-block">
-        <p class="project-eyebrow">Projet ingénierie · ENSC 2024–2025</p>
-        <h1 class="project-title">Poul'Pong —<br><em>jeu interactif physiologique</em></h1>
+        <p class="project-eyebrow">Projet ingénierie · ENSC 2025–2026</p>
 
         <div class="hero-body">
           <div>
+            <h1 class="project-title">Poul'Pong —<br><em>jeu interactif physiologique</em></h1>
             <p class="project-desc">Réinventer Pong en y intégrant la physiologie humaine : la voix contrôle la raquette, le rythme cardiaque module la vitesse de la balle. À l'intersection du jeu vidéo, de l'ingénierie et de l'IHM.</p>
 
             <div class="project-tags">
               <span class="project-tag">#Python</span>
               <span class="project-tag">#Raspberry Pi</span>
-              <span class="project-tag">#capteurs</span>
+              <span class="project-tag">#Capteurs</span>
               <span class="project-tag">#IHM</span>
-              <span class="project-tag">#fabrication 3D</span>
+              <span class="project-tag">#Maquettage</span>
+              <span class="project-tag">#Découpe laser</span>
             </div>
 
             <div class="hero-actions">
-              <a href="../../rapports/rapport-poulpong.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <a href="../../documents/Rapport technique.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
                 Lire le rapport (PDF)
                 <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M2 12L12 2M12 2H5M12 2v7"/></svg>
               </a>
@@ -140,8 +160,9 @@
             <div>
               <p class="info-section-title">Contexte</p>
               <div class="meta-list">
-                <div class="meta-item"><strong>Cadre :</strong> ENSC — CPBx</div>
-                <div class="meta-item"><strong>Année :</strong> 2024–2025</div>
+                <div class="meta-item"><strong>Cadre :</strong> 1ère année à l'ENSC</div>
+                <div class="meta-item"><strong>Année :</strong> 2025–2026</div>
+                <div class="meta-item"><strong>Délais :</strong> 4 mois </div>
               </div>
             </div>
             <div>
@@ -160,7 +181,7 @@
             <div>
               <p class="info-section-title">Concept clé</p>
               <div class="concept-box">
-                <p>La voix déplace la raquette, le <em>rythme cardiaque</em> module la balle.</p>
+                <p>Réinventer le jeu de <em>pong</em> en y intégrant des données <em>physiologiques</em> mesurées en temps réel.</p>
               </div>
             </div>
           </div>
@@ -246,7 +267,7 @@
             <p class="step-meta">Livrables</p>
             <h2 class="step-title">Rendu &amp; <em>soutenance</em></h2>
             <ul class="step-list">
-              <li><b>État de l'art :</b> benchmark capteurs &amp; microcontrôleurs</li>
+              <li><b>État de l'art</b> avec benchmark bibliothèques, capteurs &amp; microcontrôleurs</li>
               <li><b>Code Python</b> documenté &amp; démo vidéo</li>
               <li><b>Boîtier 3D</b> + rapport de conception</li>
               <li><b>Soutenance</b> devant jury académique</li>
@@ -275,7 +296,7 @@
             <h2 class="rapport-title">Rapport de conception — <em>Poul'Pong</em></h2>
             <p class="rapport-desc">Document complet détaillant l'architecture technique, les choix de capteurs, les algorithmes de traitement du signal, les tests utilisateurs et les perspectives d'amélioration du projet.</p>
             <div class="hero-actions">
-              <a href="../../rapports/rapport-poulpong.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <a href="../../documents/Rapport technique.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
                 Télécharger le rapport (PDF)
                 <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M2 12L12 2M12 2H5M12 2v7"/></svg>
               </a>
@@ -316,7 +337,7 @@
             <div class="skill-icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             </div>
-            <span class="skill-name">Conception 3D &amp; fabrication</span>
+            <span class="skill-name">Conception, modélisation &amp; découpe laser</span>
           </div>
 
           <div class="skill-card">
@@ -342,7 +363,7 @@
       <section class="bilan-section">
         <span class="section-label">Bilan</span>
         <div class="bilan-card">
-          <p>Poul'Pong incarne la rencontre entre <strong>physiologie, fun et technologie</strong>. Ce projet m'a permis d'explorer concrètement l'<em>interfaçage humain-machine</em> à travers le jeu vidéo — en faisant dialoguer des signaux biologiques réels avec une logique de jeu temps réel. Travailler à 8 sur un système embarqué m'a aussi appris à <strong>coordonner des compétences très différentes</strong> : électronique, code, design, tests — et à itérer rapidement sur un prototype physique.</p>
+          <p>Poul'Pong incarne la rencontre entre <strong>physiologie, fun et technologie</strong>. Ce projet m'a permis d'explorer concrètement le concepte d'<em>interface homme-machine</em> à travers le jeu vidéo — en faisant dialoguer des signaux biologiques réels avec une logique de jeu temps réel. Travailler à 8 sur un système embarqué m'a aussi appris à <strong>coordonner des compétences très différentes</strong> : électronique, code, design, tests — et à itérer rapidement sur un prototype physique.</p>
         </div>
       </section>
 
@@ -354,7 +375,7 @@
       <div class="footer-brand">
         <p class="footer-name">Emma Kerguillec</p>
         <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+        <p class="footer-school">ENSC · Bordeaux INP · 2025–2026</p>
         <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
       </div>
       <nav class="footer-nav-col" aria-label="Navigation principale">
