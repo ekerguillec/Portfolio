@@ -2,8 +2,6 @@
 graphify-out/
 
 # Coordonnées personnelles et fichiers lourds
-documents/CV.pdf
-documents/Rapport technique.pdf
 documents/*.mp4
 config/contact.js
 
