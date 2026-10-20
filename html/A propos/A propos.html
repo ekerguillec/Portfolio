@@ -1,441 +1,1233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="À propos d'Emma Kerguillec — ingénieure cogniticienne, sport, créativité, langues et engagement.">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="../../style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>À propos — Emma Kerguillec</title>
-  <meta property="og:type"        content="website">
-  <meta property="og:site_name"   content="Emma Kerguillec — Portfolio">
-  <meta property="og:title"       content="À propos — Emma Kerguillec">
-  <meta property="og:description" content="À propos d'Emma Kerguillec — ingénieure cogniticienne, sport, créativité, langues et engagement.">
-  <meta property="og:url"         content="https://ekerguillec.github.io/Portfolio/html/A%20propos/A%20propos.html">
-  <meta property="og:image"       content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png">
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="À propos — Emma Kerguillec">
-  <meta name="twitter:description" content="À propos d'Emma Kerguillec — ingénieure cogniticienne, sport, créativité, langues et engagement.">
-  <meta name="twitter:image"       content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="À propos d'Emma Kerguillec — ingénieure cogniticienne, sport, créativité, langues et engagement."
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="../../style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>À propos — Emma Kerguillec</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Emma Kerguillec — Portfolio" />
+    <meta property="og:title" content="À propos — Emma Kerguillec" />
+    <meta
+      property="og:description"
+      content="À propos d'Emma Kerguillec — ingénieure cogniticienne, sport, créativité, langues et engagement."
+    />
+    <meta
+      property="og:url"
+      content="https://ekerguillec.github.io/Portfolio/html/A%20propos/A%20propos.html"
+    />
+    <meta
+      property="og:image"
+      content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="À propos — Emma Kerguillec" />
+    <meta
+      name="twitter:description"
+      content="À propos d'Emma Kerguillec — ingénieure cogniticienne, sport, créativité, langues et engagement."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png"
+    />
 
-  <link rel="stylesheet" href="../../style/pages/about.css">
-  <link rel="stylesheet" href="../../style/common/theme.css">
-</head>
+    <link rel="stylesheet" href="../../style/pages/about.css" />
+    <link rel="stylesheet" href="../../style/common/theme.css" />
+  </head>
 
-<body>
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-  <header class="header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="../../index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="close-icon" aria-hidden="true">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../A propos/A propos.html" aria-current="page"><strong><em>A PROPOS</em></strong></a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="#sec-academique">Parcours académique</a></li>
-              </ul>
+    <header class="header">
+      <nav class="navbar" aria-label="Navigation principale">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="../../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu de navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="close-icon" aria-hidden="true">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="../A propos/A propos.html"
+                  aria-current="page"
+                  ><strong><em>A PROPOS</em></strong></a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-langues">Langues</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Projets/Main.html">PROJETS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="../Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Compétences/Compétences.html"
+                  >COMPÉTENCES</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Compétences/Compétences.html#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="../CV/CV.html" class="nav-link">CV</a>
+              <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
             </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Projets/Main.html">PROJETS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
-
-                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Compétences/Compétences.html">COMPÉTENCES</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Compétences/Compétences.html#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="../CV/CV.html" class="nav-link">CV</a>
-            <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main id="main-content" class="about-page">
-    <div class="about-inner">
+    <main id="main-content" class="about-page">
+      <div class="about-inner">
+        <!-- ── HERO ── -->
+        <div class="about-hero">
+          <div>
+            <p class="about-eyebrow">Étudiante · Ingénieure · Créative</p>
+            <h1 class="about-title">
+              Ouverte sur le monde,<br />
+              <em>de la cognition</em><br />
+              aux systèmes embarqués.
+            </h1>
+            <p class="about-lead">
+              Passionnée par les sciences cognitives, la création manuelle et
+              l'innovation. Mon parcours conjugue rigueur scientifique, esprit
+              de leadership et goût de la concrétisation, de l'idée au
+              prototype.
+            </p>
+            <div class="about-tags">
+              <span class="about-tag">#cognitique</span>
+              <span class="about-tag">#ENSC Bordeaux INP</span>
+              <span class="about-tag">#innovation</span>
+              <span class="about-tag">#multisport</span>
+              <span class="about-tag">#langues</span>
+            </div>
+          </div>
+          <div class="about-photo-wrapper">
+            <div class="about-photo-ring">
+              <picture>
+                <source
+                  srcset="../../images/MaPhotoCorrigee.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="../../images/MaPhotoCorrigee.png"
+                  alt="Emma Kerguillec, ingénieure cogniticienne"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
 
-      <!-- ── HERO ── -->
-      <div class="about-hero">
-        <div>
-          <p class="about-eyebrow">Étudiante · Ingénieure · Créative</p>
-          <h1 class="about-title">
-            Ouverte sur le monde,<br>
-            <em>de la cognition</em><br>
-            aux systèmes embarqués.
-          </h1>
-          <p class="about-lead">
-            Passionnée par les sciences cognitives, la création manuelle et l'innovation. Mon parcours conjugue rigueur scientifique, esprit de leadership et goût de la concrétisation, de l'idée au prototype.
+        <!-- ── QUOTE ── -->
+        <blockquote class="about-quote">
+          <p>
+            « Ingénieure ouverte sur le monde — de la cognition aux systèmes
+            embarqués, passion et innovation au quotidien. »
           </p>
-          <div class="about-tags">
-            <span class="about-tag">#cognitique</span>
-            <span class="about-tag">#ENSC Bordeaux INP</span>
-            <span class="about-tag">#innovation</span>
-            <span class="about-tag">#multisport</span>
-            <span class="about-tag">#langues</span>
+          <span>Emma Kerguillec · ENSC Bordeaux INP</span>
+        </blockquote>
+
+        <div class="about-divider"></div>
+
+        <!-- ── BENTO ── -->
+        <div class="bento" role="list">
+          <!-- ÉLOQUENCE -->
+          <div
+            id="sec-eloquence"
+            class="acard card-eloc"
+            role="listitem"
+            style="animation-delay: 0.15s"
+          >
+            <p class="card-eyebrow">Événementiel &amp; médias</p>
+            <h2 class="card-h">
+              Concours d'éloquence — <em>reportage Arte</em>
+            </h2>
+            <p class="eloc-body">
+              Co-organisatrice d'un concours d'éloquence lycéen dont la finale
+              s'est tenue en amphithéâtre devant un jury professionnel. Une
+              équipe de journalistes de la chaîne Arte était présente ce soir-là
+              pour couvrir le Dispositif Anti-Décrochage du lycée — l'événement
+              s'est retrouvé au cœur du reportage.
+            </p>
+            <div class="eloc-video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/IqezGnp0icM?si=Pe8kvx3PwEIBCdHW&amp;start=1658"
+                title="Reportage Arte — concours d'éloquence lycéen"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a
+              href="https://www.ecmorlaix.fr/actualites/lycee-nd-du-mur-concours-deloquence/"
+              class="eloc-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lire l'article du lycée ↗</a
+            >
+          </div>
+
+          <!-- CRÉATIVITÉ -->
+          <div
+            id="sec-creativite"
+            class="acard card-crea"
+            role="listitem"
+            style="animation-delay: 0.25s"
+          >
+            <p class="card-eyebrow">Créativité</p>
+            <h2 class="card-h">Prototypage &amp; <em>invention</em></h2>
+            <p
+              class="sport-body"
+              style="
+                font-size: 13.5px;
+                color: #aabcce;
+                line-height: 1.7;
+                margin-bottom: 14px;
+              "
+            >
+              Création constante — prototypage, design et concrétisation de
+              solutions.
+            </p>
+            <div class="crea-chips" role="list" aria-label="Domaines créatifs">
+              <span class="crea-chip" role="listitem">Découpeuse laser</span>
+              <span class="crea-chip" role="listitem">Impression 3D</span>
+              <span class="crea-chip" role="listitem">Soudure</span>
+              <span class="crea-chip" role="listitem">Bricolage</span>
+              <span class="crea-chip" role="listitem">Dessin</span>
+              <span class="crea-chip" role="listitem">Couture</span>
+              <span class="crea-chip" role="listitem">Matériaux</span>
+              <span class="crea-chip" role="listitem">Idéation</span>
+              <span class="crea-chip" role="listitem"
+                >Conception centrée sur l'Homme</span
+              >
+            </div>
+            <div class="crea-bullets">
+              <div class="crea-bullet">
+                <span class="bullet-dot" aria-hidden="true"></span>Vision au
+                service de l'innovation
+              </div>
+              <div class="crea-bullet">
+                <span class="bullet-dot" aria-hidden="true"></span>Expertise du
+                geste &amp; de la résolution
+              </div>
+              <div class="crea-bullet">
+                <span class="bullet-dot" aria-hidden="true"></span
+                >Concrétisation d'idées complexes
+              </div>
+            </div>
+            <svg
+              class="crea-deco-left"
+              width="165"
+              height="165"
+              viewBox="0 0 140 140"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M68,22 C48,22 34,37 34,54 C34,67 42,76 50,83 L50,98 L86,98 L86,83 C94,76 102,67 102,54 C102,37 88,22 68,22 Z"
+                stroke="currentColor"
+                stroke-opacity="0.52"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.05"
+              />
+              <line
+                x1="50"
+                y1="101"
+                x2="86"
+                y2="101"
+                stroke="currentColor"
+                stroke-opacity="0.42"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                x1="54"
+                y1="107"
+                x2="82"
+                y2="107"
+                stroke="currentColor"
+                stroke-opacity="0.30"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                x1="58"
+                y1="113"
+                x2="78"
+                y2="113"
+                stroke="currentColor"
+                stroke-opacity="0.20"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M56,83 L56,64 L62,73 L68,59 L74,73 L80,64 L80,83"
+                stroke="currentColor"
+                stroke-opacity="0.40"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              />
+              <line
+                class="deco-ray"
+                x1="68"
+                y1="11"
+                x2="68"
+                y2="2"
+                stroke="currentColor"
+                stroke-opacity="0.52"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                class="deco-ray"
+                x1="98"
+                y1="20"
+                x2="104"
+                y2="13"
+                stroke="currentColor"
+                stroke-opacity="0.46"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                class="deco-ray"
+                x1="113"
+                y1="54"
+                x2="122"
+                y2="54"
+                stroke="currentColor"
+                stroke-opacity="0.44"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                class="deco-ray"
+                x1="38"
+                y1="20"
+                x2="32"
+                y2="13"
+                stroke="currentColor"
+                stroke-opacity="0.44"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                class="deco-ray"
+                x1="23"
+                y1="54"
+                x2="14"
+                y2="54"
+                stroke="currentColor"
+                stroke-opacity="0.40"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                class="deco-ray"
+                x1="100"
+                y1="85"
+                x2="107"
+                y2="92"
+                stroke="currentColor"
+                stroke-opacity="0.34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <line
+                class="deco-ray"
+                x1="36"
+                y1="85"
+                x2="29"
+                y2="92"
+                stroke="currentColor"
+                stroke-opacity="0.32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="116"
+                cy="30"
+                r="2.5"
+                fill="currentColor"
+                fill-opacity="0.62"
+              />
+              <circle
+                cx="18"
+                cy="36"
+                r="2"
+                fill="currentColor"
+                fill-opacity="0.55"
+              />
+              <circle
+                cx="126"
+                cy="72"
+                r="1.8"
+                fill="currentColor"
+                fill-opacity="0.48"
+              />
+            </svg>
+            <svg
+              class="crea-deco"
+              width="175"
+              height="175"
+              viewBox="0 0 150 150"
+              fill="none"
+              aria-hidden="true"
+            >
+              <polygon
+                points="82,58 114,74 82,90 50,74"
+                stroke="currentColor"
+                stroke-opacity="0.55"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.05"
+              />
+              <polygon
+                points="114,74 114,106 82,122 82,90"
+                stroke="currentColor"
+                stroke-opacity="0.42"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.035"
+              />
+              <polygon
+                points="50,74 82,90 82,122 50,106"
+                stroke="currentColor"
+                stroke-opacity="0.35"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.025"
+              />
+              <polygon
+                points="36,26 56,36 36,46 16,36"
+                stroke="currentColor"
+                stroke-opacity="0.48"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.04"
+              />
+              <polygon
+                points="56,36 56,56 36,66 36,46"
+                stroke="currentColor"
+                stroke-opacity="0.36"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.03"
+              />
+              <polygon
+                points="16,36 36,46 36,66 16,56"
+                stroke="currentColor"
+                stroke-opacity="0.30"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.02"
+              />
+              <polygon
+                points="116,24 129,30.5 116,37 103,30.5"
+                stroke="currentColor"
+                stroke-opacity="0.42"
+                stroke-width="1.3"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.04"
+              />
+              <polygon
+                points="129,30.5 129,43.5 116,50 116,37"
+                stroke="currentColor"
+                stroke-opacity="0.33"
+                stroke-width="1.3"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.025"
+              />
+              <polygon
+                points="103,30.5 116,37 116,50 103,43.5"
+                stroke="currentColor"
+                stroke-opacity="0.27"
+                stroke-width="1.3"
+                stroke-linejoin="round"
+                fill="currentColor"
+                fill-opacity="0.018"
+              />
+              <line
+                class="deco-dash"
+                x1="56"
+                y1="36"
+                x2="82"
+                y2="58"
+                stroke="currentColor"
+                stroke-opacity="0.22"
+                stroke-width="1"
+                stroke-dasharray="3 4"
+              />
+              <line
+                class="deco-dash"
+                x1="129"
+                y1="30.5"
+                x2="114"
+                y2="58"
+                stroke="currentColor"
+                stroke-opacity="0.18"
+                stroke-width="1"
+                stroke-dasharray="2 4"
+              />
+              <circle
+                cx="20"
+                cy="18"
+                r="2.8"
+                fill="currentColor"
+                fill-opacity="0.65"
+              />
+              <circle
+                cx="134"
+                cy="60"
+                r="2.2"
+                fill="currentColor"
+                fill-opacity="0.55"
+              />
+              <circle
+                cx="10"
+                cy="90"
+                r="2"
+                fill="currentColor"
+                fill-opacity="0.48"
+              />
+              <circle
+                cx="66"
+                cy="14"
+                r="1.6"
+                fill="currentColor"
+                fill-opacity="0.42"
+              />
+              <circle
+                cx="142"
+                cy="100"
+                r="1.4"
+                fill="currentColor"
+                fill-opacity="0.35"
+              />
+            </svg>
+          </div>
+
+          <!-- ENGAGEMENT -->
+          <div
+            id="sec-engagement"
+            class="acard card-eng"
+            role="listitem"
+            style="animation-delay: 0.35s"
+          >
+            <p class="card-eyebrow">Engagement</p>
+            <h2 class="card-h">Bâtir du <em>lien</em></h2>
+            <div class="eng-list">
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">01</span>
+                <span>Intérimaire dans un journal - travail nocturne</span>
+              </div>
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">02</span>
+                <span
+                  >Vice-présidente d'ingénib - forum élèves-entreprises</span
+                >
+              </div>
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">03</span>
+                <span>Comptable d'une junior-entreprise</span>
+              </div>
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">04</span>
+                <span>Chargée logistique au sein du BDE de l'ENSC</span>
+              </div>
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">05</span>
+                <span>Co-organisatrice d'un concours d'éloquence</span>
+              </div>
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">06</span>
+                <span
+                  >Participation à des olympiades de mathématiques au
+                  lycée</span
+                >
+              </div>
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">07</span>
+                <span
+                  >Ancienne membre d'un club d'action contre la différence</span
+                >
+              </div>
+              <div class="eng-item">
+                <span class="eng-num" aria-hidden="true">08</span>
+                <span>Ancienne membre du Conseil de la Vie Lycéenne (CVL)</span>
+              </div>
+            </div>
+            <p class="eng-caption">
+              J'aime bâtir du lien et porter des projets avec conviction.
+            </p>
+          </div>
+
+          <!-- LANGUES -->
+          <div
+            id="sec-langues"
+            class="acard card-langues"
+            role="listitem"
+            style="animation-delay: 0.45s"
+          >
+            <p class="card-eyebrow">Langues</p>
+            <h2 class="card-h">4 langues, <em>1 curiosité</em></h2>
+            <div class="lang-grid">
+              <div class="lang-row">
+                <span class="lang-flag" aria-hidden="true">🇫🇷</span>
+                <div class="lang-info">
+                  <div class="lang-name">Français</div>
+                  <div class="lang-label">Langue maternelle</div>
+                </div>
+                <span class="lang-badge">C2</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-flag" aria-hidden="true">🇬🇧</span>
+                <div class="lang-info">
+                  <div class="lang-name">Anglais</div>
+                  <div class="lang-label">Cambridge Certificate</div>
+                </div>
+                <span class="lang-badge">B2</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-flag" aria-hidden="true">🇯🇵</span>
+                <div class="lang-info">
+                  <div class="lang-name">Japonais</div>
+                  <div class="lang-label">Autodidacte</div>
+                </div>
+                <span class="lang-badge">B1</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-flag" aria-hidden="true">🇪🇸</span>
+                <div class="lang-info">
+                  <div class="lang-name">Espagnol</div>
+                  <div class="lang-label">Ancienne LV2</div>
+                </div>
+                <span class="lang-badge">B1</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SPORT -->
+          <div
+            id="sec-sport"
+            class="acard card-sport"
+            role="listitem"
+            style="animation-delay: 0.55s"
+          >
+            <div class="sport-orb" aria-hidden="true"></div>
+            <p class="card-eyebrow">Sport &amp; énergie</p>
+            <h2 class="card-h">Dynamisme et <em>constance</em></h2>
+            <p class="sport-body">
+              Multisport depuis toujours, fidèle et persévérante. Le sport m'a
+              appris à structurer ma progression, à tenir face à la difficulté
+              et à trouver ma place dans une équipe.
+            </p>
+            <div class="sport-chips" role="list" aria-label="Sports pratiqués">
+              <span class="sport-chip" role="listitem">Handball</span>
+              <span class="sport-chip" role="listitem">Danse</span>
+              <span class="sport-chip" role="listitem">Ski</span>
+              <span class="sport-chip" role="listitem">Musculation</span>
+              <span class="sport-chip" role="listitem">Football</span>
+              <span class="sport-chip" role="listitem">Volleyball</span>
+              <span class="sport-chip" role="listitem">Course à pied</span>
+              <span class="sport-chip" role="listitem"
+                ><strong>Bénévolat</strong></span
+              >
+            </div>
+            <div class="sport-bullets">
+              <div class="sport-bullet">
+                <span class="bullet-dot" aria-hidden="true"></span>Résilience
+                &amp; esprit d'équipe
+              </div>
+              <div class="sport-bullet">
+                <span class="bullet-dot" aria-hidden="true"></span>Stratégie
+                &amp; passage à l'action
+              </div>
+              <div class="sport-bullet">
+                <span class="bullet-dot" aria-hidden="true"></span>Capacité à
+                structurer une progression
+              </div>
+              <div class="sport-bullet">
+                <span class="bullet-dot" aria-hidden="true"></span>Expérience du
+                leadership sportif
+              </div>
+            </div>
+          </div>
+
+          <!-- ACADÉMIQUE -->
+          <div
+            id="sec-academique"
+            class="acard card-acad"
+            role="listitem"
+            style="animation-delay: 0.65s"
+          >
+            <p class="card-eyebrow">Parcours académique</p>
+            <h2 class="card-h">Formation d'<em>ingénieure</em></h2>
+            <div class="acad-timeline">
+              <div class="acad-item">
+                <div class="acad-dot-col" aria-hidden="true">
+                  <div class="acad-dot"></div>
+                  <div class="acad-line"></div>
+                </div>
+                <div>
+                  <p class="acad-period">2025 – 2028</p>
+                  <p class="acad-name">ENSC — Bordeaux INP</p>
+                  <p class="acad-detail">
+                    École Nationale Supérieure de Cognitique · Diplôme
+                    d'ingénieur · Cognitique, accessibilité, IHM, ergonomie,
+                    UX/UI design, IA, neurosciences et systèmes embarqués.
+                  </p>
+                </div>
+              </div>
+              <div class="acad-item">
+                <div class="acad-dot-col" aria-hidden="true">
+                  <div class="acad-dot"></div>
+                  <div class="acad-line"></div>
+                </div>
+                <div>
+                  <p class="acad-period">2023 – 2025</p>
+                  <p class="acad-name">Classes préparatoires</p>
+                  <p class="acad-detail">
+                    MPSI / MP* — Mathématiques, physique, sciences de
+                    l'ingénieur.
+                  </p>
+                </div>
+              </div>
+              <div class="acad-item" style="padding-bottom: 40px">
+                <div class="acad-dot-col" aria-hidden="true">
+                  <div class="acad-dot"></div>
+                  <div class="acad-line"></div>
+                </div>
+                <div>
+                  <p class="acad-period">2023</p>
+                  <p class="acad-name">Baccalauréat scientifique</p>
+                  <p class="acad-detail">
+                    Mention Très Bien · Section Européenne · Spécialités
+                    Physique-Chimie &amp; SVT, option Maths complémentaire.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="about-photo-wrapper">
-          <div class="about-photo-ring">
-            <picture>
-              <source srcset="../../images/MaPhotoCorrigee.webp" type="image/webp">
-              <img src="../../images/MaPhotoCorrigee.png" alt="Emma Kerguillec, ingénieure cogniticienne">
-            </picture>
-          </div>
-        </div>
+        <!-- /bento -->
       </div>
-
-      <!-- ── QUOTE ── -->
-      <blockquote class="about-quote">
-        <p>« Ingénieure ouverte sur le monde — de la cognition aux systèmes embarqués, passion et innovation au quotidien. »</p>
-        <span>Emma Kerguillec · ENSC Bordeaux INP</span>
-      </blockquote>
-
-      <div class="about-divider"></div>
-
-      <!-- ── BENTO ── -->
-      <div class="bento" role="list">
-
-        <!-- ÉLOQUENCE -->
-        <div id="sec-eloquence" class="acard card-eloc" role="listitem" style="animation-delay:.15s">
-          <p class="card-eyebrow">Événementiel &amp; médias</p>
-          <h2 class="card-h">Concours d'éloquence — <em>reportage Arte</em></h2>
-          <p class="eloc-body">Co-organisatrice d'un concours d'éloquence lycéen dont la finale s'est tenue en amphithéâtre devant un jury professionnel. Une équipe de journalistes de la chaîne Arte était présente ce soir-là pour couvrir le Dispositif Anti-Décrochage du lycée — l'événement s'est retrouvé au cœur du reportage.</p>
-          <div class="eloc-video-wrap">
-            <iframe src="https://www.youtube.com/embed/IqezGnp0icM?si=Pe8kvx3PwEIBCdHW&amp;start=1658" title="Reportage Arte — concours d'éloquence lycéen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <a href="https://www.ecmorlaix.fr/actualites/lycee-nd-du-mur-concours-deloquence/" class="eloc-link" target="_blank" rel="noopener noreferrer">Lire l'article du lycée ↗</a>
-        </div>
-
-        <!-- CRÉATIVITÉ -->
-        <div id="sec-creativite" class="acard card-crea" role="listitem" style="animation-delay:.25s">
-          <p class="card-eyebrow">Créativité</p>
-          <h2 class="card-h">Prototypage &amp; <em>invention</em></h2>
-          <p class="sport-body" style="font-size:13.5px;color:#aabcce;line-height:1.7;margin-bottom:14px;">Création constante — prototypage, design et concrétisation de solutions.</p>
-          <div class="crea-chips" role="list" aria-label="Domaines créatifs">
-            <span class="crea-chip" role="listitem">Découpeuse laser</span>
-            <span class="crea-chip" role="listitem">Impression 3D</span>
-            <span class="crea-chip" role="listitem">Soudure</span>
-            <span class="crea-chip" role="listitem">Bricolage</span>
-            <span class="crea-chip" role="listitem">Dessin</span>
-            <span class="crea-chip" role="listitem">Couture</span>
-            <span class="crea-chip" role="listitem">Matériaux</span>
-            <span class="crea-chip" role="listitem">Idéation</span>
-            <span class="crea-chip" role="listitem">Conception centrée sur l'Homme</span>
-          </div>
-          <div class="crea-bullets">
-            <div class="crea-bullet"><span class="bullet-dot" aria-hidden="true"></span>Vision au service de l'innovation</div>
-            <div class="crea-bullet"><span class="bullet-dot" aria-hidden="true"></span>Expertise du geste &amp; de la résolution</div>
-            <div class="crea-bullet"><span class="bullet-dot" aria-hidden="true"></span>Concrétisation d'idées complexes</div>
-          </div>
-          <svg class="crea-deco-left" width="165" height="165" viewBox="0 0 140 140" fill="none" aria-hidden="true">
-            <path d="M68,22 C48,22 34,37 34,54 C34,67 42,76 50,83 L50,98 L86,98 L86,83 C94,76 102,67 102,54 C102,37 88,22 68,22 Z" stroke="currentColor" stroke-opacity="0.52" stroke-width="1.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.05"/>
-            <line x1="50" y1="101" x2="86" y2="101" stroke="currentColor" stroke-opacity="0.42" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="54" y1="107" x2="82" y2="107" stroke="currentColor" stroke-opacity="0.30" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="58" y1="113" x2="78" y2="113" stroke="currentColor" stroke-opacity="0.20" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M56,83 L56,64 L62,73 L68,59 L74,73 L80,64 L80,83" stroke="currentColor" stroke-opacity="0.40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
-            <line class="deco-ray" x1="68" y1="11" x2="68" y2="2" stroke="currentColor" stroke-opacity="0.52" stroke-width="1.5" stroke-linecap="round"/>
-            <line class="deco-ray" x1="98" y1="20" x2="104" y2="13" stroke="currentColor" stroke-opacity="0.46" stroke-width="1.5" stroke-linecap="round"/>
-            <line class="deco-ray" x1="113" y1="54" x2="122" y2="54" stroke="currentColor" stroke-opacity="0.44" stroke-width="1.5" stroke-linecap="round"/>
-            <line class="deco-ray" x1="38" y1="20" x2="32" y2="13" stroke="currentColor" stroke-opacity="0.44" stroke-width="1.5" stroke-linecap="round"/>
-            <line class="deco-ray" x1="23" y1="54" x2="14" y2="54" stroke="currentColor" stroke-opacity="0.40" stroke-width="1.5" stroke-linecap="round"/>
-            <line class="deco-ray" x1="100" y1="85" x2="107" y2="92" stroke="currentColor" stroke-opacity="0.34" stroke-width="1.5" stroke-linecap="round"/>
-            <line class="deco-ray" x1="36" y1="85" x2="29" y2="92" stroke="currentColor" stroke-opacity="0.32" stroke-width="1.5" stroke-linecap="round"/>
-            <circle cx="116" cy="30" r="2.5" fill="currentColor" fill-opacity="0.62"/>
-            <circle cx="18" cy="36" r="2" fill="currentColor" fill-opacity="0.55"/>
-            <circle cx="126" cy="72" r="1.8" fill="currentColor" fill-opacity="0.48"/>
-          </svg>
-          <svg class="crea-deco" width="175" height="175" viewBox="0 0 150 150" fill="none" aria-hidden="true">
-            <polygon points="82,58 114,74 82,90 50,74" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.05"/>
-            <polygon points="114,74 114,106 82,122 82,90" stroke="currentColor" stroke-opacity="0.42" stroke-width="1.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.035"/>
-            <polygon points="50,74 82,90 82,122 50,106" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.025"/>
-            <polygon points="36,26 56,36 36,46 16,36" stroke="currentColor" stroke-opacity="0.48" stroke-width="1.4" stroke-linejoin="round" fill="currentColor" fill-opacity="0.04"/>
-            <polygon points="56,36 56,56 36,66 36,46" stroke="currentColor" stroke-opacity="0.36" stroke-width="1.4" stroke-linejoin="round" fill="currentColor" fill-opacity="0.03"/>
-            <polygon points="16,36 36,46 36,66 16,56" stroke="currentColor" stroke-opacity="0.30" stroke-width="1.4" stroke-linejoin="round" fill="currentColor" fill-opacity="0.02"/>
-            <polygon points="116,24 129,30.5 116,37 103,30.5" stroke="currentColor" stroke-opacity="0.42" stroke-width="1.3" stroke-linejoin="round" fill="currentColor" fill-opacity="0.04"/>
-            <polygon points="129,30.5 129,43.5 116,50 116,37" stroke="currentColor" stroke-opacity="0.33" stroke-width="1.3" stroke-linejoin="round" fill="currentColor" fill-opacity="0.025"/>
-            <polygon points="103,30.5 116,37 116,50 103,43.5" stroke="currentColor" stroke-opacity="0.27" stroke-width="1.3" stroke-linejoin="round" fill="currentColor" fill-opacity="0.018"/>
-            <line class="deco-dash" x1="56" y1="36" x2="82" y2="58" stroke="currentColor" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="3 4"/>
-            <line class="deco-dash" x1="129" y1="30.5" x2="114" y2="58" stroke="currentColor" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="2 4"/>
-            <circle cx="20" cy="18" r="2.8" fill="currentColor" fill-opacity="0.65"/>
-            <circle cx="134" cy="60" r="2.2" fill="currentColor" fill-opacity="0.55"/>
-            <circle cx="10" cy="90" r="2" fill="currentColor" fill-opacity="0.48"/>
-            <circle cx="66" cy="14" r="1.6" fill="currentColor" fill-opacity="0.42"/>
-            <circle cx="142" cy="100" r="1.4" fill="currentColor" fill-opacity="0.35"/>
-          </svg>
-        </div>
-
-        <!-- ENGAGEMENT -->
-        <div id="sec-engagement" class="acard card-eng" role="listitem" style="animation-delay:.35s">
-          <p class="card-eyebrow">Engagement</p>
-          <h2 class="card-h">Bâtir du <em>lien</em></h2>
-          <div class="eng-list">
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">01</span>
-              <span>Intérimaire dans un journal - travail nocturne</span>
-            </div>
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">02</span>
-              <span>Vice-présidente d'ingénib - forum élèves-entreprises</span>
-            </div>
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">03</span>
-              <span>Comptable d'une junior-entreprise</span>
-            </div>
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">04</span>
-              <span>Chargée logistique au sein du BDE de l'ENSC</span>
-            </div>
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">05</span>
-              <span>Co-organisatrice d'un concours d'éloquence</span>
-            </div>
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">06</span>
-              <span>Participation à des olympiades de mathématiques au lycée</span>
-            </div>
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">07</span>
-              <span>Ancienne membre d'un club d'action contre la différence</span>
-            </div>
-            <div class="eng-item">
-              <span class="eng-num" aria-hidden="true">08</span>
-              <span>Ancienne membre du Conseil de la Vie Lycéenne (CVL)</span>
-            </div>
-          </div>
-          <p class="eng-caption">J'aime bâtir du lien et porter des projets avec conviction.</p>
-        </div>
-
-        <!-- LANGUES -->
-        <div id="sec-langues" class="acard card-langues" role="listitem" style="animation-delay:.45s">
-          <p class="card-eyebrow">Langues</p>
-          <h2 class="card-h">4 langues, <em>1 curiosité</em></h2>
-          <div class="lang-grid">
-            <div class="lang-row">
-              <span class="lang-flag" aria-hidden="true">🇫🇷</span>
-              <div class="lang-info">
-                <div class="lang-name">Français</div>
-                <div class="lang-label">Langue maternelle</div>
-              </div>
-              <span class="lang-badge">C2</span>
-            </div>
-            <div class="lang-row">
-              <span class="lang-flag" aria-hidden="true">🇬🇧</span>
-              <div class="lang-info">
-                <div class="lang-name">Anglais</div>
-                <div class="lang-label">Cambridge Certificate</div>
-              </div>
-              <span class="lang-badge">B2</span>
-            </div>
-            <div class="lang-row">
-              <span class="lang-flag" aria-hidden="true">🇯🇵</span>
-              <div class="lang-info">
-                <div class="lang-name">Japonais</div>
-                <div class="lang-label">Autodidacte</div>
-              </div>
-              <span class="lang-badge">B1</span>
-            </div>
-            <div class="lang-row">
-              <span class="lang-flag" aria-hidden="true">🇪🇸</span>
-              <div class="lang-info">
-                <div class="lang-name">Espagnol</div>
-                <div class="lang-label">Ancienne LV2</div>
-              </div>
-              <span class="lang-badge">B1</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SPORT -->
-        <div id="sec-sport" class="acard card-sport" role="listitem" style="animation-delay:.55s">
-          <div class="sport-orb" aria-hidden="true"></div>
-          <p class="card-eyebrow">Sport &amp; énergie</p>
-          <h2 class="card-h">Dynamisme et <em>constance</em></h2>
-          <p class="sport-body">Multisport depuis toujours, fidèle et persévérante. Le sport m'a appris à structurer ma progression, à tenir face à la difficulté et à trouver ma place dans une équipe.</p>
-          <div class="sport-chips" role="list" aria-label="Sports pratiqués">
-            <span class="sport-chip" role="listitem">Handball</span>
-            <span class="sport-chip" role="listitem">Danse</span>
-            <span class="sport-chip" role="listitem">Ski</span>
-            <span class="sport-chip" role="listitem">Musculation</span>
-            <span class="sport-chip" role="listitem">Football</span>
-            <span class="sport-chip" role="listitem">Volleyball</span>
-            <span class="sport-chip" role="listitem">Course à pied</span>
-            <span class="sport-chip" role="listitem"><strong>Bénévolat</strong></span>
-          </div>
-          <div class="sport-bullets">
-            <div class="sport-bullet"><span class="bullet-dot" aria-hidden="true"></span>Résilience &amp; esprit d'équipe</div>
-            <div class="sport-bullet"><span class="bullet-dot" aria-hidden="true"></span>Stratégie &amp; passage à l'action</div>
-            <div class="sport-bullet"><span class="bullet-dot" aria-hidden="true"></span>Capacité à structurer une progression</div>
-            <div class="sport-bullet"><span class="bullet-dot" aria-hidden="true"></span>Expérience du leadership sportif</div>
-          </div>
-        </div>
-
-        <!-- ACADÉMIQUE -->
-        <div id="sec-academique" class="acard card-acad" role="listitem" style="animation-delay:.65s">
-          <p class="card-eyebrow">Parcours académique</p>
-          <h2 class="card-h">Formation d'<em>ingénieure</em></h2>
-          <div class="acad-timeline">
-            <div class="acad-item">
-              <div class="acad-dot-col" aria-hidden="true">
-                <div class="acad-dot"></div>
-                <div class="acad-line"></div>
-              </div>
-              <div>
-                <p class="acad-period">2025 – 2028</p>
-                <p class="acad-name">ENSC — Bordeaux INP</p>
-                <p class="acad-detail">École Nationale Supérieure de Cognitique · Diplôme d'ingénieur · Cognitique, accessibilité, IHM, ergonomie, UX/UI design, IA, neurosciences et systèmes embarqués.</p>
-              </div>
-            </div>
-            <div class="acad-item">
-              <div class="acad-dot-col" aria-hidden="true">
-                <div class="acad-dot"></div>
-                <div class="acad-line"></div>
-              </div>
-              <div>
-                <p class="acad-period">2023 – 2025</p>
-                <p class="acad-name">Classes préparatoires</p>
-                <p class="acad-detail">MPSI / MP* — Mathématiques, physique, sciences de l'ingénieur.</p>
-              </div>
-            </div>
-            <div class="acad-item" style="padding-bottom:40px;">
-              <div class="acad-dot-col" aria-hidden="true">
-                <div class="acad-dot"></div>
-                <div class="acad-line"></div>
-              </div>
-              <div>
-                <p class="acad-period">2023</p>
-                <p class="acad-name">Baccalauréat scientifique</p>
-                <p class="acad-detail">Mention Très Bien · Section Européenne · Spécialités Physique-Chimie &amp; SVT, option Maths complémentaire.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- /bento -->
-
-    </div>
-  </main>
+    </main>
 
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="../A propos/A propos.html">À propos</a></li>
+            <li><a href="../Projets/Main.html">Projets</a></li>
+            <li><a href="../Experience/Experience.html">Expérience</a></li>
+            <li><a href="../Compétences/Compétences.html">Compétences</a></li>
+            <li><a href="../CV/CV.html">CV</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
+            <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
+            <li>
+              <a href="../Projets/Prothese.html">Prothèses Myoélectriques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="../A propos/A propos.html">À propos</a></li>
-          <li><a href="../Projets/Main.html">Projets</a></li>
-          <li><a href="../Experience/Experience.html">Expérience</a></li>
-          <li><a href="../Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="../CV/CV.html">CV</a></li>
-          <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="../CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="../../js/theme-toggle.js"></script>
-  <script src="../../js/navbar.js"></script>
-</body>
+    <script src="../../js/theme-toggle.js"></script>
+    <script src="../../js/navbar.js"></script>
+  </body>
 </html>

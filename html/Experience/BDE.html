@@ -1,353 +1,871 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chargée logistique BDE ENSC — Emma Kerguillec">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="../../style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>Chargée logistique BDE — Emma Kerguillec</title>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chargée logistique BDE ENSC — Emma Kerguillec"
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="../../style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chargée logistique BDE — Emma Kerguillec</title>
 
-  <link rel="stylesheet" href="../../style/experience/bde.css">
-  <link rel="stylesheet" href="../../style/common/theme.css">
-</head>
+    <link rel="stylesheet" href="../../style/experience/bde.css" />
+    <link rel="stylesheet" href="../../style/common/theme.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="../../index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="close-icon">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-academique">Parcours académique</a></li>
-              </ul>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="../../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="close-icon">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-langues"
+                      >Langues</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Projets/Main.html">PROJETS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="../Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Compétences/Compétences.html"
+                  >COMPÉTENCES</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Compétences/Compétences.html#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="../CV/CV.html" class="nav-link">CV</a>
+              <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
             </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Projets/Main.html">PROJETS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
-
-                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Compétences/Compétences.html">COMPÉTENCES</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Compétences/Compétences.html#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="../CV/CV.html" class="nav-link">CV</a>
-            <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main class="detail-page">
-    <div class="detail-inner">
+    <main class="detail-page">
+      <div class="detail-inner">
+        <a href="../Experience/Experience.html" class="back-link">
+          <svg
+            viewBox="0 0 14 14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 7H2M2 7l5-5M2 7l5 5" />
+          </svg>
+          Retour aux expériences
+        </a>
 
-      <a href="../Experience/Experience.html" class="back-link">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 7H2M2 7l5-5M2 7l5 5"/>
-        </svg>
-        Retour aux expériences
-      </a>
+        <div class="detail-hero">
+          <div>
+            <p class="detail-eyebrow">
+              Engagement associatif · Mandat 2026-2027
+            </p>
+            <h1 class="detail-title">Chargée <em>logistique</em><br />— BDE</h1>
+            <p class="detail-subtitle">
+              Le Bureau des Élèves de l'ENSC est le cœur de la vie associative
+              de l'école. En tant que chargée logistique, j'assure la
+              faisabilité concrète de chaque événement — de la réservation des
+              espaces à la coordination des équipes sur le terrain.
+            </p>
+            <div class="detail-tags">
+              <span class="detail-tag">#logistique</span>
+              <span class="detail-tag">#organisation d'événements</span>
+              <span class="detail-tag">#coordination</span>
+              <span class="detail-tag">#vie étudiante</span>
+              <span class="detail-tag">#travail en équipe</span>
+            </div>
+          </div>
+          <div class="meta-pills">
+            <div class="meta-pill">
+              <div class="meta-pill-label">Structure</div>
+              <div class="meta-pill-value">BDE — ENSC</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Poste</div>
+              <div class="meta-pill-value">Chargée logistique</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Cadre</div>
+              <div class="meta-pill-value">Associatif</div>
+            </div>
+          </div>
+        </div>
 
-      <div class="detail-hero">
+        <div class="detail-divider"></div>
+
         <div>
-          <p class="detail-eyebrow">Engagement associatif · Mandat 2026-2027</p>
-          <h1 class="detail-title">Chargée <em>logistique</em><br>— BDE</h1>
-          <p class="detail-subtitle">
-            Le Bureau des Élèves de l'ENSC est le cœur de la vie associative de l'école. En tant que chargée logistique, j'assure la faisabilité concrète de chaque événement — de la réservation des espaces à la coordination des équipes sur le terrain.
-          </p>
-          <div class="detail-tags">
-            <span class="detail-tag">#logistique</span>
-            <span class="detail-tag">#organisation d'événements</span>
-            <span class="detail-tag">#coordination</span>
-            <span class="detail-tag">#vie étudiante</span>
-            <span class="detail-tag">#travail en équipe</span>
+          <!-- Contexte -->
+          <div class="detail-section">
+            <p class="section-label">Contexte</p>
+            <h2 class="section-title">
+              La vie associative au <em>quotidien</em>
+            </h2>
+            <p class="section-body">
+              Le BDE de l'ENSC est l'association centrale de la vie étudiante :
+              il organise les événements qui rythment l'année, fédère les
+              promotions et représente les élèves auprès de l'administration.
+              Mon rôle de chargée logistique est le garant silencieux de chaque
+              événement réussi — celui qui anticipe, organise et résout les
+              imprévus pour que tout se passe sans accroc le jour J.
+            </p>
+            <div class="highlight-box">
+              <p>
+                La logistique, c'est l'art de
+                <strong>rendre possible ce que les autres imaginent</strong>.
+                Chaque événement commence par une idée créative ; mon rôle est
+                de la transformer en réalité concrète en gérant contraintes,
+                ressources et timing avec précision.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="meta-pills">
-          <div class="meta-pill">
-            <div class="meta-pill-label">Structure</div>
-            <div class="meta-pill-value">BDE — ENSC</div>
+
+          <!-- Responsabilités -->
+          <div class="detail-section">
+            <p class="section-label">Missions</p>
+            <h2 class="section-title">Ce que <em>j'assure</em></h2>
+            <div class="responsibilities-grid">
+              <div class="resp-card">
+                <div class="resp-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <p class="resp-title">Réservation des espaces</p>
+                <p class="resp-desc">
+                  Gestion des réservations de salles, d'espaces communs et des
+                  équipements nécessaires à chaque événement auprès de l'école
+                  et des prestataires externes.
+                </p>
+              </div>
+
+              <div class="resp-card">
+                <div class="resp-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="9 11 12 14 22 4" />
+                    <path
+                      d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"
+                    />
+                  </svg>
+                </div>
+                <p class="resp-title">Planification & anticipation</p>
+                <p class="resp-desc">
+                  Établissement des plannings logistiques, identification des
+                  besoins en amont et anticipation des contraintes pour chaque
+                  projet associatif.
+                </p>
+              </div>
+
+              <div class="resp-card">
+                <div class="resp-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path
+                      d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"
+                    />
+                  </svg>
+                </div>
+                <p class="resp-title">Coordination des équipes</p>
+                <p class="resp-desc">
+                  Organisation et briefing des bénévoles le jour des événements,
+                  coordination des différents pôles du BDE pour garantir une
+                  exécution fluide.
+                </p>
+              </div>
+
+              <div class="resp-card">
+                <div class="resp-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="1" y="3" width="15" height="13" rx="2" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                  </svg>
+                </div>
+                <p class="resp-title">Gestion du matériel</p>
+                <p class="resp-desc">
+                  Inventaire, prêt et transport du matériel associatif (sono,
+                  décoration, mobilier…), suivi de l'état des équipements et
+                  organisation des achats nécessaires.
+                </p>
+              </div>
+
+              <div class="resp-card">
+                <div class="resp-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <p class="resp-title">Gestion des imprévus</p>
+                <p class="resp-desc">
+                  Réactivité et prise de décision rapide face aux aléas du
+                  terrain — premier point de contact pour tout problème
+                  logistique pendant les événements.
+                </p>
+              </div>
+
+              <div class="resp-card">
+                <div class="resp-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
+                    />
+                  </svg>
+                </div>
+                <p class="resp-title">Communication interne</p>
+                <p class="resp-desc">
+                  Interface entre les membres du bureau, les prestataires,
+                  l'administration de l'école et les autres associations pour
+                  assurer la cohérence logistique de chaque projet.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="meta-pill">
-            <div class="meta-pill-label">Poste</div>
-            <div class="meta-pill-value">Chargée logistique</div>
+
+          <!-- Événements -->
+          <div class="detail-section">
+            <p class="section-label">Exemples d'événements</p>
+            <h2 class="section-title">Des projets <em>concrets</em></h2>
+            <p class="section-body">
+              La vie associative de l'ENSC se traduit par une multitude
+              d'événements tout au long de l'année, chacun avec ses propres
+              exigences logistiques.
+            </p>
+            <div class="events-grid">
+              <div class="event-card">
+                <span class="event-emoji">🎉</span>
+                <p class="event-name">Week-end d'intégration</p>
+                <p class="event-desc">
+                  Accueil des nouvelles promotions, organisation complète sur
+                  plusieurs jours.
+                </p>
+              </div>
+              <div class="event-card">
+                <span class="event-emoji">🎭</span>
+                <p class="event-name">Soirées étudiantes</p>
+                <p class="event-desc">
+                  Coordination des espaces, du matériel son/lumière et de la
+                  sécurité.
+                </p>
+              </div>
+              <div class="event-card">
+                <span class="event-emoji">🏆</span>
+                <p class="event-name">Tournois & défis sportifs</p>
+                <p class="event-desc">
+                  Planification des créneaux, arbitrage logistique et remise des
+                  récompenses.
+                </p>
+              </div>
+              <div class="event-card">
+                <span class="event-emoji">🎄</span>
+                <p class="event-name">Événements saisonniers</p>
+                <p class="event-desc">
+                  Évènement RSE, gala, afterwork tout au long de l'année.
+                </p>
+              </div>
+              <div class="event-card">
+                <span class="event-emoji">🤝</span>
+                <p class="event-name">Partenariats & inter-BDE</p>
+                <p class="event-desc">
+                  Coordination logistique avec les BDE d'autres écoles pour les
+                  événements communs.
+                </p>
+              </div>
+              <div class="event-card">
+                <span class="event-emoji">🎓</span>
+                <p class="event-name">Cérémonies officielles</p>
+                <p class="event-desc">
+                  Support logistique aux événements officiels de l'école :
+                  remises de diplômes, journées portes ouvertes.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="meta-pill">
-            <div class="meta-pill-label">Cadre</div>
-            <div class="meta-pill-value">Associatif</div>
+
+          <!-- Compétences -->
+          <div class="detail-section">
+            <p class="section-label">Ce que j'en retire</p>
+            <h2 class="section-title">Compétences <em>développées</em></h2>
+            <p class="section-body">
+              Cette expérience m'a forgé un sens aigu de l'organisation et de la
+              rigueur opérationnelle. Gérer la logistique d'une association
+              étudiante active, c'est apprendre à jongler avec des ressources
+              limitées, des délais serrés et des équipes bénévoles — un terrain
+              d'entraînement idéal pour de futures responsabilités
+              professionnelles.
+            </p>
+            <div class="highlight-box">
+              <p>
+                Au-delà des compétences techniques, le BDE m'a appris à
+                <strong>travailler sous pression avec bienveillance</strong> :
+                maintenir la cohésion d'équipe, communiquer avec clarté dans
+                l'urgence, et transformer les contraintes en opportunités
+                créatives. La logistique, c'est finalement une forme de
+                <strong>design de l'expérience vécue</strong>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="detail-divider"></div>
-
-      <div>
-
-        <!-- Contexte -->
-        <div class="detail-section">
-          <p class="section-label">Contexte</p>
-          <h2 class="section-title">La vie associative au <em>quotidien</em></h2>
-          <p class="section-body">
-            Le BDE de l'ENSC est l'association centrale de la vie étudiante : il organise les événements qui rythment l'année, fédère les promotions et représente les élèves auprès de l'administration. Mon rôle de chargée logistique est le garant silencieux de chaque événement réussi — celui qui anticipe, organise et résout les imprévus pour que tout se passe sans accroc le jour J.
-          </p>
-          <div class="highlight-box">
-            <p>
-              La logistique, c'est l'art de <strong>rendre possible ce que les autres imaginent</strong>. Chaque événement commence par une idée créative ; mon rôle est de la transformer en réalité concrète en gérant contraintes, ressources et timing avec précision.
-            </p>
-          </div>
-        </div>
-
-        <!-- Responsabilités -->
-        <div class="detail-section">
-          <p class="section-label">Missions</p>
-          <h2 class="section-title">Ce que <em>j'assure</em></h2>
-          <div class="responsibilities-grid">
-
-            <div class="resp-card">
-              <div class="resp-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-                </svg>
-              </div>
-              <p class="resp-title">Réservation des espaces</p>
-              <p class="resp-desc">Gestion des réservations de salles, d'espaces communs et des équipements nécessaires à chaque événement auprès de l'école et des prestataires externes.</p>
-            </div>
-
-            <div class="resp-card">
-              <div class="resp-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-                </svg>
-              </div>
-              <p class="resp-title">Planification & anticipation</p>
-              <p class="resp-desc">Établissement des plannings logistiques, identification des besoins en amont et anticipation des contraintes pour chaque projet associatif.</p>
-            </div>
-
-            <div class="resp-card">
-              <div class="resp-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-                </svg>
-              </div>
-              <p class="resp-title">Coordination des équipes</p>
-              <p class="resp-desc">Organisation et briefing des bénévoles le jour des événements, coordination des différents pôles du BDE pour garantir une exécution fluide.</p>
-            </div>
-
-            <div class="resp-card">
-              <div class="resp-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
-                  <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
-                </svg>
-              </div>
-              <p class="resp-title">Gestion du matériel</p>
-              <p class="resp-desc">Inventaire, prêt et transport du matériel associatif (sono, décoration, mobilier…), suivi de l'état des équipements et organisation des achats nécessaires.</p>
-            </div>
-
-            <div class="resp-card">
-              <div class="resp-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
-              <p class="resp-title">Gestion des imprévus</p>
-              <p class="resp-desc">Réactivité et prise de décision rapide face aux aléas du terrain — premier point de contact pour tout problème logistique pendant les événements.</p>
-            </div>
-
-            <div class="resp-card">
-              <div class="resp-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-                </svg>
-              </div>
-              <p class="resp-title">Communication interne</p>
-              <p class="resp-desc">Interface entre les membres du bureau, les prestataires, l'administration de l'école et les autres associations pour assurer la cohérence logistique de chaque projet.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Événements -->
-        <div class="detail-section">
-          <p class="section-label">Exemples d'événements</p>
-          <h2 class="section-title">Des projets <em>concrets</em></h2>
-          <p class="section-body">
-            La vie associative de l'ENSC se traduit par une multitude d'événements tout au long de l'année, chacun avec ses propres exigences logistiques.
-          </p>
-          <div class="events-grid">
-            <div class="event-card">
-              <span class="event-emoji">🎉</span>
-              <p class="event-name">Week-end d'intégration</p>
-              <p class="event-desc">Accueil des nouvelles promotions, organisation complète sur plusieurs jours.</p>
-            </div>
-            <div class="event-card">
-              <span class="event-emoji">🎭</span>
-              <p class="event-name">Soirées étudiantes</p>
-              <p class="event-desc">Coordination des espaces, du matériel son/lumière et de la sécurité.</p>
-            </div>
-            <div class="event-card">
-              <span class="event-emoji">🏆</span>
-              <p class="event-name">Tournois & défis sportifs</p>
-              <p class="event-desc">Planification des créneaux, arbitrage logistique et remise des récompenses.</p>
-            </div>
-            <div class="event-card">
-              <span class="event-emoji">🎄</span>
-              <p class="event-name">Événements saisonniers</p>
-              <p class="event-desc">Évènement RSE, gala, afterwork tout au long de l'année.</p>
-            </div>
-            <div class="event-card">
-              <span class="event-emoji">🤝</span>
-              <p class="event-name">Partenariats & inter-BDE</p>
-              <p class="event-desc">Coordination logistique avec les BDE d'autres écoles pour les événements communs.</p>
-            </div>
-            <div class="event-card">
-              <span class="event-emoji">🎓</span>
-              <p class="event-name">Cérémonies officielles</p>
-              <p class="event-desc">Support logistique aux événements officiels de l'école : remises de diplômes, journées portes ouvertes.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Compétences -->
-        <div class="detail-section">
-          <p class="section-label">Ce que j'en retire</p>
-          <h2 class="section-title">Compétences <em>développées</em></h2>
-          <p class="section-body">
-            Cette expérience m'a forgé un sens aigu de l'organisation et de la rigueur opérationnelle. Gérer la logistique d'une association étudiante active, c'est apprendre à jongler avec des ressources limitées, des délais serrés et des équipes bénévoles — un terrain d'entraînement idéal pour de futures responsabilités professionnelles.
-          </p>
-          <div class="highlight-box">
-            <p>
-              Au-delà des compétences techniques, le BDE m'a appris à <strong>travailler sous pression avec bienveillance</strong> : maintenir la cohésion d'équipe, communiquer avec clarté dans l'urgence, et transformer les contraintes en opportunités créatives. La logistique, c'est finalement une forme de <strong>design de l'expérience vécue</strong>.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </main>
+    </main>
 
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="../A propos/A propos.html">À propos</a></li>
+            <li><a href="../Projets/Main.html">Projets</a></li>
+            <li><a href="../Experience/Experience.html">Expérience</a></li>
+            <li><a href="../Compétences/Compétences.html">Compétences</a></li>
+            <li><a href="../CV/CV.html">CV</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
+            <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
+            <li>
+              <a href="../Projets/Prothese.html">Prothèses Myoélectriques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="../A propos/A propos.html">À propos</a></li>
-          <li><a href="../Projets/Main.html">Projets</a></li>
-          <li><a href="../Experience/Experience.html">Expérience</a></li>
-          <li><a href="../Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="../CV/CV.html">CV</a></li>
-          <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="../CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="../../js/theme-toggle.js"></script>
-  <script src="../../js/navbar.js"></script>
-</body>
+    <script src="../../js/theme-toggle.js"></script>
+    <script src="../../js/navbar.js"></script>
+  </body>
 </html>

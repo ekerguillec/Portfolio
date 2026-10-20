@@ -1,379 +1,1043 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Emma Kerguillec — Ingénieure Cogniticienne, ENSC Bordeaux INP. Portfolio de projets techniques, expériences et compétences.">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="./style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>Emma Kerguillec — Ingénieure Cogniticienne</title>
-  <meta property="og:type"        content="website">
-  <meta property="og:site_name"   content="Emma Kerguillec — Portfolio">
-  <meta property="og:title"       content="Emma Kerguillec — Ingénieure Cogniticienne">
-  <meta property="og:description" content="Emma Kerguillec — Ingénieure Cogniticienne, ENSC Bordeaux INP. Portfolio de projets techniques, expériences et compétences.">
-  <meta property="og:url"         content="https://ekerguillec.github.io/Portfolio/">
-  <meta property="og:image"       content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png">
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Emma Kerguillec — Ingénieure Cogniticienne">
-  <meta name="twitter:description" content="Emma Kerguillec — Ingénieure Cogniticienne, ENSC Bordeaux INP. Portfolio de projets techniques, expériences et compétences.">
-  <meta name="twitter:image"       content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Emma Kerguillec — Ingénieure Cogniticienne, ENSC Bordeaux INP. Portfolio de projets techniques, expériences et compétences."
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="./style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Emma Kerguillec — Ingénieure Cogniticienne</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Emma Kerguillec — Portfolio" />
+    <meta
+      property="og:title"
+      content="Emma Kerguillec — Ingénieure Cogniticienne"
+    />
+    <meta
+      property="og:description"
+      content="Emma Kerguillec — Ingénieure Cogniticienne, ENSC Bordeaux INP. Portfolio de projets techniques, expériences et compétences."
+    />
+    <meta
+      property="og:url"
+      content="https://ekerguillec.github.io/Portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Emma Kerguillec — Ingénieure Cogniticienne"
+    />
+    <meta
+      name="twitter:description"
+      content="Emma Kerguillec — Ingénieure Cogniticienne, ENSC Bordeaux INP. Portfolio de projets techniques, expériences et compétences."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png"
+    />
 
-  <link rel="stylesheet" href="./style/pages/index.css">
-  <link rel="stylesheet" href="./style/common/theme.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <link rel="stylesheet" href="./style/pages/index.css" />
+    <link rel="stylesheet" href="./style/common/theme.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-  <!-- ══ NAVBAR ══ -->
-  <header class="header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="./index.html" aria-current="page">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="close-icon" aria-hidden="true">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNav">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="./html/A propos/A propos.html">A PROPOS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./html/A propos/A propos.html#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="./html/A propos/A propos.html#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="./html/A propos/A propos.html#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="./html/A propos/A propos.html#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="./html/A propos/A propos.html#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="./html/A propos/A propos.html#sec-academique">Parcours académique</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="./html/Projets/Main.html">PROJETS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./html/Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="./html/Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="./html/Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="./html/Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="html/Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="html/Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="html/Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="./html/Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="./html/Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="./html/Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="./html/Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="./html/Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="./html/Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="./html/Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="./html/Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="./html/Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
-
-                <li><a class="dropdown-item" href="./html/Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="./html/Compétences/Compétences.html">COMPÉTENCES</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./html/Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="./html/Compétences/Compétences.html#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="./html/Compétences/Compétences.html#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="./html/CV/CV.html" class="nav-link">CV</a>
-            <a href="./html/Contact/Contact.html" class="nav-link">CONTACT</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main-content">
-
-    <!-- ══ SPLASH PLEIN-ÉCRAN ══ -->
-    <section class="hero">
-      <canvas id="neural-canvas" aria-hidden="true"></canvas>
-
-      <div class="hero-left">
-        <h1>Emma KERGUILLEC</h1>
-        <h2>Ingénieure Cogniticienne</h2>
-        <p>
-          Je transforme des problématiques complexes<br>
-          en solutions techniques efficaces, durables et pensées pour l'Homme.
-        </p>
-        <div class="buttons">
-          <a href="./html/Projets/Main.html" class="btn-primary">Découvrir mes projets &rsaquo;</a>
-          <a href="./html/Contact/Contact.html" class="btn-secondary">Me contacter</a>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="halo-wrapper">
-          <div class="halo">
-            <picture style="display:contents">
-              <source srcset="./images/MaPhotoCorrigee.webp" type="image/webp">
-              <img src="./images/MaPhotoCorrigee.png" alt="Emma Kerguillec, Ingénieure Cogniticienne">
-            </picture>
-          </div>
-        </div>
-      </div>
-
-      <!-- Flèche de scroll -->
-      <a href="#portfolio-content" class="scroll-arrow" aria-label="Défiler vers le portfolio">
-        <span>Défiler</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
-        </svg>
-      </a>
-    </section>
-
-    <!-- ══ CONTENU PORTFOLIO ══ -->
-    <div class="acc-content" id="portfolio-content">
-
-      <!-- Highlights -->
-      <section class="acc-highlights" aria-label="Points clés">
-        <div class="acc-highlights-grid">
-
-          <div class="acc-hcard">
-            <p class="acc-fc-label">Projet phare</p>
-            <p class="acc-fc-title">Poul'Pong — jeu physiologique</p>
-            <p class="acc-fc-sub">Voix + rythme cardiaque comme contrôleurs de jeu</p>
-            <div class="acc-fc-chips">
-              <span class="acc-fc-chip">MicroPython</span>
-              <span class="acc-fc-chip">Raspberry Pi</span>
-              <span class="acc-fc-chip">Capteurs EMG</span>
-            </div>
-          </div>
-
-          <div class="acc-hcard">
-            <p class="acc-fc-label">En chiffres</p>
-            <div class="acc-fc-stat">
-              <div>
-                <div class="acc-fc-num">8</div>
-                <div class="acc-fc-num-label">Expériences</div>
+    <!-- ══ NAVBAR ══ -->
+    <header class="header">
+      <nav class="navbar" aria-label="Navigation principale">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="./index.html" aria-current="page"
+            >Portfolio</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="close-icon" aria-hidden="true">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="./html/A propos/A propos.html"
+                  >A PROPOS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/A propos/A propos.html#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/A propos/A propos.html#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/A propos/A propos.html#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/A propos/A propos.html#sec-langues"
+                      >Langues</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/A propos/A propos.html#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/A propos/A propos.html#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div style="width:1px;height:36px;background:rgba(255,255,255,0.08);flex-shrink:0"></div>
-              <div>
-                <div class="acc-fc-num">3</div>
-                <div class="acc-fc-num-label">Projets complets</div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="./html/Projets/Main.html">PROJETS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./html/Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./html/Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./html/Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div style="width:1px;height:36px;background:rgba(255,255,255,0.08);flex-shrink:0"></div>
-              <div>
-                <div class="acc-fc-num">9<em>+</em></div>
-                <div class="acc-fc-num-label">Langages</div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="html/Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="html/Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="html/Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="./html/Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="./html/Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="./html/Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="./html/Compétences/Compétences.html"
+                  >COMPÉTENCES</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/Compétences/Compétences.html#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/Compétences/Compétences.html#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./html/Compétences/Compétences.html#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="./html/Compétences/Compétences.html#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./html/Compétences/Compétences.html#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="./html/CV/CV.html" class="nav-link">CV</a>
+              <a href="./html/Contact/Contact.html" class="nav-link">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ══ SPLASH PLEIN-ÉCRAN ══ -->
+      <section class="hero">
+        <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+        <div class="hero-left">
+          <h1>Emma KERGUILLEC</h1>
+          <h2>Ingénieure Cogniticienne</h2>
+          <p>
+            Je transforme des problématiques complexes<br />
+            en solutions techniques efficaces, durables et pensées pour l'Homme.
+          </p>
+          <div class="buttons">
+            <a href="./html/Projets/Main.html" class="btn-primary"
+              >Découvrir mes projets &rsaquo;</a
+            >
+            <a href="./html/Contact/Contact.html" class="btn-secondary"
+              >Me contacter</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="halo-wrapper">
+            <div class="halo">
+              <picture style="display: contents">
+                <source
+                  srcset="./images/MaPhotoCorrigee.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/MaPhotoCorrigee.png"
+                  alt="Emma Kerguillec, Ingénieure Cogniticienne"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flèche de scroll -->
+        <a
+          href="#portfolio-content"
+          class="scroll-arrow"
+          aria-label="Défiler vers le portfolio"
+        >
+          <span>Défiler</span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ══ CONTENU PORTFOLIO ══ -->
+      <div class="acc-content" id="portfolio-content">
+        <!-- Highlights -->
+        <section class="acc-highlights" aria-label="Points clés">
+          <div class="acc-highlights-grid">
+            <div class="acc-hcard">
+              <p class="acc-fc-label">Projet phare</p>
+              <p class="acc-fc-title">Poul'Pong — jeu physiologique</p>
+              <p class="acc-fc-sub">
+                Voix + rythme cardiaque comme contrôleurs de jeu
+              </p>
+              <div class="acc-fc-chips">
+                <span class="acc-fc-chip">MicroPython</span>
+                <span class="acc-fc-chip">Raspberry Pi</span>
+                <span class="acc-fc-chip">Capteurs EMG</span>
               </div>
             </div>
-          </div>
 
-          <div class="acc-hcard">
-            <p class="acc-fc-label">Formation</p>
-            <p class="acc-fc-title">ENSC · Bordeaux INP</p>
-            <p class="acc-fc-sub">Diplôme d'ingénieure en cognitique — seule école de ce type en France</p>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Projets -->
-      <section class="acc-section" aria-labelledby="acc-projets-title">
-        <div class="acc-section-header">
-          <span class="acc-section-num">01 · Projets</span>
-          <div class="acc-section-line"></div>
-        </div>
-        <h2 class="acc-section-title" id="acc-projets-title">Ce que je <em>construis</em></h2>
-        <p class="acc-section-sub">Des projets à l'intersection de l'ingénierie, de la cognition et du design — techniques, documentés, menés en équipe.</p>
-
-        <div class="acc-projects-grid">
-          <a href="./html/Projets/Poulpong.html" class="acc-project-card" style="animation-delay:.05s">
-            <span class="acc-project-tag">Ingénierie · ENSC 2024–2025</span>
-            <h3 class="acc-project-title">Poul'Pong — <em>jeu physiologique</em></h3>
-            <p class="acc-project-desc">Réinventer Pong avec la physiologie humaine : la voix contrôle la raquette, le rythme cardiaque module la balle. Raspberry Pi Pico W, MicroPython, capteurs EMG.</p>
-            <div class="acc-project-chips">
-              <span class="acc-chip">MicroPython</span>
-              <span class="acc-chip">Raspberry Pi</span>
-              <span class="acc-chip">IHM</span>
+            <div class="acc-hcard">
+              <p class="acc-fc-label">En chiffres</p>
+              <div class="acc-fc-stat">
+                <div>
+                  <div class="acc-fc-num">8</div>
+                  <div class="acc-fc-num-label">Expériences</div>
+                </div>
+                <div
+                  style="
+                    width: 1px;
+                    height: 36px;
+                    background: rgba(255, 255, 255, 0.08);
+                    flex-shrink: 0;
+                  "
+                ></div>
+                <div>
+                  <div class="acc-fc-num">3</div>
+                  <div class="acc-fc-num-label">Projets complets</div>
+                </div>
+                <div
+                  style="
+                    width: 1px;
+                    height: 36px;
+                    background: rgba(255, 255, 255, 0.08);
+                    flex-shrink: 0;
+                  "
+                ></div>
+                <div>
+                  <div class="acc-fc-num">9<em>+</em></div>
+                  <div class="acc-fc-num-label">Langages</div>
+                </div>
+              </div>
             </div>
-            <span class="acc-project-arrow">Voir le projet <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12L12 2M12 2H5M12 2v7"/></svg></span>
-          </a>
 
-          <a href="./html/Projets/Audiosensible.html" class="acc-project-card" style="animation-delay:.12s">
-            <span class="acc-project-tag">Sensibilisation · ENSC</span>
-            <h3 class="acc-project-title">Ombre Sensible — <em>handicap auditif</em></h3>
-            <p class="acc-project-desc">Faire vivre de l'intérieur les altérations sonores vécues par les personnes atteintes de surdité, d'hyperacousie ou d'acouphènes — par le son, en temps réel.</p>
-            <div class="acc-project-chips">
-              <span class="acc-chip">Acoustique</span>
-              <span class="acc-chip">Accessibilité</span>
-              <span class="acc-chip">Web</span>
+            <div class="acc-hcard">
+              <p class="acc-fc-label">Formation</p>
+              <p class="acc-fc-title">ENSC · Bordeaux INP</p>
+              <p class="acc-fc-sub">
+                Diplôme d'ingénieure en cognitique — seule école de ce type en
+                France
+              </p>
             </div>
-            <span class="acc-project-arrow">Voir le projet <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12L12 2M12 2H5M12 2v7"/></svg></span>
-          </a>
+          </div>
+        </section>
 
-          <a href="./html/Projets/Prothese.html" class="acc-project-card" style="animation-delay:.19s">
-            <span class="acc-project-tag">Recherche · 2024–2025</span>
-            <h3 class="acc-project-title">Prothèses de bras <em>myoélectriques</em></h3>
-            <p class="acc-project-desc">Mémoire de recherche sur les prothèses intelligentes : innovations biomécaniques, traitement du signal EMG, impact utilisateur et rédaction scientifique.</p>
-            <div class="acc-project-chips">
-              <span class="acc-chip">Neurosciences</span>
-              <span class="acc-chip">Biomécanique</span>
-              <span class="acc-chip">Recherche</span>
+        <!-- Projets -->
+        <section class="acc-section" aria-labelledby="acc-projets-title">
+          <div class="acc-section-header">
+            <span class="acc-section-num">01 · Projets</span>
+            <div class="acc-section-line"></div>
+          </div>
+          <h2 class="acc-section-title" id="acc-projets-title">
+            Ce que je <em>construis</em>
+          </h2>
+          <p class="acc-section-sub">
+            Des projets à l'intersection de l'ingénierie, de la cognition et du
+            design — techniques, documentés, menés en équipe.
+          </p>
+
+          <div class="acc-projects-grid">
+            <a
+              href="./html/Projets/Poulpong.html"
+              class="acc-project-card"
+              style="animation-delay: 0.05s"
+            >
+              <span class="acc-project-tag">Ingénierie · ENSC 2024–2025</span>
+              <h3 class="acc-project-title">
+                Poul'Pong — <em>jeu physiologique</em>
+              </h3>
+              <p class="acc-project-desc">
+                Réinventer Pong avec la physiologie humaine : la voix contrôle
+                la raquette, le rythme cardiaque module la balle. Raspberry Pi
+                Pico W, MicroPython, capteurs EMG.
+              </p>
+              <div class="acc-project-chips">
+                <span class="acc-chip">MicroPython</span>
+                <span class="acc-chip">Raspberry Pi</span>
+                <span class="acc-chip">IHM</span>
+              </div>
+              <span class="acc-project-arrow"
+                >Voir le projet
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2v7" />
+                </svg>
+              </span>
+            </a>
+
+            <a
+              href="./html/Projets/Audiosensible.html"
+              class="acc-project-card"
+              style="animation-delay: 0.12s"
+            >
+              <span class="acc-project-tag">Sensibilisation · ENSC</span>
+              <h3 class="acc-project-title">
+                Ombre Sensible — <em>handicap auditif</em>
+              </h3>
+              <p class="acc-project-desc">
+                Faire vivre de l'intérieur les altérations sonores vécues par
+                les personnes atteintes de surdité, d'hyperacousie ou
+                d'acouphènes — par le son, en temps réel.
+              </p>
+              <div class="acc-project-chips">
+                <span class="acc-chip">Acoustique</span>
+                <span class="acc-chip">Accessibilité</span>
+                <span class="acc-chip">Web</span>
+              </div>
+              <span class="acc-project-arrow"
+                >Voir le projet
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2v7" />
+                </svg>
+              </span>
+            </a>
+
+            <a
+              href="./html/Projets/Prothese.html"
+              class="acc-project-card"
+              style="animation-delay: 0.19s"
+            >
+              <span class="acc-project-tag">Recherche · 2024–2025</span>
+              <h3 class="acc-project-title">
+                Prothèses de bras <em>myoélectriques</em>
+              </h3>
+              <p class="acc-project-desc">
+                Mémoire de recherche sur les prothèses intelligentes :
+                innovations biomécaniques, traitement du signal EMG, impact
+                utilisateur et rédaction scientifique.
+              </p>
+              <div class="acc-project-chips">
+                <span class="acc-chip">Neurosciences</span>
+                <span class="acc-chip">Biomécanique</span>
+                <span class="acc-chip">Recherche</span>
+              </div>
+              <span class="acc-project-arrow"
+                >Voir le projet
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2v7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Expériences -->
+        <section class="acc-section" aria-labelledby="acc-exp-title">
+          <div class="acc-section-header" style="animation-delay: 0.1s">
+            <span class="acc-section-num">02 · Expériences</span>
+            <div class="acc-section-line"></div>
+          </div>
+          <h2 class="acc-section-title" id="acc-exp-title">
+            Mon <em>parcours</em>
+          </h2>
+          <p class="acc-section-sub">
+            Vice-présidente, comptable, logisticienne, opératrice de nuit — une
+            polyvalence construite sur le terrain, pas dans les manuels.
+          </p>
+
+          <div class="acc-exp-list">
+            <a
+              href="./html/Experience/BDE.html"
+              class="acc-exp-item"
+              style="animation-delay: 0.05s"
+            >
+              <span class="acc-exp-period">2026 → aujourd'hui</span>
+              <span class="acc-exp-dot"></span>
+              <span class="acc-exp-name">BDE ENSC — Chargée Logistique</span>
+              <span class="acc-exp-role">ENSC</span>
+              <svg
+                class="acc-exp-chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 12l4-4-4-4" />
+              </svg>
+            </a>
+            <a
+              href="./html/Experience/ingénib.html"
+              class="acc-exp-item"
+              style="animation-delay: 0.1s"
+            >
+              <span class="acc-exp-period">2026 → aujourd'hui</span>
+              <span class="acc-exp-dot"></span>
+              <span class="acc-exp-name">Forum Ingénib — Vice-Présidente</span>
+              <span class="acc-exp-role">ENSEIRB × ENSC</span>
+              <svg
+                class="acc-exp-chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 12l4-4-4-4" />
+              </svg>
+            </a>
+            <a
+              href="./html/Experience/i2c.html"
+              class="acc-exp-item"
+              style="animation-delay: 0.2s"
+            >
+              <span class="acc-exp-period">2026 → aujourd'hui</span>
+              <span class="acc-exp-dot"></span>
+              <span class="acc-exp-name"
+                >i2c Junior-Entreprise — Comptable</span
+              >
+              <span class="acc-exp-role">ENSC</span>
+              <svg
+                class="acc-exp-chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 12l4-4-4-4" />
+              </svg>
+            </a>
+            <a
+              href="./html/Experience/Le Télégramme.html"
+              class="acc-exp-item"
+              style="animation-delay: 0.15s"
+            >
+              <span class="acc-exp-period">2025 → aujourd'hui</span>
+              <span class="acc-exp-dot"></span>
+              <span class="acc-exp-name"
+                >Le Télégramme — Opératrice de production nocturne</span
+              >
+              <span class="acc-exp-role">Imprimerie industrielle</span>
+              <svg
+                class="acc-exp-chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 12l4-4-4-4" />
+              </svg>
+            </a>
+            <a
+              href="./html/Experience/Experience.html"
+              class="acc-exp-item"
+              style="animation-delay: 0.25s; border-style: dashed; opacity: 0.7"
+            >
+              <span class="acc-exp-period">Toutes</span>
+              <span
+                class="acc-exp-dot"
+                style="background: rgba(125, 211, 252, 0.6)"
+              ></span>
+              <span class="acc-exp-name" style="color: #7dd3fc"
+                >Voir toutes les expériences →</span
+              >
+              <svg
+                class="acc-exp-chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 12l4-4-4-4" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section
+          class="acc-contact-section"
+          aria-labelledby="acc-contact-title"
+        >
+          <div class="acc-contact-inner">
+            <div class="acc-contact-text">
+              <p class="acc-contact-eyebrow">
+                Disponible · Stage & opportunités
+              </p>
+              <h2 class="acc-contact-title" id="acc-contact-title">
+                Travaillons<br /><em>ensemble.</em>
+              </h2>
+              <p class="acc-contact-sub">
+                Ouverte à un stage, une collaboration ou simplement un échange
+                sur un projet ambitieux.
+              </p>
             </div>
-            <span class="acc-project-arrow">Voir le projet <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12L12 2M12 2H5M12 2v7"/></svg></span>
-          </a>
-        </div>
-      </section>
-
-      <!-- Expériences -->
-      <section class="acc-section" aria-labelledby="acc-exp-title">
-        <div class="acc-section-header" style="animation-delay:.1s">
-          <span class="acc-section-num">02 · Expériences</span>
-          <div class="acc-section-line"></div>
-        </div>
-        <h2 class="acc-section-title" id="acc-exp-title">Mon <em>parcours</em></h2>
-        <p class="acc-section-sub">Vice-présidente, comptable, logisticienne, opératrice de nuit — une polyvalence construite sur le terrain, pas dans les manuels.</p>
-
-        <div class="acc-exp-list">
-          <a href="./html/Experience/BDE.html" class="acc-exp-item" style="animation-delay:.05s">
-            <span class="acc-exp-period">2026 → aujourd'hui</span>
-            <span class="acc-exp-dot"></span>
-            <span class="acc-exp-name">BDE ENSC — Chargée Logistique</span>
-            <span class="acc-exp-role">ENSC</span>
-            <svg class="acc-exp-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12l4-4-4-4"/></svg>
-          </a>
-          <a href="./html/Experience/ingénib.html" class="acc-exp-item" style="animation-delay:.1s">
-            <span class="acc-exp-period">2026 → aujourd'hui</span>
-            <span class="acc-exp-dot"></span>
-            <span class="acc-exp-name">Forum Ingénib — Vice-Présidente</span>
-            <span class="acc-exp-role">ENSEIRB × ENSC</span>
-            <svg class="acc-exp-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12l4-4-4-4"/></svg>
-          </a>
-          <a href="./html/Experience/i2c.html" class="acc-exp-item" style="animation-delay:.2s">
-            <span class="acc-exp-period">2026 → aujourd'hui</span>
-            <span class="acc-exp-dot"></span>
-            <span class="acc-exp-name">i2c Junior-Entreprise — Comptable</span>
-            <span class="acc-exp-role">ENSC</span>
-            <svg class="acc-exp-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12l4-4-4-4"/></svg>
-          </a>
-          <a href="./html/Experience/Le Télégramme.html" class="acc-exp-item" style="animation-delay:.15s">
-            <span class="acc-exp-period">2025 → aujourd'hui</span>
-            <span class="acc-exp-dot"></span>
-            <span class="acc-exp-name">Le Télégramme — Opératrice de production nocturne</span>
-            <span class="acc-exp-role">Imprimerie industrielle</span>
-            <svg class="acc-exp-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12l4-4-4-4"/></svg>
-          </a>
-          <a href="./html/Experience/Experience.html" class="acc-exp-item" style="animation-delay:.25s; border-style:dashed; opacity:0.7">
-            <span class="acc-exp-period">Toutes</span>
-            <span class="acc-exp-dot" style="background:rgba(125,211,252,0.6)"></span>
-            <span class="acc-exp-name" style="color:#7dd3fc">Voir toutes les expériences →</span>
-            <svg class="acc-exp-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12l4-4-4-4"/></svg>
-          </a>
-        </div>
-      </section>
-
-      <!-- Contact CTA -->
-      <section class="acc-contact-section" aria-labelledby="acc-contact-title">
-        <div class="acc-contact-inner">
-          <div class="acc-contact-text">
-            <p class="acc-contact-eyebrow">Disponible · Stage & opportunités</p>
-            <h2 class="acc-contact-title" id="acc-contact-title">Travaillons<br><em>ensemble.</em></h2>
-            <p class="acc-contact-sub">Ouverte à un stage, une collaboration ou simplement un échange sur un projet ambitieux.</p>
+            <div class="acc-contact-actions">
+              <a href="./html/Contact/Contact.html" class="acc-btn-primary"
+                >Prendre contact</a
+              >
+              <a
+                href="./html/CV/CV.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="acc-btn-secondary"
+                >Télécharger mon CV</a
+              >
+            </div>
           </div>
-          <div class="acc-contact-actions">
-            <a href="./html/Contact/Contact.html" class="acc-btn-primary">Prendre contact</a>
-            <a href="./html/CV/CV.html" target="_blank" rel="noopener noreferrer" class="acc-btn-secondary">Télécharger mon CV</a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      <!-- /.acc-content -->
+    </main>
 
-    </div><!-- /.acc-content -->
-  </main>
-
-  <!-- Footer -->
+    <!-- Footer -->
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="./html/A propos/A propos.html">À propos</a></li>
+            <li><a href="./html/Projets/Main.html">Projets</a></li>
+            <li><a href="./html/Experience/Experience.html">Expérience</a></li>
+            <li>
+              <a href="./html/Compétences/Compétences.html">Compétences</a>
+            </li>
+            <li><a href="./html/CV/CV.html">CV</a></li>
+            <li><a href="./html/Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="./html/Projets/Poulpong.html">Poul'Pong</a></li>
+            <li>
+              <a href="./html/Projets/Audiosensible.html">Ombre Sensible</a>
+            </li>
+            <li>
+              <a href="./html/Projets/Prothese.html"
+                >Prothèses Myoélectriques</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="./html/A propos/A propos.html">À propos</a></li>
-          <li><a href="./html/Projets/Main.html">Projets</a></li>
-          <li><a href="./html/Experience/Experience.html">Expérience</a></li>
-          <li><a href="./html/Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="./html/CV/CV.html">CV</a></li>
-          <li><a href="./html/Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="./html/Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="./html/Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="./html/Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="./html/CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="./html/CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="./js/index-canvas.js"></script>
-  <script src="./js/theme-toggle.js"></script>
+    <script src="./js/index-canvas.js"></script>
+    <script src="./js/theme-toggle.js"></script>
 
-  
-  <script src="./js/navbar.js"></script>
-</body>
+    <script src="./js/navbar.js"></script>
+  </body>
 </html>

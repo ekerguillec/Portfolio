@@ -1,254 +1,837 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stage en maison d'assistante maternelle — Emma Kerguillec">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="../../style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>Stage MAM — Emma Kerguillec</title>
-  <link rel="stylesheet" href="../../style/experience/detail-base.css">
-  <link rel="stylesheet" href="../../style/common/theme.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-  <header class="header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="../../index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="close-icon" aria-hidden="true">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-academique">Parcours académique</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Projets/Main.html">PROJETS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stage en maison d'assistante maternelle — Emma Kerguillec"
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="../../style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stage MAM — Emma Kerguillec</title>
+    <link rel="stylesheet" href="../../style/experience/detail-base.css" />
+    <link rel="stylesheet" href="../../style/common/theme.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="header">
+      <nav class="navbar" aria-label="Navigation principale">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="../../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu de navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="close-icon" aria-hidden="true">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-langues"
+                      >Langues</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Projets/Main.html">PROJETS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="../Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
 
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
+                  <li>
+                    <a class="dropdown-item" href="../Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Compétences/Compétences.html"
+                  >COMPÉTENCES</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Compétences/Compétences.html#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="../CV/CV.html" class="nav-link">CV</a>
+              <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
             </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Compétences/Compétences.html">COMPÉTENCES</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Compétences/Compétences.html#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="../CV/CV.html" class="nav-link">CV</a>
-            <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main id="main-content" class="detail-page">
-    <div class="detail-inner">
+    <main id="main-content" class="detail-page">
+      <div class="detail-inner">
+        <a href="../Experience/Experience.html" class="back-link">
+          <svg
+            viewBox="0 0 14 14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M12 7H2M2 7l5-5M2 7l5 5" />
+          </svg>
+          Retour aux expériences
+        </a>
 
-      <a href="../Experience/Experience.html" class="back-link">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 7H2M2 7l5-5M2 7l5 5"/></svg>
-        Retour aux expériences
-      </a>
+        <div class="detail-hero">
+          <div>
+            <p class="detail-eyebrow">Stage · Printemps 2022</p>
+            <h1 class="detail-title">
+              Stage en maison<br /><em>d'assistante maternelle</em>
+            </h1>
+            <p class="detail-subtitle">
+              Une semaine d'immersion auprès des tout-petits dans la MAM Les
+              P'tits Mousses à Plouezoc'h : accompagnement quotidien, animation,
+              observation du développement de l'enfant et collaboration en
+              équipe.
+            </p>
+            <div class="detail-tags">
+              <span class="detail-tag">#petite enfance</span>
+              <span class="detail-tag">#accompagnement</span>
+              <span class="detail-tag">#animation</span>
+              <span class="detail-tag">#observation</span>
+              <span class="detail-tag">#travail en équipe</span>
+            </div>
+          </div>
+          <div class="meta-pills">
+            <div class="meta-pill">
+              <div class="meta-pill-label">Période</div>
+              <div class="meta-pill-value">Printemps 2021</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Lieu</div>
+              <div class="meta-pill-value">Plouezoc'h (29)</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Structure</div>
+              <div class="meta-pill-value">MAM Les P'tits Mousses</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Public</div>
+              <div class="meta-pill-value">3 mois – 3 ans</div>
+            </div>
+          </div>
+        </div>
 
-      <div class="detail-hero">
+        <div class="detail-divider"></div>
         <div>
-          <p class="detail-eyebrow">Stage · Printemps 2022</p>
-          <h1 class="detail-title">Stage en maison<br><em>d'assistante maternelle</em></h1>
-          <p class="detail-subtitle">Une semaine d'immersion auprès des tout-petits dans la MAM Les P'tits Mousses à Plouezoc'h : accompagnement quotidien, animation, observation du développement de l'enfant et collaboration en équipe.</p>
-          <div class="detail-tags">
-            <span class="detail-tag">#petite enfance</span>
-            <span class="detail-tag">#accompagnement</span>
-            <span class="detail-tag">#animation</span>
-            <span class="detail-tag">#observation</span>
-            <span class="detail-tag">#travail en équipe</span>
+          <div class="detail-section">
+            <p class="section-label">Contexte</p>
+            <h2 class="section-title">
+              La cognitique commence <em>dès la naissance</em>
+            </h2>
+            <p class="section-body">
+              Une maison d'assistante maternelle est un lieu de vie partagé où
+              plusieurs assistantes maternelles accueillent ensemble des enfants
+              en bas âge dans un cadre familial. Ce stage m'a confrontée à la
+              réalité du développement cognitif et moteur de l'enfant dans ses
+              premières années — une dimension fondamentale des sciences
+              cognitives que j'étudie à l'ENSC.
+            </p>
+            <div class="highlight-box">
+              <p>
+                Observer des enfants de 3 mois à 2 ans en interaction, c'est
+                voir à l'œuvre les
+                <strong
+                  >mécanismes d'apprentissage les plus fondamentaux</strong
+                >
+                : imitation, exploration, socialisation par le langage non
+                verbal. Ce stage a ancré dans mon approche une conviction :
+                <strong
+                  >comprendre le développement humain précoce enrichit toute
+                  pratique de l'ingénierie cognitique</strong
+                >.
+              </p>
+            </div>
+            <img
+              src="../../images/logo et image MAM/2.jpg"
+              alt="Espace d'accueil coloré d'une maison d'assistante maternelle avec des jouets"
+              class="cover-image"
+            />
           </div>
-        </div>
-        <div class="meta-pills">
-          <div class="meta-pill"><div class="meta-pill-label">Période</div><div class="meta-pill-value">Printemps 2021</div></div>
-          <div class="meta-pill"><div class="meta-pill-label">Lieu</div><div class="meta-pill-value">Plouezoc'h (29)</div></div>
-          <div class="meta-pill"><div class="meta-pill-label">Structure</div><div class="meta-pill-value">MAM Les P'tits Mousses</div></div>
-          <div class="meta-pill"><div class="meta-pill-label">Public</div><div class="meta-pill-value">3 mois – 3 ans</div></div>
+
+          <div class="detail-section">
+            <p class="section-label">Missions</p>
+            <h2 class="section-title">
+              Accompagner, animer, <em>observer</em>
+            </h2>
+            <div class="responsibilities-grid">
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                    />
+                  </svg>
+                </div>
+                <p class="resp-title">Accueil & prise en charge</p>
+                <p class="resp-desc">
+                  Accueil des enfants dès leur arrivée, transition douce avec
+                  les parents, prise en charge des repas, changes et siestes en
+                  respectant les besoins de chaque enfant.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                </div>
+                <p class="resp-title">Animation ludo-éducative</p>
+                <p class="resp-desc">
+                  Proposition et animation d'ateliers adaptés à chaque âge :
+                  peinture, pâte à modeler, jeux d'éveil, lecture à voix haute,
+                  chansons — pour stimuler le développement sensoriel et
+                  langagier.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="12" cy="12" r="2" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                    <circle cx="5" cy="12" r="1" />
+                    <circle cx="19" cy="12" r="1" />
+                  </svg>
+                </div>
+                <p class="resp-title">Veille à la sécurité</p>
+                <p class="resp-desc">
+                  Surveillance permanente de la sécurité physique et affective,
+                  anticipation des risques liés aux jeux et à la mobilité
+                  croissante des enfants en plein développement psychomoteur.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <p class="resp-title">Observation développementale</p>
+                <p class="resp-desc">
+                  Observation du développement psychomoteur et cognitif,
+                  repérage des comportements et besoins spécifiques de chaque
+                  enfant, transmission des observations à l'équipe.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path
+                      d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"
+                    />
+                  </svg>
+                </div>
+                <p class="resp-title">Relation avec les familles</p>
+                <p class="resp-desc">
+                  Participation aux transmissions de fin de journée avec les
+                  parents, communication bienveillante sur le déroulé de la
+                  journée et les petits progrès observés chez chaque enfant.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <p class="resp-title">Hygiène & protocoles</p>
+                <p class="resp-desc">
+                  Application rigoureuse des consignes d'hygiène (lavage des
+                  mains, désinfection des surfaces et jouets) et des protocoles
+                  en vigueur en structure d'accueil de la petite enfance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <p class="section-label">Ce que j'en retire</p>
+            <h2 class="section-title">
+              Patience, responsabilité, <em>regard humain</em>
+            </h2>
+            <p class="section-body">
+              Ce stage m'a transmis des qualités que je retrouve dans tous mes
+              projets d'ingénierie : la capacité d'observation fine, la patience
+              face à l'inattendu, et la conscience que derrière chaque
+              interaction humaine se jouent des mécanismes cognitifs complexes
+              qu'il est possible de comprendre et d'accompagner.
+            </p>
+            <div class="highlight-box">
+              <p>
+                Travailler auprès des tout-petits, c'est apprendre l'<strong
+                  >écoute non verbale</strong
+                >
+                — lire un pleur, interpréter un silence, anticiper un besoin
+                avant qu'il ne soit exprimé. Ces compétences d'observation et
+                d'empathie sont au cœur de la cognitique et
+                <strong
+                  >guident mon approche de chaque projet centré sur
+                  l'humain</strong
+                >.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="detail-divider"></div>
-      <div>
-
-        <div class="detail-section">
-          <p class="section-label">Contexte</p>
-          <h2 class="section-title">La cognitique commence <em>dès la naissance</em></h2>
-          <p class="section-body">Une maison d'assistante maternelle est un lieu de vie partagé où plusieurs assistantes maternelles accueillent ensemble des enfants en bas âge dans un cadre familial. Ce stage m'a confrontée à la réalité du développement cognitif et moteur de l'enfant dans ses premières années — une dimension fondamentale des sciences cognitives que j'étudie à l'ENSC.</p>
-          <div class="highlight-box">
-            <p>Observer des enfants de 3 mois à 2 ans en interaction, c'est voir à l'œuvre les <strong>mécanismes d'apprentissage les plus fondamentaux</strong> : imitation, exploration, socialisation par le langage non verbal. Ce stage a ancré dans mon approche une conviction : <strong>comprendre le développement humain précoce enrichit toute pratique de l'ingénierie cognitique</strong>.</p>
-          </div>
-          <img src="../../images/logo et image MAM/2.jpg" alt="Espace d'accueil coloré d'une maison d'assistante maternelle avec des jouets" class="cover-image">
-        </div>
-
-        <div class="detail-section">
-          <p class="section-label">Missions</p>
-          <h2 class="section-title">Accompagner, animer, <em>observer</em></h2>
-          <div class="responsibilities-grid">
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
-              <p class="resp-title">Accueil & prise en charge</p>
-              <p class="resp-desc">Accueil des enfants dès leur arrivée, transition douce avec les parents, prise en charge des repas, changes et siestes en respectant les besoins de chaque enfant.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg></div>
-              <p class="resp-title">Animation ludo-éducative</p>
-              <p class="resp-desc">Proposition et animation d'ateliers adaptés à chaque âge : peinture, pâte à modeler, jeux d'éveil, lecture à voix haute, chansons — pour stimuler le développement sensoriel et langagier.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/><circle cx="5" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></div>
-              <p class="resp-title">Veille à la sécurité</p>
-              <p class="resp-desc">Surveillance permanente de la sécurité physique et affective, anticipation des risques liés aux jeux et à la mobilité croissante des enfants en plein développement psychomoteur.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-              <p class="resp-title">Observation développementale</p>
-              <p class="resp-desc">Observation du développement psychomoteur et cognitif, repérage des comportements et besoins spécifiques de chaque enfant, transmission des observations à l'équipe.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-              <p class="resp-title">Relation avec les familles</p>
-              <p class="resp-desc">Participation aux transmissions de fin de journée avec les parents, communication bienveillante sur le déroulé de la journée et les petits progrès observés chez chaque enfant.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-              <p class="resp-title">Hygiène & protocoles</p>
-              <p class="resp-desc">Application rigoureuse des consignes d'hygiène (lavage des mains, désinfection des surfaces et jouets) et des protocoles en vigueur en structure d'accueil de la petite enfance.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="detail-section">
-          <p class="section-label">Ce que j'en retire</p>
-          <h2 class="section-title">Patience, responsabilité, <em>regard humain</em></h2>
-          <p class="section-body">Ce stage m'a transmis des qualités que je retrouve dans tous mes projets d'ingénierie : la capacité d'observation fine, la patience face à l'inattendu, et la conscience que derrière chaque interaction humaine se jouent des mécanismes cognitifs complexes qu'il est possible de comprendre et d'accompagner.</p>
-          <div class="highlight-box">
-            <p>Travailler auprès des tout-petits, c'est apprendre l'<strong>écoute non verbale</strong> — lire un pleur, interpréter un silence, anticiper un besoin avant qu'il ne soit exprimé. Ces compétences d'observation et d'empathie sont au cœur de la cognitique et <strong>guident mon approche de chaque projet centré sur l'humain</strong>.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </main>
+    </main>
 
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="../A propos/A propos.html">À propos</a></li>
+            <li><a href="../Projets/Main.html">Projets</a></li>
+            <li><a href="../Experience/Experience.html">Expérience</a></li>
+            <li><a href="../Compétences/Compétences.html">Compétences</a></li>
+            <li><a href="../CV/CV.html">CV</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
+            <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
+            <li>
+              <a href="../Projets/Prothese.html">Prothèses Myoélectriques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="../A propos/A propos.html">À propos</a></li>
-          <li><a href="../Projets/Main.html">Projets</a></li>
-          <li><a href="../Experience/Experience.html">Expérience</a></li>
-          <li><a href="../Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="../CV/CV.html">CV</a></li>
-          <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="../CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="../../js/theme-toggle.js"></script>
-  <script src="../../js/navbar.js"></script>
-</body>
+    </footer>
+    <script src="../../js/theme-toggle.js"></script>
+    <script src="../../js/navbar.js"></script>
+  </body>
 </html>

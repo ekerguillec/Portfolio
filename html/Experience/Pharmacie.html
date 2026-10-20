@@ -1,248 +1,812 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stage en officine, Pharmacie Kerboriou — Emma Kerguillec">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="../../style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>Stage en officine — Emma Kerguillec</title>
-  <link rel="stylesheet" href="../../style/experience/detail-base.css">
-  <link rel="stylesheet" href="../../style/common/theme.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-  <header class="header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="../../index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="close-icon" aria-hidden="true">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-academique">Parcours académique</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Projets/Main.html">PROJETS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stage en officine, Pharmacie Kerboriou — Emma Kerguillec"
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="../../style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stage en officine — Emma Kerguillec</title>
+    <link rel="stylesheet" href="../../style/experience/detail-base.css" />
+    <link rel="stylesheet" href="../../style/common/theme.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="header">
+      <nav class="navbar" aria-label="Navigation principale">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="../../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu de navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="close-icon" aria-hidden="true">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-langues"
+                      >Langues</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Projets/Main.html">PROJETS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="../Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
 
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
+                  <li>
+                    <a class="dropdown-item" href="../Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Compétences/Compétences.html"
+                  >COMPÉTENCES</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Compétences/Compétences.html#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="../CV/CV.html" class="nav-link">CV</a>
+              <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
             </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Compétences/Compétences.html">COMPÉTENCES</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Compétences/Compétences.html#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="../CV/CV.html" class="nav-link">CV</a>
-            <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main id="main-content" class="detail-page">
-    <div class="detail-inner">
+    <main id="main-content" class="detail-page">
+      <div class="detail-inner">
+        <a href="../Experience/Experience.html" class="back-link">
+          <svg
+            viewBox="0 0 14 14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M12 7H2M2 7l5-5M2 7l5 5" />
+          </svg>
+          Retour aux expériences
+        </a>
 
-      <a href="../Experience/Experience.html" class="back-link">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 7H2M2 7l5-5M2 7l5 5"/></svg>
-        Retour aux expériences
-      </a>
+        <div class="detail-hero">
+          <div>
+            <p class="detail-eyebrow">Stage · 1 semaine · 2019</p>
+            <h1 class="detail-title">
+              Stage en officine<br /><em>Pharmacie Kerboriou</em>
+            </h1>
+            <p class="detail-subtitle">
+              Une semaine d'immersion complète dans une pharmacie : préparation
+              des ordonnances, gestion des stocks et découverte du rôle central
+              du pharmacien dans le suivi thérapeutique.
+            </p>
+            <div class="detail-tags">
+              <span class="detail-tag">#santé</span>
+              <span class="detail-tag">#préparation officinale</span>
+              <span class="detail-tag">#rigueur</span>
+              <span class="detail-tag">#confidentialité</span>
+            </div>
+          </div>
+          <div class="meta-pills">
+            <div class="meta-pill">
+              <div class="meta-pill-label">Durée</div>
+              <div class="meta-pill-value">1 semaine</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Période</div>
+              <div class="meta-pill-value">2019</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Structure</div>
+              <div class="meta-pill-value">Pharmacie Kerboriou</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Secteur</div>
+              <div class="meta-pill-value">Santé / Officine</div>
+            </div>
+          </div>
+        </div>
 
-      <div class="detail-hero">
+        <div class="detail-divider"></div>
         <div>
-          <p class="detail-eyebrow">Stage · 1 semaine · 2019</p>
-          <h1 class="detail-title">Stage en officine<br><em>Pharmacie Kerboriou</em></h1>
-          <p class="detail-subtitle">Une semaine d'immersion complète dans une pharmacie : préparation des ordonnances, gestion des stocks et découverte du rôle central du pharmacien dans le suivi thérapeutique.</p>
-          <div class="detail-tags">
-            <span class="detail-tag">#santé</span>
-            <span class="detail-tag">#préparation officinale</span>
-            <span class="detail-tag">#rigueur</span>
-            <span class="detail-tag">#confidentialité</span>
+          <div class="detail-section">
+            <p class="section-label">Contexte</p>
+            <h2 class="section-title">
+              À l'interface du soin <em>et du conseil</em>
+            </h2>
+            <p class="section-body">
+              La pharmacie d'officine est un lieu de première ligne dans le
+              parcours de soin : elle accueille des patients de tous âges, avec
+              des besoins et des états de santé très divers. Ce stage m'a permis
+              de découvrir un environnement où la précision technique, l'écoute
+              et la discrétion sont inséparables — trois dimensions directement
+              en lien avec mon approche en cognitique.
+            </p>
+            <div class="highlight-box">
+              <p>
+                Observer le pharmacien en situation de conseil, c'est voir à
+                l'œuvre une
+                <strong
+                  >expertise qui articule savoirs techniques et compétences
+                  relationnelles</strong
+                >. Cette expérience a renforcé ma conviction que
+                <strong
+                  >la qualité d'un acte professionnel ne se mesure pas seulement
+                  à sa rigueur technique, mais aussi à la façon dont il est
+                  communiqué</strong
+                >
+                au patient.
+              </p>
+            </div>
+            <img
+              src="../../images/pharma.webp"
+              alt="Intérieur d'une pharmacie avec des rayonnages de médicaments"
+              class="cover-image"
+            />
           </div>
-        </div>
-        <div class="meta-pills">
-          <div class="meta-pill"><div class="meta-pill-label">Durée</div><div class="meta-pill-value">1 semaine</div></div>
-          <div class="meta-pill"><div class="meta-pill-label">Période</div><div class="meta-pill-value"> 2019</div></div>
-          <div class="meta-pill"><div class="meta-pill-label">Structure</div><div class="meta-pill-value">Pharmacie Kerboriou</div></div>
-          <div class="meta-pill"><div class="meta-pill-label">Secteur</div><div class="meta-pill-value">Santé / Officine</div></div>
+
+          <div class="detail-section">
+            <p class="section-label">Missions</p>
+            <h2 class="section-title">Préparation, stock, <em>conseil</em></h2>
+            <div class="responsibilities-grid">
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <p class="resp-title">Réception & rangement</p>
+                <p class="resp-desc">
+                  Déchargement des commandes de médicaments et produits
+                  parapharmaceutiques, vérification des quantités, étiquetage et
+                  rangement méthodique dans le robot et les rayons.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                    />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                  </svg>
+                </div>
+                <p class="resp-title">Préparation des ordonnances</p>
+                <p class="resp-desc">
+                  Préparation des boîtes correspondant aux prescriptions
+                  médicales sous la supervision de l'équipe officinale, en
+                  respectant l'exactitude des dosages et des conditionnements.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" />
+                    <line x1="9" y1="21" x2="9" y2="9" />
+                  </svg>
+                </div>
+                <p class="resp-title">Gestion des stocks</p>
+                <p class="resp-desc">
+                  Suivi des niveaux de stock, signalement des produits à
+                  réapprovisionner, gestion des dates de péremption et mise en
+                  conformité des rayons.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>
+                </div>
+                <p class="resp-title">Secret professionnel</p>
+                <p class="resp-desc">
+                  Respect absolu de la confidentialité des données patients et
+                  des prescriptions médicales — une exigence éthique
+                  fondamentale dans tout environnement de santé.
+                </p>
+              </div>
+              <div class="resp-card">
+                <div class="resp-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7dd3fc"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <p class="resp-title">Observation du métier</p>
+                <p class="resp-desc">
+                  Observation du contrôle final des ordonnances, des conseils
+                  personnalisés délivrés par le pharmacien, du suivi des
+                  traitements et de la réglementation pharmaceutique en vigueur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <p class="section-label">Ce que j'en retire</p>
+            <h2 class="section-title">
+              Rigueur, écoute, <em>responsabilité</em>
+            </h2>
+            <p class="section-body">
+              Ce stage m'a transmis une réalité concrète : dans les métiers de
+              la santé, chaque détail compte. Une erreur de dosage, un mauvais
+              rangement, une information incomplète — les conséquences peuvent
+              être graves. Cette expérience a affiné mon sens du détail et
+              renforcé ma rigueur dans tous les domaines où la précision est non
+              négociable.
+            </p>
+            <div class="highlight-box">
+              <p>
+                J'ai découvert que le pharmacien n'est pas seulement un expert
+                du médicament : c'est un
+                <strong>interface entre le savoir médical et le patient</strong
+                >. Savoir vulgariser, rassurer, expliquer sans condescendance —
+                c'est exactement ce que j'applique dans mes projets en
+                cognitique lorsque je travaille à
+                <strong
+                  >rendre les systèmes techniques accessibles et
+                  compréhensibles</strong
+                >
+                pour tous les utilisateurs.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="detail-divider"></div>
-      <div>
-
-        <div class="detail-section">
-          <p class="section-label">Contexte</p>
-          <h2 class="section-title">À l'interface du soin <em>et du conseil</em></h2>
-          <p class="section-body">La pharmacie d'officine est un lieu de première ligne dans le parcours de soin : elle accueille des patients de tous âges, avec des besoins et des états de santé très divers. Ce stage m'a permis de découvrir un environnement où la précision technique, l'écoute et la discrétion sont inséparables — trois dimensions directement en lien avec mon approche en cognitique.</p>
-          <div class="highlight-box">
-            <p>Observer le pharmacien en situation de conseil, c'est voir à l'œuvre une <strong>expertise qui articule savoirs techniques et compétences relationnelles</strong>. Cette expérience a renforcé ma conviction que <strong>la qualité d'un acte professionnel ne se mesure pas seulement à sa rigueur technique, mais aussi à la façon dont il est communiqué</strong> au patient.</p>
-          </div>
-          <img src="../../images/pharma.webp" alt="Intérieur d'une pharmacie avec des rayonnages de médicaments" class="cover-image">
-        </div>
-
-        <div class="detail-section">
-          <p class="section-label">Missions</p>
-          <h2 class="section-title">Préparation, stock, <em>conseil</em></h2>
-          <div class="responsibilities-grid">
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-              <p class="resp-title">Réception & rangement</p>
-              <p class="resp-desc">Déchargement des commandes de médicaments et produits parapharmaceutiques, vérification des quantités, étiquetage et rangement méthodique dans le robot et les rayons.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-              <p class="resp-title">Préparation des ordonnances</p>
-              <p class="resp-desc">Préparation des boîtes correspondant aux prescriptions médicales sous la supervision de l'équipe officinale, en respectant l'exactitude des dosages et des conditionnements.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
-              <p class="resp-title">Gestion des stocks</p>
-              <p class="resp-desc">Suivi des niveaux de stock, signalement des produits à réapprovisionner, gestion des dates de péremption et mise en conformité des rayons.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-              <p class="resp-title">Secret professionnel</p>
-              <p class="resp-desc">Respect absolu de la confidentialité des données patients et des prescriptions médicales — une exigence éthique fondamentale dans tout environnement de santé.</p>
-            </div>
-            <div class="resp-card">
-              <div class="resp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-              <p class="resp-title">Observation du métier</p>
-              <p class="resp-desc">Observation du contrôle final des ordonnances, des conseils personnalisés délivrés par le pharmacien, du suivi des traitements et de la réglementation pharmaceutique en vigueur.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="detail-section">
-          <p class="section-label">Ce que j'en retire</p>
-          <h2 class="section-title">Rigueur, écoute, <em>responsabilité</em></h2>
-          <p class="section-body">Ce stage m'a transmis une réalité concrète : dans les métiers de la santé, chaque détail compte. Une erreur de dosage, un mauvais rangement, une information incomplète — les conséquences peuvent être graves. Cette expérience a affiné mon sens du détail et renforcé ma rigueur dans tous les domaines où la précision est non négociable.</p>
-          <div class="highlight-box">
-            <p>J'ai découvert que le pharmacien n'est pas seulement un expert du médicament : c'est un <strong>interface entre le savoir médical et le patient</strong>. Savoir vulgariser, rassurer, expliquer sans condescendance — c'est exactement ce que j'applique dans mes projets en cognitique lorsque je travaille à <strong>rendre les systèmes techniques accessibles et compréhensibles</strong> pour tous les utilisateurs.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </main>
+    </main>
 
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="../A propos/A propos.html">À propos</a></li>
+            <li><a href="../Projets/Main.html">Projets</a></li>
+            <li><a href="../Experience/Experience.html">Expérience</a></li>
+            <li><a href="../Compétences/Compétences.html">Compétences</a></li>
+            <li><a href="../CV/CV.html">CV</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
+            <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
+            <li>
+              <a href="../Projets/Prothese.html">Prothèses Myoélectriques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="../A propos/A propos.html">À propos</a></li>
-          <li><a href="../Projets/Main.html">Projets</a></li>
-          <li><a href="../Experience/Experience.html">Expérience</a></li>
-          <li><a href="../Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="../CV/CV.html">CV</a></li>
-          <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="../CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="../../js/theme-toggle.js"></script>
-  <script src="../../js/navbar.js"></script>
-</body>
+    </footer>
+    <script src="../../js/theme-toggle.js"></script>
+    <script src="../../js/navbar.js"></script>
+  </body>
 </html>

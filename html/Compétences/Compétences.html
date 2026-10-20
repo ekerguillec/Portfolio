@@ -1,554 +1,1588 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <script>if(window.location.hash){window.__portfolioHash=window.location.hash;history.replaceState(null,'',location.pathname+location.search);}</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compétences d'Emma Kerguillec — ingénierie cognitive, facteur humain, programmation, systèmes embarqués, IA.">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="../../style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>Compétences — Emma Kerguillec</title>
-  <meta property="og:type"        content="website">
-  <meta property="og:site_name"   content="Emma Kerguillec — Portfolio">
-  <meta property="og:title"       content="Compétences — Emma Kerguillec">
-  <meta property="og:description" content="Compétences d'Emma Kerguillec — ingénierie cognitive, facteur humain, programmation, systèmes embarqués, IA.">
-  <meta property="og:url"         content="https://ekerguillec.github.io/Portfolio/html/Comp%C3%A9tences/Comp%C3%A9tences.html">
-  <meta property="og:image"       content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png">
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Compétences — Emma Kerguillec">
-  <meta name="twitter:description" content="Compétences d'Emma Kerguillec — ingénierie cognitive, facteur humain, programmation, systèmes embarqués, IA.">
-  <meta name="twitter:image"       content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <script>
+      if (window.location.hash) {
+        window.__portfolioHash = window.location.hash;
+        history.replaceState(null, "", location.pathname + location.search);
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Compétences d'Emma Kerguillec — ingénierie cognitive, facteur humain, programmation, systèmes embarqués, IA."
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="../../style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Compétences — Emma Kerguillec</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Emma Kerguillec — Portfolio" />
+    <meta property="og:title" content="Compétences — Emma Kerguillec" />
+    <meta
+      property="og:description"
+      content="Compétences d'Emma Kerguillec — ingénierie cognitive, facteur humain, programmation, systèmes embarqués, IA."
+    />
+    <meta
+      property="og:url"
+      content="https://ekerguillec.github.io/Portfolio/html/Comp%C3%A9tences/Comp%C3%A9tences.html"
+    />
+    <meta
+      property="og:image"
+      content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Compétences — Emma Kerguillec" />
+    <meta
+      name="twitter:description"
+      content="Compétences d'Emma Kerguillec — ingénierie cognitive, facteur humain, programmation, systèmes embarqués, IA."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ekerguillec.github.io/Portfolio/images/MaPhotoCorrigee.png"
+    />
 
-  <link rel="stylesheet" href="../../style/pages/competences.css">
-  <link rel="stylesheet" href="../../style/common/theme.css">
-</head>
+    <link rel="stylesheet" href="../../style/pages/competences.css" />
+    <link rel="stylesheet" href="../../style/common/theme.css" />
+  </head>
 
-<body>
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-  <header class="header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="../../index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-          <span class="close-icon" aria-hidden="true">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-academique">Parcours académique</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Projets/Main.html">PROJETS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
-
-                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Compétences/Compétences.html" aria-current="page"><strong><em>COMPÉTENCES</em></strong></a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="../CV/CV.html" class="nav-link">CV</a>
-            <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main-content" class="skills-page">
-    <div class="skills-inner">
-
-      <!-- ── HEADER ── -->
-      <header class="skills-header">
-        <div class="skills-header-left">
-          <p class="skills-eyebrow">Compétences</p>
-          <h1 class="skills-title">Ce que je sais<br><em>faire.</em></h1>
-          <p class="skills-sub">Une ingénieure cogniticienne à l'interface du facteur humain, des systèmes complexes et du numérique — des compétences construites pour concevoir des systèmes fiables, centrés sur l'humain.</p>
-        </div>
-        <div class="skills-header-right">
-          <div class="stat-grid">
-            <div class="stat-card">
-              <div class="stat-num">9<em>+</em></div>
-              <div class="stat-lbl">Langages &amp; frameworks</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-num">4</div>
-              <div class="stat-lbl">Langues parlées</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-num">60<em>+</em></div>
-              <div class="stat-lbl">Entreprises gérées (Forum Ingénib)</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-num">3</div>
-              <div class="stat-lbl">Projets techniques complets</div>
-            </div>
-          </div>
-          <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="stat-cv">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <path d="M12 18v-6M9 15l3 3 3-3"/>
+    <header class="header">
+      <nav class="navbar" aria-label="Navigation principale">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="../../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu de navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="close-icon" aria-hidden="true">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
             </svg>
-            Télécharger mon CV
-          </a>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-langues"
+                      >Langues</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Projets/Main.html">PROJETS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="../Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="../Compétences/Compétences.html"
+                  aria-current="page"
+                  ><strong><em>COMPÉTENCES</em></strong></a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item has-submenu" href="#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="../CV/CV.html" class="nav-link">CV</a>
+              <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
+            </div>
+          </div>
         </div>
-      </header>
+      </nav>
+    </header>
 
-      <!-- ── OUTILS & TECHNOLOGIES ── -->
-      <section class="tools-section" aria-label="Outils et technologies">
-
-        <p class="tools-label" id="sec-langages">Langages &amp; frameworks <small style="font-size:10px;color:#9ab5c8;font-weight:400;letter-spacing:0;text-transform:none;margin-left:4px;">— survolez ou cliquez pour en savoir plus</small></p>
-        <div class="skills-table" style="margin-bottom:14px;">
-
-          <div class="skills-row">
-            <span class="skills-row-cat">Systèmes &amp;<br>embarqué</span>
-            <div class="skills-row-items">
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-python" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>Python</button><div class="tool-tooltip" role="tooltip" id="tt-python"><strong>Python</strong>Langage polyvalent pour l'analyse de données, le traitement du signal et les systèmes embarqués. Cœur logiciel de Poul'Pong et des travaux d'analyse ENSC.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-csharp" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>C#</button><div class="tool-tooltip" role="tooltip" id="tt-csharp"><strong>C#</strong>Langage orienté objet de Microsoft pour le développement logiciel temps réel. Utilisé dans Ombre Sensible pour le traitement du signal audio (filtres, presets acouphènes, hyperacousie).</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-micropython" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>MicroPython</button><div class="tool-tooltip" role="tooltip" id="tt-micropython"><strong>MicroPython</strong>Version allégée de Python tournant sur microcontrôleurs. Utilisé sur Raspberry Pi Pico W pour piloter capteurs, logique de jeu et communication WiFi dans Poul'Pong.</div></div>
-            </div>
+    <main id="main-content" class="skills-page">
+      <div class="skills-inner">
+        <!-- ── HEADER ── -->
+        <header class="skills-header">
+          <div class="skills-header-left">
+            <p class="skills-eyebrow">Compétences</p>
+            <h1 class="skills-title">Ce que je sais<br /><em>faire.</em></h1>
+            <p class="skills-sub">
+              Une ingénieure cogniticienne à l'interface du facteur humain, des
+              systèmes complexes et du numérique — des compétences construites
+              pour concevoir des systèmes fiables, centrés sur l'humain.
+            </p>
           </div>
-
-          <div class="skills-row">
-            <span class="skills-row-cat">Web &amp;<br>données</span>
-            <div class="skills-row-items">
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-js" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>JavaScript / React</button><div class="tool-tooltip" role="tooltip" id="tt-js"><strong>JavaScript / React</strong>JavaScript pour l'interactivité web ; React pour les interfaces à composants réutilisables. Maîtrise du front-end moderne et des architectures SPA.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-html" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>HTML5 / CSS3</button><div class="tool-tooltip" role="tooltip" id="tt-html"><strong>HTML5 / CSS3</strong>Langages fondamentaux du web : structure sémantique et mise en forme avancée. Maîtrisés à niveau expert — ce portfolio WCAG AAA en est la démonstration directe.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-php" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>PHP</button><div class="tool-tooltip" role="tooltip" id="tt-php"><strong>PHP</strong>Langage de script côté serveur pour les applications web dynamiques. Gestion des formulaires, sessions et communication avec les bases de données SQL.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-sql" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>SQL / MCD / MLD</button><div class="tool-tooltip" role="tooltip" id="tt-sql"><strong>SQL / MCD / MLD</strong>SQL pour interroger et manipuler des bases de données relationnelles. MCD (Modèle Conceptuel) et MLD (Modèle Logique) pour la modélisation avant implémentation.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-api" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>APIs REST</button><div class="tool-tooltip" role="tooltip" id="tt-api"><strong>APIs REST</strong>Architecture pour l'échange de données entre services web via HTTP (GET, POST, PUT, DELETE). Standard des systèmes distribués et des applications modernes.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-bootstrap" aria-expanded="false"><span class="tool-dot tool-blue" aria-hidden="true"></span>Bootstrap</button><div class="tool-tooltip" role="tooltip" id="tt-bootstrap"><strong>Bootstrap</strong>Framework CSS open-source facilitant la création d'interfaces responsives. Utilisé comme base de mise en page sur toutes les pages de ce portfolio.</div></div>
+          <div class="skills-header-right">
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-num">9<em>+</em></div>
+                <div class="stat-lbl">Langages &amp; frameworks</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">4</div>
+                <div class="stat-lbl">Langues parlées</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">60<em>+</em></div>
+                <div class="stat-lbl">Entreprises gérées (Forum Ingénib)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">3</div>
+                <div class="stat-lbl">Projets techniques complets</div>
+              </div>
             </div>
-          </div>
-
-        </div>
-
-        <p class="tools-label" id="sec-logiciels" style="margin-top:28px;">Logiciels &amp; outils</p>
-        <div class="skills-table" style="margin-bottom:14px;">
-
-          <div class="skills-row">
-            <span class="skills-row-cat">Calcul &amp;<br>analyse</span>
-            <div class="skills-row-items">
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-matlab" aria-expanded="false"><span class="tool-dot tool-orange" aria-hidden="true"></span>MATLAB</button><div class="tool-tooltip" role="tooltip" id="tt-matlab"><strong>MATLAB</strong>Environnement de calcul numérique très utilisé en ingénierie. Indispensable pour le traitement du signal, les simulations et l'analyse expérimentale.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-r" aria-expanded="false"><span class="tool-dot tool-orange" aria-hidden="true"></span>Logiciel R</button><div class="tool-tooltip" role="tooltip" id="tt-r"><strong>Logiciel R</strong>Langage statistique de référence pour l'analyse de données expérimentales, les tests d'hypothèse, la modélisation et la visualisation scientifique.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-numpy" aria-expanded="false"><span class="tool-dot tool-orange" aria-hidden="true"></span>NumPy / Matplotlib</button><div class="tool-tooltip" role="tooltip" id="tt-numpy"><strong>NumPy / Matplotlib</strong>Bibliothèques Python essentielles : NumPy pour le calcul matriciel haute performance, Matplotlib pour la visualisation de données, de signaux et de résultats expérimentaux.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-signal" aria-expanded="false"><span class="tool-dot tool-orange" aria-hidden="true"></span>Traitement du signal</button><div class="tool-tooltip" role="tooltip" id="tt-signal"><strong>Traitement du signal</strong>Techniques d'analyse et de transformation de signaux temporels : filtrage, FFT, convolution, modélisation. Base technique d'Ombre Sensible (audio) et de Poul'Pong (biofeedback).</div></div>
-            </div>
-          </div>
-
-          <div class="skills-row">
-            <span class="skills-row-cat">Développement</span>
-            <div class="skills-row-items">
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-git" aria-expanded="false"><span class="tool-dot tool-green" aria-hidden="true"></span>Git / GitHub / GitLab</button><div class="tool-tooltip" role="tooltip" id="tt-git"><strong>Git / GitHub / GitLab</strong>Contrôle de version (Git) et plateformes d'hébergement de dépôts (GitHub, GitLab) : suivi des modifications, dépôts privés et publics, travail collaboratif.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-vscode" aria-expanded="false"><span class="tool-dot tool-green" aria-hidden="true"></span>VS Code</button><div class="tool-tooltip" role="tooltip" id="tt-vscode"><strong>VS Code</strong>Éditeur de code léger et extensible, compatible avec tous les langages du portfolio. Environnement de développement principal pour Python, C#, HTML/CSS et MicroPython.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-latex" aria-expanded="false"><span class="tool-dot tool-green" aria-hidden="true"></span>LaTeX</button><div class="tool-tooltip" role="tooltip" id="tt-latex"><strong>LaTeX</strong>Système de composition typographique pour la rédaction scientifique et académique. Utilisé pour le mémoire sur les prothèses myoélectriques — standard dans l'ingénierie et la recherche.</div></div>
-            </div>
-          </div>
-
-          <div class="skills-row">
-            <span class="skills-row-cat">Design &amp;<br>collaboration</span>
-            <div class="skills-row-items">
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-figma" aria-expanded="false"><span class="tool-dot tool-green" aria-hidden="true"></span>Figma</button><div class="tool-tooltip" role="tooltip" id="tt-figma"><strong>Figma</strong>Outil de design d'interface collaboratif. Utilisé pour le maquettage et le prototypage d'IHM avant développement — essentiel dans tout projet UX/UI.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-gsuite" aria-expanded="false"><span class="tool-dot tool-green" aria-hidden="true"></span>G Suite</button><div class="tool-tooltip" role="tooltip" id="tt-gsuite"><strong>G Suite</strong>Suite collaborative Google (Docs, Sheets, Slides, Drive). Utilisée pour la rédaction partagée, les présentations et la coordination d'équipe à distance.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-excel" aria-expanded="false"><span class="tool-dot tool-green" aria-hidden="true"></span>MS Office / Excel </button><div class="tool-tooltip" role="tooltip" id="tt-excel"><strong>MS Office / Excel </strong>Suite bureautique Microsoft. Excel maîtrisé pour la comptabilité i2c : tableaux de suivi, budgets, états de rapprochement bancaire, déclarations TVA/URSSAF.</div></div>
-            </div>
-          </div>
-
-        </div>
-
-        <p class="tools-label" id="sec-methodes" style="margin-top:28px;">Méthodes &amp; fabrication</p>
-        <div class="skills-table">
-
-          <div class="skills-row">
-            <span class="skills-row-cat">Méthodes &amp;<br>UX</span>
-            <div class="skills-row-items">
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-agile" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>Kanban / Scrum / MASK</button><div class="tool-tooltip" role="tooltip" id="tt-agile"><strong>Kanban / Scrum / MASK</strong>Méthodes agiles : Kanban (flux continu), Scrum (sprints itératifs), MASK pour la capitalisation et le transfert de savoir.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-wcag" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>WCAG AAA</button><div class="tool-tooltip" role="tooltip" id="tt-wcag"><strong>WCAG AAA</strong>Web Content Accessibility Guidelines niveau AAA — le standard d'accessibilité numérique le plus exigeant : contraste ≥ 7:1, navigation clavier complète, ARIA. </div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-nielsen" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>Heuristiques Nielsen</button><div class="tool-tooltip" role="tooltip" id="tt-nielsen"><strong>Heuristiques de Nielsen</strong>10 principes fondamentaux d'ergonomie des interfaces formulés par Jakob Nielsen. Outil structuré d'évaluation de l'utilisabilité et de détection des problèmes UX.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-amdec" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>AMDEC / HFMEA</button><div class="tool-tooltip" role="tooltip" id="tt-amdec"><strong>AMDEC / HFMEA</strong>Analyse des Modes de Défaillance, Effets et Criticité. La HFMEA intègre les facteurs humains — outil de sécurité des systèmes critiques indispensable en nucléaire, aéro et défense.</div></div>
-            </div>
-          </div>
-
-          <div class="skills-row">
-            <span class="skills-row-cat">Fabrication &amp;<br>embarqué</span>
-            <div class="skills-row-items">
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-3d" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>Impression 3D</button><div class="tool-tooltip" role="tooltip" id="tt-3d"><strong>Impression 3D</strong>Fabrication additive par dépôt de matière pour le prototypage rapide. Utilisée pour les boîtiers et pièces mécaniques dans Poul'Pong et Ombre Sensible.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-laser" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>Découpe laser</button><div class="tool-tooltip" role="tooltip" id="tt-laser"><strong>Découpe laser</strong>Fabrication soustractive de précision sur matériaux plans (bois, acrylique). Utilisée pour les panneaux du boîtier de Poul'Pong — intégration entre conception 3D et fabrication.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-cao" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>Conception 3D</button><div class="tool-tooltip" role="tooltip" id="tt-cao"><strong>Conception 3D (CAO)</strong>Modélisation de pièces en 3D pour l'impression ou la simulation. Capacité à passer d'une idée à un fichier de fabrication — lien entre la conception et la réalisation physique.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-pico" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>Raspberry Pi Pico W</button><div class="tool-tooltip" role="tooltip" id="tt-pico"><strong>Raspberry Pi Pico W</strong>Microcontrôleur compact avec connectivité WiFi, programmé en MicroPython. Cœur de Poul'Pong : gère en temps réel les capteurs physiologiques, la logique du jeu et la communication réseau.</div></div>
-              <div class="tool-item"><button class="tool-chip-btn" aria-describedby="tt-capteurs" aria-expanded="false"><span class="tool-dot tool-purple" aria-hidden="true"></span>Capteurs physiologiques</button><div class="tool-tooltip" role="tooltip" id="tt-capteurs"><strong>Capteurs physiologiques</strong>Capteurs mesurant des signaux biologiques en temps réel (fréquence cardiaque, signal vocal). Utilisés pour créer des interfaces biofeedback dans Poul'Pong — l'humain comme contrôleur.</div></div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ── FEATURED : Ingénierie cognitive ── -->
-      <section id="sec-cognitique" aria-label="Compétence principale">
-        <div class="skills-featured">
-          <div class="feat-orb" aria-hidden="true"></div>
-          <div>
-            <p class="feat-label">Compétence cœur · ENSC Bordeaux INP</p>
-            <h2 class="feat-title">Ingénierie<br><em>cognitive</em></h2>
-            <p class="feat-body">Discipline à l'interface des sciences humaines, de l'ingénierie et du numérique, la cognitique s'applique partout où un système doit être conçu pour l'être humain. Analyser les capacités et les limites cognitives des opérateurs, intégrer le facteur humain dès la conception, réduire les risques d'erreurs dans les systèmes critiques — c'est mon domaine d'expertise fondamental, et ce que je peux apporter à votre entreprise.</p>
-            <div class="feat-tags">
-              <span class="feat-tag">Sciences cognitives</span>
-              <span class="feat-tag">Facteur humain</span>
-              <span class="feat-tag">Analyse de la tâche</span>
-              <span class="feat-tag">Conception centrée utilisateur</span>
-              <span class="feat-tag">Modélisation cognitive</span>
-              <span class="feat-tag">Charge mentale</span>
-            </div>
-          </div>
-          <div class="feat-right">
-            <div class="feat-stat">
-              <div class="feat-stat-label">Formation</div>
-              <div class="feat-stat-val">ENSC — Bordeaux INP<br>Diplôme d'ingénieur</div>
-            </div>
-            <div class="feat-stat">
-              <div class="feat-stat-label">Spécialité unique</div>
-              <div class="feat-stat-val">Seule école d'ingénieurs en cognitique en France</div>
-            </div>
-            <div class="feat-stat">
-              <div class="feat-stat-label">Secteurs cibles</div>
-              <div class="feat-stat-val">Défense · Aéronautique · Nucléaire · Automobile</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── GRILLE 3 cartes ── -->
-      <section aria-label="Compétences techniques et métier">
-        <div class="skills-grid">
-
-          <!-- Facteur humain & ergonomie -->
-          <div class="scard sd1" id="sec-facteur-humain">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            <a
+              href="../CV/CV.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="stat-cv"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <path d="M12 18v-6M9 15l3 3 3-3" />
               </svg>
+              Télécharger mon CV
+            </a>
+          </div>
+        </header>
+
+        <!-- ── OUTILS & TECHNOLOGIES ── -->
+        <section class="tools-section" aria-label="Outils et technologies">
+          <p class="tools-label" id="sec-langages">
+            Langages &amp; frameworks
+            <small
+              style="
+                font-size: 10px;
+                color: #9ab5c8;
+                font-weight: 400;
+                letter-spacing: 0;
+                text-transform: none;
+                margin-left: 4px;
+              "
+              >— survolez ou cliquez pour en savoir plus</small
+            >
+          </p>
+          <div class="skills-table" style="margin-bottom: 14px">
+            <div class="skills-row">
+              <span class="skills-row-cat">Systèmes &amp;<br />embarqué</span>
+              <div class="skills-row-items">
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-python"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >Python
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-python">
+                    <strong>Python</strong>Langage polyvalent pour l'analyse de
+                    données, le traitement du signal et les systèmes embarqués.
+                    Cœur logiciel de Poul'Pong et des travaux d'analyse ENSC.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-csharp"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >C#
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-csharp">
+                    <strong>C#</strong>Langage orienté objet de Microsoft pour
+                    le développement logiciel temps réel. Utilisé dans Ombre
+                    Sensible pour le traitement du signal audio (filtres,
+                    presets acouphènes, hyperacousie).
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-micropython"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >MicroPython
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-micropython">
+                    <strong>MicroPython</strong>Version allégée de Python
+                    tournant sur microcontrôleurs. Utilisé sur Raspberry Pi Pico
+                    W pour piloter capteurs, logique de jeu et communication
+                    WiFi dans Poul'Pong.
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="scard-label">Métier</p>
-            <h2 class="scard-title">Facteur humain &amp;<br><em>ergonomie</em></h2>
-            <p class="scard-body">Analyse des besoins utilisateurs, identification des facteurs de risque cognitif, intégration du facteur humain dans la conception de systèmes industriels et critiques, appliquée aux environnements complexes (salle de contrôle, poste de pilotage, véhicule).</p>
-            <div class="scard-chips">
-              <span class="scard-chip">Analyse de la tâche</span>
-              <span class="scard-chip">Charge mentale</span>
-              <span class="scard-chip">Ergonomie cognitive</span>
-              <span class="scard-chip">Sécurité des systèmes</span>
+
+            <div class="skills-row">
+              <span class="skills-row-cat">Web &amp;<br />données</span>
+              <div class="skills-row-items">
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-js"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >JavaScript / React
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-js">
+                    <strong>JavaScript / React</strong>JavaScript pour
+                    l'interactivité web ; React pour les interfaces à composants
+                    réutilisables. Maîtrise du front-end moderne et des
+                    architectures SPA.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-html"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >HTML5 / CSS3
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-html">
+                    <strong>HTML5 / CSS3</strong>Langages fondamentaux du web :
+                    structure sémantique et mise en forme avancée. Maîtrisés à
+                    niveau expert — ce portfolio WCAG AAA en est la
+                    démonstration directe.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-php"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >PHP
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-php">
+                    <strong>PHP</strong>Langage de script côté serveur pour les
+                    applications web dynamiques. Gestion des formulaires,
+                    sessions et communication avec les bases de données SQL.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-sql"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >SQL / MCD / MLD
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-sql">
+                    <strong>SQL / MCD / MLD</strong>SQL pour interroger et
+                    manipuler des bases de données relationnelles. MCD (Modèle
+                    Conceptuel) et MLD (Modèle Logique) pour la modélisation
+                    avant implémentation.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-api"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >APIs REST
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-api">
+                    <strong>APIs REST</strong>Architecture pour l'échange de
+                    données entre services web via HTTP (GET, POST, PUT,
+                    DELETE). Standard des systèmes distribués et des
+                    applications modernes.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-bootstrap"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-blue" aria-hidden="true"></span
+                    >Bootstrap
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-bootstrap">
+                    <strong>Bootstrap</strong>Framework CSS open-source
+                    facilitant la création d'interfaces responsives. Utilisé
+                    comme base de mise en page sur toutes les pages de ce
+                    portfolio.
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>Mémoire sur les prothèses myoélectriques · Cours ENSC · Projet Ombre Sensible</p>
           </div>
 
-          <!-- IHM & UX industriel -->
-          <div class="scard sd2" id="sec-ihm">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-              </svg>
+          <p class="tools-label" id="sec-logiciels" style="margin-top: 28px">
+            Logiciels &amp; outils
+          </p>
+          <div class="skills-table" style="margin-bottom: 14px">
+            <div class="skills-row">
+              <span class="skills-row-cat">Calcul &amp;<br />analyse</span>
+              <div class="skills-row-items">
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-matlab"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-orange" aria-hidden="true"></span
+                    >MATLAB
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-matlab">
+                    <strong>MATLAB</strong>Environnement de calcul numérique
+                    très utilisé en ingénierie. Indispensable pour le traitement
+                    du signal, les simulations et l'analyse expérimentale.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-r"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-orange" aria-hidden="true"></span
+                    >Logiciel R
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-r">
+                    <strong>Logiciel R</strong>Langage statistique de référence
+                    pour l'analyse de données expérimentales, les tests
+                    d'hypothèse, la modélisation et la visualisation
+                    scientifique.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-numpy"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-orange" aria-hidden="true"></span
+                    >NumPy / Matplotlib
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-numpy">
+                    <strong>NumPy / Matplotlib</strong>Bibliothèques Python
+                    essentielles : NumPy pour le calcul matriciel haute
+                    performance, Matplotlib pour la visualisation de données, de
+                    signaux et de résultats expérimentaux.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-signal"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-orange" aria-hidden="true"></span
+                    >Traitement du signal
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-signal">
+                    <strong>Traitement du signal</strong>Techniques d'analyse et
+                    de transformation de signaux temporels : filtrage, FFT,
+                    convolution, modélisation. Base technique d'Ombre Sensible
+                    (audio) et de Poul'Pong (biofeedback).
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="scard-label">Conception</p>
-            <h2 class="scard-title">Interfaces<br><em>Homme-Machine</em></h2>
-            <p class="scard-body">Conception et évaluation d'interfaces pour des contextes industriels et embarqués. Prise en compte des contraintes cognitives de l'opérateur : lisibilité, gestion de l'attention, réduction des erreurs. Développement en C# d'un casque immersif simulant différents handicaps auditifs (surdité, acouphènes, hyperacousie) avec traitement du signal en temps réel. Maîtrise des normes d'accessibilité WCAG AAA.</p>
-            <div class="scard-chips">
-              <span class="scard-chip">UX / UI</span>
-              <span class="scard-chip">Prototypage</span>
-              <span class="scard-chip">Heuristiques de Nielsen</span>
-              <span class="scard-chip">WCAG AAA</span>
-              <span class="scard-chip">Tests utilisateurs</span>
-              <span class="scard-chip">Figma</span>
-              <span class="scard-chip">C# (traitement temps réel)</span>
+
+            <div class="skills-row">
+              <span class="skills-row-cat">Développement</span>
+              <div class="skills-row-items">
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-git"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-green" aria-hidden="true"></span
+                    >Git / GitHub / GitLab
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-git">
+                    <strong>Git / GitHub / GitLab</strong>Contrôle de version
+                    (Git) et plateformes d'hébergement de dépôts (GitHub,
+                    GitLab) : suivi des modifications, dépôts privés et publics,
+                    travail collaboratif.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-vscode"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-green" aria-hidden="true"></span
+                    >VS Code
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-vscode">
+                    <strong>VS Code</strong>Éditeur de code léger et extensible,
+                    compatible avec tous les langages du portfolio.
+                    Environnement de développement principal pour Python, C#,
+                    HTML/CSS et MicroPython.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-latex"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-green" aria-hidden="true"></span
+                    >LaTeX
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-latex">
+                    <strong>LaTeX</strong>Système de composition typographique
+                    pour la rédaction scientifique et académique. Utilisé pour
+                    le mémoire sur les prothèses myoélectriques — standard dans
+                    l'ingénierie et la recherche.
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>Ombre Sensible (casque immersif C#) · Portfolio WCAG AAA · Poul'Pong</p>
+
+            <div class="skills-row">
+              <span class="skills-row-cat"
+                >Design &amp;<br />collaboration</span
+              >
+              <div class="skills-row-items">
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-figma"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-green" aria-hidden="true"></span
+                    >Figma
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-figma">
+                    <strong>Figma</strong>Outil de design d'interface
+                    collaboratif. Utilisé pour le maquettage et le prototypage
+                    d'IHM avant développement — essentiel dans tout projet
+                    UX/UI.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-gsuite"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-green" aria-hidden="true"></span
+                    >G Suite
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-gsuite">
+                    <strong>G Suite</strong>Suite collaborative Google (Docs,
+                    Sheets, Slides, Drive). Utilisée pour la rédaction partagée,
+                    les présentations et la coordination d'équipe à distance.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-excel"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-green" aria-hidden="true"></span
+                    >MS Office / Excel
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-excel">
+                    <strong>MS Office / Excel </strong>Suite bureautique
+                    Microsoft. Excel maîtrisé pour la comptabilité i2c :
+                    tableaux de suivi, budgets, états de rapprochement bancaire,
+                    déclarations TVA/URSSAF.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Programmation -->
-          <div class="scard sd3" id="sec-programmation">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-              </svg>
+          <p class="tools-label" id="sec-methodes" style="margin-top: 28px">
+            Méthodes &amp; fabrication
+          </p>
+          <div class="skills-table">
+            <div class="skills-row">
+              <span class="skills-row-cat">Méthodes &amp;<br />UX</span>
+              <div class="skills-row-items">
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-agile"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >Kanban / Scrum / MASK
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-agile">
+                    <strong>Kanban / Scrum / MASK</strong>Méthodes agiles :
+                    Kanban (flux continu), Scrum (sprints itératifs), MASK pour
+                    la capitalisation et le transfert de savoir.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-wcag"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >WCAG AAA
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-wcag">
+                    <strong>WCAG AAA</strong>Web Content Accessibility
+                    Guidelines niveau AAA — le standard d'accessibilité
+                    numérique le plus exigeant : contraste ≥ 7:1, navigation
+                    clavier complète, ARIA.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-nielsen"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >Heuristiques Nielsen
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-nielsen">
+                    <strong>Heuristiques de Nielsen</strong>10 principes
+                    fondamentaux d'ergonomie des interfaces formulés par Jakob
+                    Nielsen. Outil structuré d'évaluation de l'utilisabilité et
+                    de détection des problèmes UX.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-amdec"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >AMDEC / HFMEA
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-amdec">
+                    <strong>AMDEC / HFMEA</strong>Analyse des Modes de
+                    Défaillance, Effets et Criticité. La HFMEA intègre les
+                    facteurs humains — outil de sécurité des systèmes critiques
+                    indispensable en nucléaire, aéro et défense.
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="scard-label">Développement</p>
-            <h2 class="scard-title">Programmation<br><em>&amp; développement</em></h2>
-            <p class="scard-body">Large palette de langages selon les besoins : Python pour l'analyse et les systèmes embarqués, C# pour le développement logiciel temps réel (traitement du signal audio), JavaScript / React pour les interfaces web, PHP et SQL pour le back-end et les bases de données. Intégration d'APIs REST, modélisation MCD/MLD. Rigueur du code, lisibilité et documentation.</p>
-            <div class="scard-chips">
-              <span class="scard-chip">Python</span>
-              <span class="scard-chip">C#</span>
-              <span class="scard-chip">JavaScript / React</span>
-              <span class="scard-chip">PHP</span>
-              <span class="scard-chip">SQL / MCD</span>
-              <span class="scard-chip">APIs REST</span>
-              <span class="scard-chip">HTML / CSS</span>
-              <span class="scard-chip">MicroPython</span>
-              <span class="scard-chip">Git / GitLab</span>
+
+            <div class="skills-row">
+              <span class="skills-row-cat"
+                >Fabrication &amp;<br />embarqué</span
+              >
+              <div class="skills-row-items">
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-3d"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >Impression 3D
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-3d">
+                    <strong>Impression 3D</strong>Fabrication additive par dépôt
+                    de matière pour le prototypage rapide. Utilisée pour les
+                    boîtiers et pièces mécaniques dans Poul'Pong et Ombre
+                    Sensible.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-laser"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >Découpe laser
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-laser">
+                    <strong>Découpe laser</strong>Fabrication soustractive de
+                    précision sur matériaux plans (bois, acrylique). Utilisée
+                    pour les panneaux du boîtier de Poul'Pong — intégration
+                    entre conception 3D et fabrication.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-cao"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >Conception 3D
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-cao">
+                    <strong>Conception 3D (CAO)</strong>Modélisation de pièces
+                    en 3D pour l'impression ou la simulation. Capacité à passer
+                    d'une idée à un fichier de fabrication — lien entre la
+                    conception et la réalisation physique.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-pico"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >Raspberry Pi Pico W
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-pico">
+                    <strong>Raspberry Pi Pico W</strong>Microcontrôleur compact
+                    avec connectivité WiFi, programmé en MicroPython. Cœur de
+                    Poul'Pong : gère en temps réel les capteurs physiologiques,
+                    la logique du jeu et la communication réseau.
+                  </div>
+                </div>
+                <div class="tool-item">
+                  <button
+                    class="tool-chip-btn"
+                    aria-describedby="tt-capteurs"
+                    aria-expanded="false"
+                  >
+                    <span class="tool-dot tool-purple" aria-hidden="true"></span
+                    >Capteurs physiologiques
+                  </button>
+                  <div class="tool-tooltip" role="tooltip" id="tt-capteurs">
+                    <strong>Capteurs physiologiques</strong>Capteurs mesurant
+                    des signaux biologiques en temps réel (fréquence cardiaque,
+                    signal vocal). Utilisés pour créer des interfaces
+                    biofeedback dans Poul'Pong — l'humain comme contrôleur.
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>Ombre Sensible (C# temps réel) · Poul'Pong (MicroPython) · Portfolio (HTML/CSS/JS)</p>
+          </div>
+        </section>
+
+        <!-- ── FEATURED : Ingénierie cognitive ── -->
+        <section id="sec-cognitique" aria-label="Compétence principale">
+          <div class="skills-featured">
+            <div class="feat-orb" aria-hidden="true"></div>
+            <div>
+              <p class="feat-label">Compétence cœur · ENSC Bordeaux INP</p>
+              <h2 class="feat-title">Ingénierie<br /><em>cognitive</em></h2>
+              <p class="feat-body">
+                Discipline à l'interface des sciences humaines, de l'ingénierie
+                et du numérique, la cognitique s'applique partout où un système
+                doit être conçu pour l'être humain. Analyser les capacités et
+                les limites cognitives des opérateurs, intégrer le facteur
+                humain dès la conception, réduire les risques d'erreurs dans les
+                systèmes critiques — c'est mon domaine d'expertise fondamental,
+                et ce que je peux apporter à votre entreprise.
+              </p>
+              <div class="feat-tags">
+                <span class="feat-tag">Sciences cognitives</span>
+                <span class="feat-tag">Facteur humain</span>
+                <span class="feat-tag">Analyse de la tâche</span>
+                <span class="feat-tag">Conception centrée utilisateur</span>
+                <span class="feat-tag">Modélisation cognitive</span>
+                <span class="feat-tag">Charge mentale</span>
+              </div>
+            </div>
+            <div class="feat-right">
+              <div class="feat-stat">
+                <div class="feat-stat-label">Formation</div>
+                <div class="feat-stat-val">
+                  ENSC — Bordeaux INP<br />Diplôme d'ingénieur
+                </div>
+              </div>
+              <div class="feat-stat">
+                <div class="feat-stat-label">Spécialité unique</div>
+                <div class="feat-stat-val">
+                  Seule école d'ingénieurs en cognitique en France
+                </div>
+              </div>
+              <div class="feat-stat">
+                <div class="feat-stat-label">Secteurs cibles</div>
+                <div class="feat-stat-val">
+                  Défense · Aéronautique · Nucléaire · Automobile
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── GRILLE 3 cartes ── -->
+        <section aria-label="Compétences techniques et métier">
+          <div class="skills-grid">
+            <!-- Facteur humain & ergonomie -->
+            <div class="scard sd1" id="sec-facteur-humain">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <p class="scard-label">Métier</p>
+              <h2 class="scard-title">
+                Facteur humain &amp;<br /><em>ergonomie</em>
+              </h2>
+              <p class="scard-body">
+                Analyse des besoins utilisateurs, identification des facteurs de
+                risque cognitif, intégration du facteur humain dans la
+                conception de systèmes industriels et critiques, appliquée aux
+                environnements complexes (salle de contrôle, poste de pilotage,
+                véhicule).
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">Analyse de la tâche</span>
+                <span class="scard-chip">Charge mentale</span>
+                <span class="scard-chip">Ergonomie cognitive</span>
+                <span class="scard-chip">Sécurité des systèmes</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span>Mémoire sur
+                les prothèses myoélectriques · Cours ENSC · Projet Ombre
+                Sensible
+              </p>
+            </div>
+
+            <!-- IHM & UX industriel -->
+            <div class="scard sd2" id="sec-ihm">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <p class="scard-label">Conception</p>
+              <h2 class="scard-title">
+                Interfaces<br /><em>Homme-Machine</em>
+              </h2>
+              <p class="scard-body">
+                Conception et évaluation d'interfaces pour des contextes
+                industriels et embarqués. Prise en compte des contraintes
+                cognitives de l'opérateur : lisibilité, gestion de l'attention,
+                réduction des erreurs. Développement en C# d'un casque immersif
+                simulant différents handicaps auditifs (surdité, acouphènes,
+                hyperacousie) avec traitement du signal en temps réel. Maîtrise
+                des normes d'accessibilité WCAG AAA.
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">UX / UI</span>
+                <span class="scard-chip">Prototypage</span>
+                <span class="scard-chip">Heuristiques de Nielsen</span>
+                <span class="scard-chip">WCAG AAA</span>
+                <span class="scard-chip">Tests utilisateurs</span>
+                <span class="scard-chip">Figma</span>
+                <span class="scard-chip">C# (traitement temps réel)</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span>Ombre Sensible
+                (casque immersif C#) · Portfolio WCAG AAA · Poul'Pong
+              </p>
+            </div>
+
+            <!-- Programmation -->
+            <div class="scard sd3" id="sec-programmation">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <p class="scard-label">Développement</p>
+              <h2 class="scard-title">
+                Programmation<br /><em>&amp; développement</em>
+              </h2>
+              <p class="scard-body">
+                Large palette de langages selon les besoins : Python pour
+                l'analyse et les systèmes embarqués, C# pour le développement
+                logiciel temps réel (traitement du signal audio), JavaScript /
+                React pour les interfaces web, PHP et SQL pour le back-end et
+                les bases de données. Intégration d'APIs REST, modélisation
+                MCD/MLD. Rigueur du code, lisibilité et documentation.
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">Python</span>
+                <span class="scard-chip">C#</span>
+                <span class="scard-chip">JavaScript / React</span>
+                <span class="scard-chip">PHP</span>
+                <span class="scard-chip">SQL / MCD</span>
+                <span class="scard-chip">APIs REST</span>
+                <span class="scard-chip">HTML / CSS</span>
+                <span class="scard-chip">MicroPython</span>
+                <span class="scard-chip">Git / GitLab</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span>Ombre Sensible
+                (C# temps réel) · Poul'Pong (MicroPython) · Portfolio
+                (HTML/CSS/JS)
+              </p>
+            </div>
           </div>
 
-        </div>
-
-        <!-- ── GRILLE 3 cartes (ligne 2) ── -->
-        <div class="skills-grid">
-
-          <!-- Systèmes embarqués -->
-          <div class="scard sd4" id="sec-embarque">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/>
-                <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
-                <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
-                <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/>
-                <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
-              </svg>
+          <!-- ── GRILLE 3 cartes (ligne 2) ── -->
+          <div class="skills-grid">
+            <!-- Systèmes embarqués -->
+            <div class="scard sd4" id="sec-embarque">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="4" y="4" width="16" height="16" rx="2" />
+                  <rect x="9" y="9" width="6" height="6" />
+                  <line x1="9" y1="1" x2="9" y2="4" />
+                  <line x1="15" y1="1" x2="15" y2="4" />
+                  <line x1="9" y1="20" x2="9" y2="23" />
+                  <line x1="15" y1="20" x2="15" y2="23" />
+                  <line x1="20" y1="9" x2="23" y2="9" />
+                  <line x1="20" y1="14" x2="23" y2="14" />
+                  <line x1="1" y1="9" x2="4" y2="9" />
+                  <line x1="1" y1="14" x2="4" y2="14" />
+                </svg>
+              </div>
+              <p class="scard-label">Embarqué &amp; Fabrication</p>
+              <h2 class="scard-title">
+                Systèmes embarqués<br /><em>&amp; prototypage</em>
+              </h2>
+              <p class="scard-body">
+                Mise en œuvre de microcontrôleurs et capteurs dans des systèmes
+                interactifs temps réel. Intégration de capteurs physiologiques
+                (rythme cardiaque, microphone) pour un contrôle biologique du
+                jeu. Fabrication complète : impression 3D des éléments
+                structurels, découpe laser du boîtier. Maîtrise de la chaîne
+                complète de conception à l'objet physique.
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">Raspberry Pi Pico W</span>
+                <span class="scard-chip">Capteurs physiologiques</span>
+                <span class="scard-chip">Impression 3D</span>
+                <span class="scard-chip">Découpe laser</span>
+                <span class="scard-chip">Inkscape</span>
+                <span class="scard-chip">Temps réel</span>
+                <span class="scard-chip">Conception 3D</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span>Poul'Pong
+                (arcade complète)
+              </p>
             </div>
-            <p class="scard-label">Embarqué &amp; Fabrication</p>
-            <h2 class="scard-title">Systèmes embarqués<br><em>&amp; prototypage</em></h2>
-            <p class="scard-body">Mise en œuvre de microcontrôleurs et capteurs dans des systèmes interactifs temps réel. Intégration de capteurs physiologiques (rythme cardiaque, microphone) pour un contrôle biologique du jeu. Fabrication complète : impression 3D des éléments structurels, découpe laser du boîtier. Maîtrise de la chaîne complète de conception à l'objet physique.</p>
-            <div class="scard-chips">
-              <span class="scard-chip">Raspberry Pi Pico W</span>
-              <span class="scard-chip">Capteurs physiologiques</span>
-              <span class="scard-chip">Impression 3D</span>
-              <span class="scard-chip">Découpe laser</span>
-              <span class="scard-chip">Inkscape</span>
-              <span class="scard-chip">Temps réel</span>
-              <span class="scard-chip">Conception 3D</span>
+
+            <!-- IA & traitement de données -->
+            <div class="scard sd5" id="sec-ia">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"
+                  />
+                </svg>
+              </div>
+              <p class="scard-label">Intelligence Artificielle</p>
+              <h2 class="scard-title">
+                IA &amp; analyse<br /><em>de données</em>
+              </h2>
+              <p class="scard-body">
+                Application des méthodes d'intelligence artificielle à l'analyse
+                de signaux physiologiques et comportementaux. Traitement du
+                signal audio temps réel (acouphènes, hyperacousie). Analyse
+                statistique avec R et MATLAB pour le traitement de données
+                expérimentales. Initiation aux réseaux de neurones et à
+                l'apprentissage automatique dans un contexte cognitif.
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">Traitement du signal</span>
+                <span class="scard-chip">MATLAB</span>
+                <span class="scard-chip">Logiciel R</span>
+                <span class="scard-chip">Machine Learning</span>
+                <span class="scard-chip">Python / NumPy</span>
+                <span class="scard-chip">Statistiques</span>
+                <span class="scard-chip">Acoustique</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span>Ombre Sensible
+                (signal audio C#) · Poul'Pong (capteurs) · cours ENSC (MATLAB,
+                R)
+              </p>
             </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>Poul'Pong (arcade complète)</p>
+
+            <!-- Recherche scientifique -->
+            <div class="scard sd6" id="sec-recherche">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              <p class="scard-label">Recherche</p>
+              <h2 class="scard-title">Rédaction<br /><em>scientifique</em></h2>
+              <p class="scard-body">
+                Conduite d'une démarche de recherche rigoureuse : revue de
+                littérature, synthèse bibliographique, analyse critique et
+                rédaction scientifique. Mémoire complet sur les prothèses de
+                bras myoélectriques — innovations biomécaniques, enjeux
+                neurobiologiques et impact utilisateur.
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">Revue de littérature</span>
+                <span class="scard-chip">Biomécanique</span>
+                <span class="scard-chip">Neurosciences</span>
+                <span class="scard-chip">Rédaction en FR/EN</span>
+                <span class="scard-chip">Présentation orale</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span>Mémoire sur
+                les prothèses myoélectriques · Publication interne CPBx
+              </p>
+            </div>
           </div>
 
-          <!-- IA & traitement de données -->
-          <div class="scard sd5" id="sec-ia">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <circle cx="12" cy="12" r="3"/>
-                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-              </svg>
+          <!-- ── GRILLE 2 grandes cartes ── -->
+          <div class="skills-grid-2">
+            <!-- Gestion de projet & management -->
+            <div class="scard sd7" id="sec-management">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                  <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" />
+                </svg>
+              </div>
+              <p class="scard-label">Management</p>
+              <h2 class="scard-title">
+                Gestion de projet &amp;<br /><em>leadership</em>
+              </h2>
+              <p class="scard-body">
+                Pilotage de projets complexes à double enjeu institutionnel
+                (Forum Ingénib ENSC × ENSEIRB, 60+ entreprises). Recrutement par
+                entretiens, encadrement d'équipe, planification de
+                rétro-planning, gestion budgétaire interécoles. Application des
+                méthodes agiles (Kanban, Scrum, MASK) pour la coordination de
+                projets techniques. Également comptable de la Junior-Entreprise
+                i2c — cycle comptable complet, TVA, audit annuel, formation du
+                prochain mandat.
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">Management d'équipe</span>
+                <span class="scard-chip">Kanban / Scrum / MASK</span>
+                <span class="scard-chip">Planification</span>
+                <span class="scard-chip">Budget</span>
+                <span class="scard-chip">Communication institutionnelle</span>
+                <span class="scard-chip">Comptabilité</span>
+                <span class="scard-chip">Négociation</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span>VP Forum
+                Ingénib 2026 · Comptable i2c Junior-Entreprise ENSC
+              </p>
             </div>
-            <p class="scard-label">Intelligence Artificielle</p>
-            <h2 class="scard-title">IA &amp; analyse<br><em>de données</em></h2>
-            <p class="scard-body">Application des méthodes d'intelligence artificielle à l'analyse de signaux physiologiques et comportementaux. Traitement du signal audio temps réel (acouphènes, hyperacousie). Analyse statistique avec R et MATLAB pour le traitement de données expérimentales. Initiation aux réseaux de neurones et à l'apprentissage automatique dans un contexte cognitif.</p>
-            <div class="scard-chips">
-              <span class="scard-chip">Traitement du signal</span>
-              <span class="scard-chip">MATLAB</span>
-              <span class="scard-chip">Logiciel R</span>
-              <span class="scard-chip">Machine Learning</span>
-              <span class="scard-chip">Python / NumPy</span>
-              <span class="scard-chip">Statistiques</span>
-              <span class="scard-chip">Acoustique</span>
+
+            <!-- Communication & langues -->
+            <div class="scard sd8" id="sec-langues">
+              <div class="scard-bar" aria-hidden="true"></div>
+              <div class="scard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#7dd3fc"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
+                  />
+                </svg>
+              </div>
+              <p class="scard-label">Communication</p>
+              <h2 class="scard-title">
+                Langues &amp;<br /><em>communication</em>
+              </h2>
+              <p class="scard-body">
+                Communication orale et écrite en environnement professionnel et
+                académique. Capacité à vulgariser des concepts techniques
+                complexes auprès d'interlocuteurs non spécialistes. Maîtrise du
+                français écrit à un niveau de rédaction professionnelle.
+                Pratique de l'anglais technique (Cambridge B2). Japonais B1
+                autodidacte — capacité à apprendre en autonomie.
+              </p>
+              <div class="scard-chips">
+                <span class="scard-chip">Français C2</span>
+                <span class="scard-chip">Anglais B2 — Cambridge</span>
+                <span class="scard-chip">Japonais B1</span>
+                <span class="scard-chip">Espagnol B1</span>
+                <span class="scard-chip">Prise de parole</span>
+                <span class="scard-chip">Vulgarisation</span>
+              </div>
+              <p class="scard-proof">
+                <span class="proof-dot" aria-hidden="true"></span
+                >Co-organisatrice d'un concours d'éloquence · Présentations
+                académiques ENSC
+              </p>
             </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>Ombre Sensible (signal audio C#) · Poul'Pong (capteurs) · cours ENSC (MATLAB, R)</p>
           </div>
-
-          <!-- Recherche scientifique -->
-          <div class="scard sd6" id="sec-recherche">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-                <polyline points="10 9 9 9 8 9"/>
-              </svg>
-            </div>
-            <p class="scard-label">Recherche</p>
-            <h2 class="scard-title">Rédaction<br><em>scientifique</em></h2>
-            <p class="scard-body">Conduite d'une démarche de recherche rigoureuse : revue de littérature, synthèse bibliographique, analyse critique et rédaction scientifique. Mémoire complet sur les prothèses de bras myoélectriques — innovations biomécaniques, enjeux neurobiologiques et impact utilisateur.</p>
-            <div class="scard-chips">
-              <span class="scard-chip">Revue de littérature</span>
-              <span class="scard-chip">Biomécanique</span>
-              <span class="scard-chip">Neurosciences</span>
-              <span class="scard-chip">Rédaction en FR/EN</span>
-              <span class="scard-chip">Présentation orale</span>
-            </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>Mémoire sur les prothèses myoélectriques · Publication interne CPBx</p>
-          </div>
-
-        </div>
-
-        <!-- ── GRILLE 2 grandes cartes ── -->
-        <div class="skills-grid-2">
-
-          <!-- Gestion de projet & management -->
-          <div class="scard sd7" id="sec-management">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>
-                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
-              </svg>
-            </div>
-            <p class="scard-label">Management</p>
-            <h2 class="scard-title">Gestion de projet &amp;<br><em>leadership</em></h2>
-            <p class="scard-body">Pilotage de projets complexes à double enjeu institutionnel (Forum Ingénib ENSC × ENSEIRB, 60+ entreprises). Recrutement par entretiens, encadrement d'équipe, planification de rétro-planning, gestion budgétaire interécoles. Application des méthodes agiles (Kanban, Scrum, MASK) pour la coordination de projets techniques. Également comptable de la Junior-Entreprise i2c — cycle comptable complet, TVA, audit annuel, formation du prochain mandat.</p>
-            <div class="scard-chips">
-              <span class="scard-chip">Management d'équipe</span>
-              <span class="scard-chip">Kanban / Scrum / MASK</span>
-              <span class="scard-chip">Planification</span>
-              <span class="scard-chip">Budget</span>
-              <span class="scard-chip">Communication institutionnelle</span>
-              <span class="scard-chip">Comptabilité</span>
-              <span class="scard-chip">Négociation</span>
-            </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>VP Forum Ingénib 2026 · Comptable i2c Junior-Entreprise ENSC</p>
-          </div>
-
-          <!-- Communication & langues -->
-          <div class="scard sd8" id="sec-langues">
-            <div class="scard-bar" aria-hidden="true"></div>
-            <div class="scard-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-              </svg>
-            </div>
-            <p class="scard-label">Communication</p>
-            <h2 class="scard-title">Langues &amp;<br><em>communication</em></h2>
-            <p class="scard-body">Communication orale et écrite en environnement professionnel et académique. Capacité à vulgariser des concepts techniques complexes auprès d'interlocuteurs non spécialistes. Maîtrise du français écrit à un niveau de rédaction professionnelle. Pratique de l'anglais technique (Cambridge B2). Japonais B1 autodidacte — capacité à apprendre en autonomie.</p>
-            <div class="scard-chips">
-              <span class="scard-chip">Français C2</span>
-              <span class="scard-chip">Anglais B2 — Cambridge</span>
-              <span class="scard-chip">Japonais B1</span>
-              <span class="scard-chip">Espagnol B1</span>
-              <span class="scard-chip">Prise de parole</span>
-              <span class="scard-chip">Vulgarisation</span>
-            </div>
-            <p class="scard-proof"><span class="proof-dot" aria-hidden="true"></span>Co-organisatrice d'un concours d'éloquence · Présentations académiques ENSC</p>
-          </div>
-
-        </div>
-      </section>
-
-    </div>
-  </main>
+        </section>
+      </div>
+    </main>
 
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="../A propos/A propos.html">À propos</a></li>
+            <li><a href="../Projets/Main.html">Projets</a></li>
+            <li><a href="../Experience/Experience.html">Expérience</a></li>
+            <li><a href="../Compétences/Compétences.html">Compétences</a></li>
+            <li><a href="../CV/CV.html">CV</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
+            <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
+            <li>
+              <a href="../Projets/Prothese.html">Prothèses Myoélectriques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="../A propos/A propos.html">À propos</a></li>
-          <li><a href="../Projets/Main.html">Projets</a></li>
-          <li><a href="../Experience/Experience.html">Expérience</a></li>
-          <li><a href="../Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="../CV/CV.html">CV</a></li>
-          <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="../CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  
-  
-  <script src="../../js/competences.js"></script>
-  <script src="../../js/theme-toggle.js"></script>
-  <script src="../../js/navbar.js"></script>
-</body>
+    <script src="../../js/competences.js"></script>
+    <script src="../../js/theme-toggle.js"></script>
+    <script src="../../js/navbar.js"></script>
+  </body>
 </html>

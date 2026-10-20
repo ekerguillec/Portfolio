@@ -1,383 +1,944 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projet Ombre Sensible — sensibilisation au handicap auditif — Emma Kerguillec">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="../../style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>Ombre Sensible — Emma Kerguillec</title>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projet Ombre Sensible — sensibilisation au handicap auditif — Emma Kerguillec"
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="../../style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ombre Sensible — Emma Kerguillec</title>
 
-  <link rel="stylesheet" href="../../style/projets/audiosensible.css">
-  <link rel="stylesheet" href="../../style/common/theme.css">
-</head>
+    <link rel="stylesheet" href="../../style/projets/audiosensible.css" />
+    <link rel="stylesheet" href="../../style/common/theme.css" />
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="../../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="close-icon">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-langues"
+                      >Langues</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="../Projets/Main.html"
+                  aria-current="page"
+                  ><strong><em>PROJETS</em></strong></a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="../Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
 
-  <header class="header">
-    <nav class="navbar">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="../../index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <span class="close-icon">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-academique">Parcours académique</a></li>
-              </ul>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Compétences/Compétences.html"
+                  >COMPÉTENCES</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Compétences/Compétences.html#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="../CV/CV.html" class="nav-link">CV</a>
+              <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
             </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Projets/Main.html" aria-current="page"><strong><em>PROJETS</em></strong></a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
-
-                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Compétences/Compétences.html">COMPÉTENCES</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Compétences/Compétences.html#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="../CV/CV.html" class="nav-link">CV</a>
-            <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="project-page">
-    <div class="project-inner">
-
-      <nav class="breadcrumb-nav" aria-label="fil d'Ariane">
-        <a href="../Projets/Main.html">Projets</a>
-        <span>›</span>
-        <span class="current">Ombre Sensible</span>
       </nav>
+    </header>
 
-      <!-- ── HERO ── -->
-      <div class="hero-block">
-        <p class="project-eyebrow">Projet de sensibilisation · ENSC</p>
+    <main class="project-page">
+      <div class="project-inner">
+        <nav class="breadcrumb-nav" aria-label="fil d'Ariane">
+          <a href="../Projets/Main.html">Projets</a>
+          <span>›</span>
+          <span class="current">Ombre Sensible</span>
+        </nav>
 
-        <div class="hero-body">
-          <div>
-            <h1 class="project-title">Ombre Sensible —<br><em>ressentir le handicap auditif</em></h1>
-            <p class="project-desc">Permettre à chacun de vivre de l'intérieur les altérations sonores vécues par les personnes atteintes de surdité partielle, d'hyperacousie ou de perte sélective de fréquences — par le son, en temps réel.</p>
+        <!-- ── HERO ── -->
+        <div class="hero-block">
+          <p class="project-eyebrow">Projet de sensibilisation · ENSC</p>
 
-            <div class="project-tags">
-              <span class="project-tag">#Acoustique</span>
-              <span class="project-tag">#Traitement du signal</span>
-              <span class="project-tag">#Cognition</span>
-              <span class="project-tag">#Accessibilité</span>
-              <span class="project-tag">#Sensibilisation</span>
-              <span class="project-tag">#Sécurité</span>
-              <span class="project-tag">#Développement web</span>
+          <div class="hero-body">
+            <div>
+              <h1 class="project-title">
+                Ombre Sensible —<br /><em>ressentir le handicap auditif</em>
+              </h1>
+              <p class="project-desc">
+                Permettre à chacun de vivre de l'intérieur les altérations
+                sonores vécues par les personnes atteintes de surdité partielle,
+                d'hyperacousie ou de perte sélective de fréquences — par le son,
+                en temps réel.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">#Acoustique</span>
+                <span class="project-tag">#Traitement du signal</span>
+                <span class="project-tag">#Cognition</span>
+                <span class="project-tag">#Accessibilité</span>
+                <span class="project-tag">#Sensibilisation</span>
+                <span class="project-tag">#Sécurité</span>
+                <span class="project-tag">#Développement web</span>
+              </div>
+
+              <div class="hero-actions">
+                <a
+                  href="https://audiosensible.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-primary-action"
+                >
+                  Visiter le site
+                  <svg
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="width: 14px; height: 14px"
+                  >
+                    <path d="M2 12L12 2M12 2H5M12 2v7" />
+                  </svg>
+                </a>
+                <a href="../Projets/Main.html" class="btn-secondary-action"
+                  >← Retour aux projets</a
+                >
+              </div>
             </div>
 
-            <div class="hero-actions">
-              <a href="https://audiosensible.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
-                Visiter le site
-                <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M2 12L12 2M12 2H5M12 2v7"/></svg>
+            <div class="info-card">
+              <div>
+                <p class="info-section-title">Contexte</p>
+                <div style="display: flex; flex-direction: column; gap: 10px">
+                  <div style="font-size: 15px; color: #64748b">
+                    <strong style="color: #94a3b8; font-weight: 500"
+                      >Cadre :</strong
+                    >
+                    1ère année à l'ENSC
+                  </div>
+                  <div style="font-size: 15px; color: #64748b">
+                    <strong style="color: #94a3b8; font-weight: 500"
+                      >Année :</strong
+                    >
+                    2025-2026
+                  </div>
+                  <div style="font-size: 15px; color: #64748b">
+                    <strong style="color: #94a3b8; font-weight: 500"
+                      >Délais :</strong
+                    >
+                    8 mois
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="info-section-title">Équipe (4 personnes)</p>
+                <div class="team-list">
+                  <div class="team-member">DAURIAC Calista</div>
+                  <div class="team-member">LATU-VILLIÈRE Louis</div>
+                  <div class="team-member">KERGUILLEC Emma</div>
+                  <div class="team-member">WILLEY Mathilde</div>
+                </div>
+              </div>
+              <div>
+                <p class="info-section-title">Objectif</p>
+                <div class="concept-box">
+                  <p>
+                    Susciter une prise de conscience
+                    <em>sensorielle et empathique</em> sur la fragilité de
+                    l'écoute.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ── SITE WEB ── -->
+        <section class="site-section">
+          <span class="section-label">Site interactif</span>
+          <div class="site-card">
+            <div class="site-card-header">
+              <div class="browser-dots">
+                <div class="browser-dot dot-red"></div>
+                <div class="browser-dot dot-yellow"></div>
+                <div class="browser-dot dot-green"></div>
+              </div>
+              <div class="browser-url">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"
+                  />
+                </svg>
+                audiosensible.netlify.app
+              </div>
+              <a
+                href="https://audiosensible.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="browser-open-btn"
+              >
+                Ouvrir
+                <svg
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2v7" />
+                </svg>
               </a>
-              <a href="../Projets/Main.html" class="btn-secondary-action">← Retour aux projets</a>
+            </div>
+            <div class="site-body">
+              <div>
+                <h2 class="site-desc-title">
+                  Expérience auditive <em>interactive</em>
+                </h2>
+                <p class="site-desc-text">
+                  Le site permet à l'utilisateur de simuler différents profils
+                  de handicap auditif directement depuis son navigateur — sans
+                  installation, sans matériel spécifique.
+                </p>
+                <div class="site-features">
+                  <div class="site-feature">
+                    <div class="feature-dot"></div>
+                    Simulation de surdité partielle, hyperacousie et perte
+                    fréquentielle
+                  </div>
+                  <div class="site-feature">
+                    <div class="feature-dot"></div>
+                    Traitement du signal audio en temps réel (Web Audio API)
+                  </div>
+                  <div class="site-feature">
+                    <div class="feature-dot"></div>
+                    Interface accessible sur desktop et mobile
+                  </div>
+                  <div class="site-feature">
+                    <div class="feature-dot"></div>
+                    Contenu pédagogique intégré sur le handicap auditif
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="info-card">
-            <div>
-              <p class="info-section-title">Contexte</p>
-              <div style="display:flex;flex-direction:column;gap:10px">
-                <div style="font-size:15px;color:#64748b"><strong style="color:#94a3b8;font-weight:500">Cadre :</strong> 1ère année à l'ENSC</div>
-                <div style="font-size:15px;color:#64748b"><strong style="color:#94a3b8;font-weight:500">Année :</strong> 2025-2026</div>
-                <div style="font-size:15px;color:#64748b"><strong style="color:#94a3b8;font-weight:500">Délais :</strong> 8 mois</div>
-              </div>
+        <div class="divider"></div>
+
+        <!-- ── ÉTAPES ── -->
+        <section class="steps-section">
+          <span class="section-label">Démarche du projet</span>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">01</div>
+              <p class="step-meta">Concept &amp; fonctionnement</p>
+              <h2 class="step-title">Architecture <em>technique</em></h2>
+              <ul class="step-list">
+                <li>Casque audio neutre à forte isolation</li>
+                <li>2 microphones directionnels intégrés</li>
+                <li>
+                  Traitement du signal en temps réel (filtres passe-haut,
+                  passe-bas, passe-bande)
+                </li>
+                <li>
+                  Interface physique ou numérique pour choisir les profils
+                  auditifs
+                </li>
+              </ul>
             </div>
-            <div>
-              <p class="info-section-title">Équipe (4 personnes)</p>
-              <div class="team-list">
-                <div class="team-member">DAURIAC Calista</div>
-                <div class="team-member">LATU-VILLIÈRE Louis</div>
-                <div class="team-member">KERGUILLEC Emma</div>
-                <div class="team-member">WILLEY Mathilde</div>
-              </div>
+
+            <div class="step-card">
+              <div class="step-number">02</div>
+              <p class="step-meta">Caractéristiques techniques</p>
+              <h2 class="step-title">Stack &amp; <em>matériel</em></h2>
+              <ul class="step-list">
+                <li>Traitement sur ordinateur (Web Audio API)</li>
+                <li>Connectivité câble ou Bluetooth</li>
+                <li>Matériaux modifiés pour intégrer l'électronique</li>
+                <li>Confort et isolation optimisés pour l'usage terrain</li>
+              </ul>
             </div>
-            <div>
-              <p class="info-section-title">Objectif</p>
-              <div class="concept-box">
-                <p>Susciter une prise de conscience <em>sensorielle et empathique</em> sur la fragilité de l'écoute.</p>
-              </div>
+
+            <div class="step-card">
+              <div class="step-number">03</div>
+              <p class="step-meta">Deux configurations</p>
+              <h2 class="step-title">Casque &amp; <em>module externe</em></h2>
+              <ul class="step-list">
+                <li>
+                  <b>Casque embarqué :</b> préserve la perception spatiale
+                  naturelle
+                </li>
+                <li>
+                  <b>Module externe :</b> simule le trajet du son dans un modèle
+                  de boîte crânienne imprimée en 3D
+                </li>
+              </ul>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">04</div>
+              <p class="step-meta">Portée &amp; perspectives</p>
+              <h2 class="step-title">Usages &amp; <em>diffusion</em></h2>
+              <ul class="step-list">
+                <li>
+                  Actions de sensibilisation : écoles, musées, événements de
+                  santé publique
+                </li>
+                <li>Outil éducatif en sciences cognitives et acoustique</li>
+                <li>
+                  Base technologique pour des dispositifs d'entraînement auditif
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- ── COMPÉTENCES ── -->
+        <section class="skills-section">
+          <span class="section-label">Compétences mobilisées</span>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+              <span class="skill-name">Traitement du signal audio</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"
+                  />
+                </svg>
+              </div>
+              <span class="skill-name">Développement web (Web Audio API)</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"
+                  />
+                </svg>
+              </div>
+              <span class="skill-name"
+                >Sciences cognitives &amp; acoustique</span
+              >
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
+                  />
+                </svg>
+              </div>
+              <span class="skill-name">Communication &amp; médiation</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <span class="skill-name">Conception pédagogique</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- ── BILAN ── -->
+        <section class="bilan-section">
+          <span class="section-label">Bilan</span>
+          <div class="bilan-card">
+            <p>
+              Ombre Sensible m'a permis d'explorer la
+              <strong>dimension humaine et sociale de l'ingénierie</strong> —
+              concevoir non pas pour optimiser une performance, mais pour
+              <em>faire ressentir</em>. Travailler sur la simulation du handicap
+              auditif a profondément renforcé ma conviction que la
+              <strong>cognitique</strong> est avant tout un pont entre
+              technologie et vécu : comprendre comment le cerveau traite le son,
+              et utiliser cette compréhension pour
+              <em>changer le regard</em> des autres sur ceux qui l'entendent
+              différemment.
+            </p>
+          </div>
+        </section>
       </div>
-
-      <div class="divider"></div>
-
-      <!-- ── SITE WEB ── -->
-      <section class="site-section">
-        <span class="section-label">Site interactif</span>
-        <div class="site-card">
-          <div class="site-card-header">
-            <div class="browser-dots">
-              <div class="browser-dot dot-red"></div>
-              <div class="browser-dot dot-yellow"></div>
-              <div class="browser-dot dot-green"></div>
-            </div>
-            <div class="browser-url">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
-              audiosensible.netlify.app
-            </div>
-            <a href="https://audiosensible.netlify.app" target="_blank" rel="noopener noreferrer" class="browser-open-btn">
-              Ouvrir
-              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12L12 2M12 2H5M12 2v7"/></svg>
-            </a>
-          </div>
-          <div class="site-body">
-            <div>
-              <h2 class="site-desc-title">Expérience auditive <em>interactive</em></h2>
-              <p class="site-desc-text">Le site permet à l'utilisateur de simuler différents profils de handicap auditif directement depuis son navigateur — sans installation, sans matériel spécifique.</p>
-              <div class="site-features">
-                <div class="site-feature"><div class="feature-dot"></div>Simulation de surdité partielle, hyperacousie et perte fréquentielle</div>
-                <div class="site-feature"><div class="feature-dot"></div>Traitement du signal audio en temps réel (Web Audio API)</div>
-                <div class="site-feature"><div class="feature-dot"></div>Interface accessible sur desktop et mobile</div>
-                <div class="site-feature"><div class="feature-dot"></div>Contenu pédagogique intégré sur le handicap auditif</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- ── ÉTAPES ── -->
-      <section class="steps-section">
-        <span class="section-label">Démarche du projet</span>
-        <div class="steps-grid">
-
-          <div class="step-card">
-            <div class="step-number">01</div>
-            <p class="step-meta">Concept &amp; fonctionnement</p>
-            <h2 class="step-title">Architecture <em>technique</em></h2>
-            <ul class="step-list">
-              <li>Casque audio neutre à forte isolation</li>
-              <li>2 microphones directionnels intégrés</li>
-              <li>Traitement du signal en temps réel (filtres passe-haut, passe-bas, passe-bande)</li>
-              <li>Interface physique ou numérique pour choisir les profils auditifs</li>
-            </ul>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">02</div>
-            <p class="step-meta">Caractéristiques techniques</p>
-            <h2 class="step-title">Stack &amp; <em>matériel</em></h2>
-            <ul class="step-list">
-              <li>Traitement sur ordinateur (Web Audio API)</li>
-              <li>Connectivité câble ou Bluetooth</li>
-              <li>Matériaux modifiés pour intégrer l'électronique</li>
-              <li>Confort et isolation optimisés pour l'usage terrain</li>
-            </ul>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">03</div>
-            <p class="step-meta">Deux configurations</p>
-            <h2 class="step-title">Casque &amp; <em>module externe</em></h2>
-            <ul class="step-list">
-              <li><b>Casque embarqué :</b> préserve la perception spatiale naturelle</li>
-              <li><b>Module externe :</b> simule le trajet du son dans un modèle de boîte crânienne imprimée en 3D</li>
-            </ul>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">04</div>
-            <p class="step-meta">Portée &amp; perspectives</p>
-            <h2 class="step-title">Usages &amp; <em>diffusion</em></h2>
-            <ul class="step-list">
-              <li>Actions de sensibilisation : écoles, musées, événements de santé publique</li>
-              <li>Outil éducatif en sciences cognitives et acoustique</li>
-              <li>Base technologique pour des dispositifs d'entraînement auditif</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- ── COMPÉTENCES ── -->
-      <section class="skills-section">
-        <span class="section-label">Compétences mobilisées</span>
-        <div class="skills-grid">
-
-          <div class="skill-card">
-            <div class="skill-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <span class="skill-name">Traitement du signal audio</span>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
-            </div>
-            <span class="skill-name">Développement web (Web Audio API)</span>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg>
-            </div>
-            <span class="skill-name">Sciences cognitives &amp; acoustique</span>
-          </div>
-
-
-          <div class="skill-card">
-            <div class="skill-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-            </div>
-            <span class="skill-name">Communication &amp; médiation</span>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-            </div>
-            <span class="skill-name">Conception pédagogique</span>
-          </div>
-
-        </div>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- ── BILAN ── -->
-      <section class="bilan-section">
-        <span class="section-label">Bilan</span>
-        <div class="bilan-card">
-          <p>Ombre Sensible m'a permis d'explorer la <strong>dimension humaine et sociale de l'ingénierie</strong> — concevoir non pas pour optimiser une performance, mais pour <em>faire ressentir</em>. Travailler sur la simulation du handicap auditif a profondément renforcé ma conviction que la <strong>cognitique</strong> est avant tout un pont entre technologie et vécu : comprendre comment le cerveau traite le son, et utiliser cette compréhension pour <em>changer le regard</em> des autres sur ceux qui l'entendent différemment.</p>
-        </div>
-      </section>
-
-    </div>
-  </main>
+    </main>
 
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="../A propos/A propos.html">À propos</a></li>
+            <li><a href="../Projets/Main.html">Projets</a></li>
+            <li><a href="../Experience/Experience.html">Expérience</a></li>
+            <li><a href="../Compétences/Compétences.html">Compétences</a></li>
+            <li><a href="../CV/CV.html">CV</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
+            <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
+            <li>
+              <a href="../Projets/Prothese.html">Prothèses Myoélectriques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="../A propos/A propos.html">À propos</a></li>
-          <li><a href="../Projets/Main.html">Projets</a></li>
-          <li><a href="../Experience/Experience.html">Expérience</a></li>
-          <li><a href="../Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="../CV/CV.html">CV</a></li>
-          <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="../CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
+    <!-- QR Code generator (qrcodejs, CDN autorisé) -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 
-  <!-- QR Code generator (qrcodejs, CDN autorisé) -->
-  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-  
-  <script src="../../js/audiosensible-qr.js"></script>
-  <script src="../../js/theme-toggle.js"></script>
-  <script src="../../js/navbar.js"></script>
-</body>
+    <script src="../../js/audiosensible-qr.js"></script>
+    <script src="../../js/theme-toggle.js"></script>
+    <script src="../../js/navbar.js"></script>
+  </body>
 </html>

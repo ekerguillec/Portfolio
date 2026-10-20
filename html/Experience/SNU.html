@@ -1,337 +1,811 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <script>!function(){var t=localStorage.getItem('portfolio-theme');if(t==='light'||(t===null&&window.matchMedia('(prefers-color-scheme:light)').matches))document.documentElement.classList.add('light-mode')}();</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Service National Universel — Emma Kerguillec">
-  <meta name="author" content="Emma Kerguillec">
-  <link rel="stylesheet" href="../../style/common/base.css">
-  <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon-ek-monogram.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <title>SNU — Emma Kerguillec</title>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      !(function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        if (t !== "dark") document.documentElement.classList.add("light-mode");
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Service National Universel — Emma Kerguillec"
+    />
+    <meta name="author" content="Emma Kerguillec" />
+    <link rel="stylesheet" href="../../style/common/base.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../images/favicon/favicon-ek-monogram.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>SNU — Emma Kerguillec</title>
 
-  <link rel="stylesheet" href="../../style/experience/snu.css">
-  <link rel="stylesheet" href="../../style/common/theme.css">
-</head>
+    <link rel="stylesheet" href="../../style/experience/snu.css" />
+    <link rel="stylesheet" href="../../style/common/theme.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand" href="../../index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="close-icon">&#10005;</span>
-        </button>
-        <button class="theme-toggle" aria-label="Passer en mode clair" title="Changer de thème">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a href="../../index.html" class="nav-link">ACCUEIL</a>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages À propos"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-eloquence">Concours d'éloquence — reportage Arte</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-creativite">Créativité</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-engagement">Engagement</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-langues">Langues</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-sport">Sport &amp; énergie</a></li>
-                <li><a class="dropdown-item" href="../A propos/A propos.html#sec-academique">Parcours académique</a></li>
-              </ul>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand" href="../../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="close-icon">&#10005;</span>
+          </button>
+          <button
+            class="theme-toggle"
+            aria-label="Passer en mode clair"
+            title="Changer de thème"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a href="../../index.html" class="nav-link">ACCUEIL</a>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../A propos/A propos.html">A PROPOS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages À propos"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-eloquence"
+                      >Concours d'éloquence — reportage Arte</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-creativite"
+                      >Créativité</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-engagement"
+                      >Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-langues"
+                      >Langues</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-sport"
+                      >Sport &amp; énergie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../A propos/A propos.html#sec-academique"
+                      >Parcours académique</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Projets/Main.html">PROJETS</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Projets"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Main.html"
+                      >Tous les projets</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Poulpong.html"
+                      >Poul'Pong</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Projets/Audiosensible.html"
+                      >Ombre Sensible</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Projets/Prothese.html"
+                      >Prothèses Myoélectriques</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown dropdown-expanded">
+                <a class="nav-link" href="../Experience/Experience.html"
+                  >EXPERIENCE</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Expérience"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Experience/Experience.html"
+                      >Toutes les expériences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Engagement associatif
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/ingénib.html"
+                          >Forum Ingénib</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/i2c.html"
+                          >i2c Junior-Entreprise</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../Experience/BDE.html"
+                          >BDE ENSC</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Emplois étudiants
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Le Télégramme.html"
+                          >Le Télégramme</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/E.Leclerc.html"
+                          >E.Leclerc</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Experience/Experience.html"
+                      >Stages
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Experience/Mam.html"
+                          >MAM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Experience/Pharmacie.html"
+                          >Pharmacie</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../Experience/SNU.html"
+                      >Engagement citoyen – SNU</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="../Compétences/Compétences.html"
+                  >COMPÉTENCES</a
+                ><button
+                  class="nav-caret"
+                  aria-expanded="false"
+                  aria-label="Sous-pages Compétences"
+                >
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M1 1l4 4 4-4" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html"
+                      >Toutes les compétences</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-langages"
+                      >Langages &amp; frameworks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-logiciels"
+                      >Logiciels &amp; outils</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Compétences/Compétences.html#sec-methodes"
+                      >Méthodes &amp; fabrication</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item has-submenu"
+                      href="../Compétences/Compétences.html#sec-cognitique"
+                      >Ingénierie cognitive
+                      <svg
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2 2l4 4-4 4" />
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-facteur-humain"
+                          >Facteur humain &amp; ergonomie</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ihm"
+                          >Interfaces Homme-Machine</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-programmation"
+                          >Programmation &amp; développement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-embarque"
+                          >Systèmes embarqués &amp; prototypage</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-ia"
+                          >IA &amp; analyse de données</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-recherche"
+                          >Rédaction scientifique</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-management"
+                          >Gestion de projet &amp; leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../Compétences/Compétences.html#sec-langues"
+                          >Langues &amp; communication</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="../CV/CV.html" class="nav-link">CV</a>
+              <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
             </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Projets/Main.html">PROJETS</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Projets"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Projets/Main.html">Tous les projets</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Projets/Poulpong.html">Poul'Pong</a></li>
-                <li><a class="dropdown-item" href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-                <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown dropdown-expanded">
-              <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
-                <li><hr class="dropdown-divider"></li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Engagement associatif <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/ingénib.html">Forum Ingénib</a></li>
-                    <li><a class="dropdown-item" href="../Experience/i2c.html">i2c Junior-Entreprise</a></li>
-                    <li><a class="dropdown-item" href="../Experience/BDE.html">BDE ENSC</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Emplois étudiants <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Le Télégramme.html">Le Télégramme</a></li>
-                    <li><a class="dropdown-item" href="../Experience/E.Leclerc.html">E.Leclerc</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Experience/Experience.html">Stages <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Experience/Mam.html">MAM</a></li>
-                    <li><a class="dropdown-item" href="../Experience/Pharmacie.html">Pharmacie</a></li>
-                  </ul>
-                </li>
-
-                <li><a class="dropdown-item" href="../Experience/SNU.html">Engagement citoyen – SNU</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link" href="../Compétences/Compétences.html">COMPÉTENCES</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Compétences"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html">Toutes les compétences</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langages">Langages &amp; frameworks</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-logiciels">Logiciels &amp; outils</a></li>
-                <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-methodes">Méthodes &amp; fabrication</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item has-submenu" href="../Compétences/Compétences.html#sec-cognitique">Ingénierie cognitive <svg width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l4 4-4 4"/></svg></a>
-                  <ul class="dropdown-menu dropdown-submenu-menu">
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-facteur-humain">Facteur humain &amp; ergonomie</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ihm">Interfaces Homme-Machine</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-programmation">Programmation &amp; développement</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-embarque">Systèmes embarqués &amp; prototypage</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-ia">IA &amp; analyse de données</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-recherche">Rédaction scientifique</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-management">Gestion de projet &amp; leadership</a></li>
-                    <li><a class="dropdown-item" href="../Compétences/Compétences.html#sec-langues">Langues &amp; communication</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="../CV/CV.html" class="nav-link">CV</a>
-            <a href="../Contact/Contact.html" class="nav-link">CONTACT</a>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main class="detail-page">
-    <div class="detail-inner">
+    <main class="detail-page">
+      <div class="detail-inner">
+        <a href="../Experience/Experience.html" class="back-link">
+          <svg
+            viewBox="0 0 14 14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 7H2M2 7l5-5M2 7l5 5" />
+          </svg>
+          Retour aux expériences
+        </a>
 
-      <a href="../Experience/Experience.html" class="back-link">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 7H2M2 7l5-5M2 7l5 5"/>
-        </svg>
-        Retour aux expériences
-      </a>
+        <!-- HERO -->
+        <div class="detail-hero">
+          <div>
+            <p class="detail-eyebrow">Engagement citoyen · État français</p>
+            <h1 class="detail-title">
+              Service National<br /><em>Universel</em>
+            </h1>
+            <p class="detail-subtitle">
+              Le SNU est un dispositif d'engagement civique proposé par l'État à
+              la jeunesse française. Fondé sur la cohésion nationale, le
+              dépassement de soi et l'engagement volontaire, il m'a confrontée à
+              des réalités collectives éloignées de mon quotidien.
+            </p>
+            <div class="detail-tags">
+              <span class="detail-tag">#engagement citoyen</span>
+              <span class="detail-tag">#cohésion d'équipe</span>
+              <span class="detail-tag">#discipline</span>
+              <span class="detail-tag">#dépassement de soi</span>
+              <span class="detail-tag">#vivre-ensemble</span>
+            </div>
+          </div>
+          <div class="meta-pills">
+            <div class="meta-pill">
+              <div class="meta-pill-label">Dispositif</div>
+              <div class="meta-pill-value">SNU — État</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Format</div>
+              <div class="meta-pill-value">Séjour de cohésion</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Durée</div>
+              <div class="meta-pill-value">12 jours</div>
+            </div>
+            <div class="meta-pill">
+              <div class="meta-pill-label">Statut</div>
+              <div class="meta-pill-value">Volontaire</div>
+            </div>
+          </div>
+        </div>
 
-      <!-- HERO -->
-      <div class="detail-hero">
+        <div class="detail-divider"></div>
+
         <div>
-          <p class="detail-eyebrow">Engagement citoyen · État français</p>
-          <h1 class="detail-title">Service National<br><em>Universel</em></h1>
-          <p class="detail-subtitle">
-            Le SNU est un dispositif d'engagement civique proposé par l'État à la jeunesse française. Fondé sur la cohésion nationale, le dépassement de soi et l'engagement volontaire, il m'a confrontée à des réalités collectives éloignées de mon quotidien.
-          </p>
-          <div class="detail-tags">
-            <span class="detail-tag">#engagement citoyen</span>
-            <span class="detail-tag">#cohésion d'équipe</span>
-            <span class="detail-tag">#discipline</span>
-            <span class="detail-tag">#dépassement de soi</span>
-            <span class="detail-tag">#vivre-ensemble</span>
+          <!-- Contexte -->
+          <div class="detail-section">
+            <p class="section-label">Contexte</p>
+            <h2 class="section-title">Qu'est-ce que le <em>SNU</em> ?</h2>
+            <p class="section-body">
+              Le Service National Universel est un programme civique volontaire
+              destiné aux jeunes de 15 à 17 ans. Il s'articule autour d'un
+              séjour de cohésion de 12 jours en internat, suivi d'une mission
+              d'intérêt général. Loin d'un simple stage, il s'agit d'une
+              véritable immersion dans un collectif hétérogène — mixité sociale,
+              géographique et culturelle — avec un cadre structuré, des
+              activités physiques, des ateliers citoyens et des moments de vie
+              commune intenses.
+            </p>
+            <div class="highlight-box">
+              <p>
+                Participer au SNU, c'est choisir volontairement de
+                <strong>sortir de sa zone de confort</strong> pour se confronter
+                à l'altérité, à la vie en collectivité et aux exigences d'un
+                cadre discipliné. C'est une expérience fondatrice qui dit
+                quelque chose sur
+                <strong>qui l'on est et ce que l'on est prêt·e à donner</strong
+                >.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="meta-pills">
-          <div class="meta-pill">
-            <div class="meta-pill-label">Dispositif</div>
-            <div class="meta-pill-value">SNU — État</div>
+
+          <!-- Phases -->
+          <div class="detail-section">
+            <p class="section-label">Déroulement</p>
+            <h2 class="section-title">Les temps <em>forts</em></h2>
+            <div class="phases-grid">
+              <div class="phase-card">
+                <p class="phase-number">Phase 01</p>
+                <p class="phase-title">Séjour de cohésion</p>
+                <p class="phase-desc">
+                  12 jours en internat avec des jeunes de toute la France.
+                  Réveil matinal, activités physiques, ateliers citoyens, vie en
+                  maisonnée — un rythme soutenu qui forge l'esprit d'équipe.
+                </p>
+              </div>
+
+              <div class="phase-card">
+                <p class="phase-number">Phase 02</p>
+                <p class="phase-title">Ateliers thématiques</p>
+                <p class="phase-desc">
+                  Sessions de sensibilisation sur des thèmes variés : défense
+                  nationale, premiers secours, développement durable, égalité,
+                  laïcité — des sujets qui ancrent le séjour dans la citoyenneté
+                  active.
+                </p>
+              </div>
+
+              <div class="phase-card">
+                <p class="phase-number">Phase 03</p>
+                <p class="phase-title">Mission d'intérêt général</p>
+                <p class="phase-desc">
+                  Engagement au service d'une structure locale (association,
+                  collectivité, établissement public) pour mettre ses
+                  compétences au service d'un intérêt commun.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="meta-pill">
-            <div class="meta-pill-label">Format</div>
-            <div class="meta-pill-value">Séjour de cohésion</div>
+
+          <!-- Valeurs -->
+          <div class="detail-section">
+            <p class="section-label">Ce que ça représente</p>
+            <h2 class="section-title">Des valeurs <em>incarnées</em></h2>
+            <p class="section-body">
+              Le SNU ne transmet pas des valeurs abstraites — il les met à
+              l'épreuve du quotidien collectif. Voici ce que ces 12 jours m'ont
+              appris à vivre concrètement.
+            </p>
+            <div class="values-grid">
+              <div class="value-card">
+                <span class="value-icon">🤝</span>
+                <p class="value-name">Cohésion</p>
+                <p class="value-desc">
+                  Construire un collectif soudé à partir de parcours
+                  radicalement différents.
+                </p>
+              </div>
+              <div class="value-card">
+                <span class="value-icon">🎯</span>
+                <p class="value-name">Discipline</p>
+                <p class="value-desc">
+                  Respecter un cadre rigoureux, tenir ses engagements même dans
+                  l'inconfort.
+                </p>
+              </div>
+              <div class="value-card">
+                <span class="value-icon">🏛️</span>
+                <p class="value-name">Citoyenneté</p>
+                <p class="value-desc">
+                  Choisir de contribuer à quelque chose qui dépasse son intérêt
+                  individuel.
+                </p>
+              </div>
+              <div class="value-card">
+                <span class="value-icon">⚡</span>
+                <p class="value-name">Dépassement</p>
+                <p class="value-desc">
+                  Aller au-delà de ses limites perçues, physiques et
+                  relationnelles.
+                </p>
+              </div>
+              <div class="value-card">
+                <span class="value-icon">🌍</span>
+                <p class="value-name">Mixité</p>
+                <p class="value-desc">
+                  Vivre et travailler aux côtés de jeunes aux origines et
+                  réalités très diverses.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="meta-pill">
-            <div class="meta-pill-label">Durée</div>
-            <div class="meta-pill-value">12 jours</div>
-          </div>
-          <div class="meta-pill">
-            <div class="meta-pill-label">Statut</div>
-            <div class="meta-pill-value">Volontaire</div>
+
+          <!-- Compétences -->
+          <div class="detail-section">
+            <p class="section-label">Compétences développées</p>
+            <h2 class="section-title">Ce que j'en <em>retiens</em></h2>
+            <p class="section-body">
+              Au-delà de l'expérience humaine, le SNU a été un terrain
+              d'entraînement pour des compétences comportementales que je
+              mobilise dans tous mes engagements depuis.
+            </p>
+            <div class="skills-acquired">
+              <div class="skill-row">
+                <div class="skill-dot"></div>
+                <p class="skill-text">
+                  <strong>Adaptabilité</strong> — S'intégrer rapidement dans un
+                  groupe inconnu, avec un cadre imposé et des règles de vie
+                  collectives non négociables.
+                </p>
+              </div>
+              <div class="skill-row">
+                <div class="skill-dot"></div>
+                <p class="skill-text">
+                  <strong>Résilience</strong> — Maintenir son engagement et son
+                  attitude positive face à la fatigue, aux contraintes et aux
+                  moments difficiles.
+                </p>
+              </div>
+              <div class="skill-row">
+                <div class="skill-dot"></div>
+                <p class="skill-text">
+                  <strong>Écoute & empathie</strong> — Cohabiter avec des
+                  personnes très différentes de soi oblige à développer une
+                  écoute authentique et une véritable ouverture à l'autre.
+                </p>
+              </div>
+              <div class="skill-row">
+                <div class="skill-dot"></div>
+                <p class="skill-text">
+                  <strong>Leadership informel</strong> — Dans les activités
+                  collectives, prendre des initiatives, fédérer et motiver sans
+                  rôle hiérarchique formel.
+                </p>
+              </div>
+              <div class="skill-row">
+                <div class="skill-dot"></div>
+                <p class="skill-text">
+                  <strong>Premiers secours</strong> — Formation aux gestes de
+                  premiers secours, compétence concrète et directement
+                  transférable.
+                </p>
+              </div>
+              <div class="skill-row">
+                <div class="skill-dot"></div>
+                <p class="skill-text">
+                  <strong>Sens du collectif</strong> — Comprendre que la
+                  performance d'un groupe dépend de chaque maillon, et que
+                  s'investir pour les autres est une forme d'efficacité.
+                </p>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <p>
+                Le SNU a été l'une de mes premières expériences de
+                <strong>vie en collectivité intense</strong>. Elle a posé les
+                fondations de mon rapport aux équipes et à l'engagement : je
+                n'intègre pas un projet pour en faire partie, je l'intègre pour
+                <strong>y contribuer pleinement</strong>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="detail-divider"></div>
-
-      <div>
-
-        <!-- Contexte -->
-        <div class="detail-section">
-          <p class="section-label">Contexte</p>
-          <h2 class="section-title">Qu'est-ce que le <em>SNU</em> ?</h2>
-          <p class="section-body">
-            Le Service National Universel est un programme civique volontaire destiné aux jeunes de 15 à 17 ans. Il s'articule autour d'un séjour de cohésion de 12 jours en internat, suivi d'une mission d'intérêt général. Loin d'un simple stage, il s'agit d'une véritable immersion dans un collectif hétérogène — mixité sociale, géographique et culturelle — avec un cadre structuré, des activités physiques, des ateliers citoyens et des moments de vie commune intenses.
-          </p>
-          <div class="highlight-box">
-            <p>
-              Participer au SNU, c'est choisir volontairement de <strong>sortir de sa zone de confort</strong> pour se confronter à l'altérité, à la vie en collectivité et aux exigences d'un cadre discipliné. C'est une expérience fondatrice qui dit quelque chose sur <strong>qui l'on est et ce que l'on est prêt·e à donner</strong>.
-            </p>
-          </div>
-        </div>
-
-        <!-- Phases -->
-        <div class="detail-section">
-          <p class="section-label">Déroulement</p>
-          <h2 class="section-title">Les temps <em>forts</em></h2>
-          <div class="phases-grid">
-
-            <div class="phase-card">
-              <p class="phase-number">Phase 01</p>
-              <p class="phase-title">Séjour de cohésion</p>
-              <p class="phase-desc">12 jours en internat avec des jeunes de toute la France. Réveil matinal, activités physiques, ateliers citoyens, vie en maisonnée — un rythme soutenu qui forge l'esprit d'équipe.</p>
-            </div>
-
-            <div class="phase-card">
-              <p class="phase-number">Phase 02</p>
-              <p class="phase-title">Ateliers thématiques</p>
-              <p class="phase-desc">Sessions de sensibilisation sur des thèmes variés : défense nationale, premiers secours, développement durable, égalité, laïcité — des sujets qui ancrent le séjour dans la citoyenneté active.</p>
-            </div>
-
-            <div class="phase-card">
-              <p class="phase-number">Phase 03</p>
-              <p class="phase-title">Mission d'intérêt général</p>
-              <p class="phase-desc">Engagement au service d'une structure locale (association, collectivité, établissement public) pour mettre ses compétences au service d'un intérêt commun.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Valeurs -->
-        <div class="detail-section">
-          <p class="section-label">Ce que ça représente</p>
-          <h2 class="section-title">Des valeurs <em>incarnées</em></h2>
-          <p class="section-body">
-            Le SNU ne transmet pas des valeurs abstraites — il les met à l'épreuve du quotidien collectif. Voici ce que ces 12 jours m'ont appris à vivre concrètement.
-          </p>
-          <div class="values-grid">
-            <div class="value-card">
-              <span class="value-icon">🤝</span>
-              <p class="value-name">Cohésion</p>
-              <p class="value-desc">Construire un collectif soudé à partir de parcours radicalement différents.</p>
-            </div>
-            <div class="value-card">
-              <span class="value-icon">🎯</span>
-              <p class="value-name">Discipline</p>
-              <p class="value-desc">Respecter un cadre rigoureux, tenir ses engagements même dans l'inconfort.</p>
-            </div>
-            <div class="value-card">
-              <span class="value-icon">🏛️</span>
-              <p class="value-name">Citoyenneté</p>
-              <p class="value-desc">Choisir de contribuer à quelque chose qui dépasse son intérêt individuel.</p>
-            </div>
-            <div class="value-card">
-              <span class="value-icon">⚡</span>
-              <p class="value-name">Dépassement</p>
-              <p class="value-desc">Aller au-delà de ses limites perçues, physiques et relationnelles.</p>
-            </div>
-            <div class="value-card">
-              <span class="value-icon">🌍</span>
-              <p class="value-name">Mixité</p>
-              <p class="value-desc">Vivre et travailler aux côtés de jeunes aux origines et réalités très diverses.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Compétences -->
-        <div class="detail-section">
-          <p class="section-label">Compétences développées</p>
-          <h2 class="section-title">Ce que j'en <em>retiens</em></h2>
-          <p class="section-body">
-            Au-delà de l'expérience humaine, le SNU a été un terrain d'entraînement pour des compétences comportementales que je mobilise dans tous mes engagements depuis.
-          </p>
-          <div class="skills-acquired">
-            <div class="skill-row">
-              <div class="skill-dot"></div>
-              <p class="skill-text"><strong>Adaptabilité</strong> — S'intégrer rapidement dans un groupe inconnu, avec un cadre imposé et des règles de vie collectives non négociables.</p>
-            </div>
-            <div class="skill-row">
-              <div class="skill-dot"></div>
-              <p class="skill-text"><strong>Résilience</strong> — Maintenir son engagement et son attitude positive face à la fatigue, aux contraintes et aux moments difficiles.</p>
-            </div>
-            <div class="skill-row">
-              <div class="skill-dot"></div>
-              <p class="skill-text"><strong>Écoute & empathie</strong> — Cohabiter avec des personnes très différentes de soi oblige à développer une écoute authentique et une véritable ouverture à l'autre.</p>
-            </div>
-            <div class="skill-row">
-              <div class="skill-dot"></div>
-              <p class="skill-text"><strong>Leadership informel</strong> — Dans les activités collectives, prendre des initiatives, fédérer et motiver sans rôle hiérarchique formel.</p>
-            </div>
-            <div class="skill-row">
-              <div class="skill-dot"></div>
-              <p class="skill-text"><strong>Premiers secours</strong> — Formation aux gestes de premiers secours, compétence concrète et directement transférable.</p>
-            </div>
-            <div class="skill-row">
-              <div class="skill-dot"></div>
-              <p class="skill-text"><strong>Sens du collectif</strong> — Comprendre que la performance d'un groupe dépend de chaque maillon, et que s'investir pour les autres est une forme d'efficacité.</p>
-            </div>
-          </div>
-
-          <div class="highlight-box">
-            <p>
-              Le SNU a été l'une de mes premières expériences de <strong>vie en collectivité intense</strong>. Elle a posé les fondations de mon rapport aux équipes et à l'engagement : je n'intègre pas un projet pour en faire partie, je l'intègre pour <strong>y contribuer pleinement</strong>.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </main>
+    </main>
 
     <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Emma Kerguillec</p>
-        <p class="footer-role">Ingénieure Cogniticienne</p>
-        <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
-        <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Emma Kerguillec</p>
+          <p class="footer-role">Ingénieure Cogniticienne</p>
+          <p class="footer-school">ENSC · Bordeaux INP · 2024–2026</p>
+          <p class="footer-tagline">Des systèmes pensés pour l'Homme.</p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Navigation principale">
+          <p class="footer-nav-label">Portfolio</p>
+          <ul class="footer-nav-list">
+            <li><a href="../A propos/A propos.html">À propos</a></li>
+            <li><a href="../Projets/Main.html">Projets</a></li>
+            <li><a href="../Experience/Experience.html">Expérience</a></li>
+            <li><a href="../Compétences/Compétences.html">Compétences</a></li>
+            <li><a href="../CV/CV.html">CV</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Projets">
+          <p class="footer-nav-label">Projets</p>
+          <ul class="footer-nav-list">
+            <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
+            <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
+            <li>
+              <a href="../Projets/Prothese.html">Prothèses Myoélectriques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer-nav-col" aria-label="Navigation principale">
-        <p class="footer-nav-label">Portfolio</p>
-        <ul class="footer-nav-list">
-          <li><a href="../A propos/A propos.html">À propos</a></li>
-          <li><a href="../Projets/Main.html">Projets</a></li>
-          <li><a href="../Experience/Experience.html">Expérience</a></li>
-          <li><a href="../Compétences/Compétences.html">Compétences</a></li>
-          <li><a href="../CV/CV.html">CV</a></li>
-          <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-col" aria-label="Projets">
-        <p class="footer-nav-label">Projets</p>
-        <ul class="footer-nav-list">
-          <li><a href="../Projets/Poulpong.html">Poul'Pong</a></li>
-          <li><a href="../Projets/Audiosensible.html">Ombre Sensible</a></li>
-          <li><a href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Emma Kerguillec · ENSC Bordeaux INP</p>
-      <div class="footer-socials">
-        <a href="../CV/CV.html" target="_blank" rel="noopener noreferrer" class="footer-social-link">CV ↗</a>
-        <a href="https://www.linkedin.com/in/emma-kerguillec-b86959226" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn ↗</a>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emma Kerguillec · ENSC Bordeaux INP
+        </p>
+        <div class="footer-socials">
+          <a
+            href="../CV/CV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >CV ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emma-kerguillec-b86959226"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            >LinkedIn ↗</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="../../js/theme-toggle.js"></script>
-  <script src="../../js/navbar.js"></script>
-</body>
+    <script src="../../js/theme-toggle.js"></script>
+    <script src="../../js/navbar.js"></script>
+  </body>
 </html>
