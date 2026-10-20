@@ -17,8 +17,7 @@ html:not(.light-mode)
   gap: 56px;
   align-items: center;
 }
-.exp-header-left {
-}
+
 .exp-header-right {
   display: flex;
   flex-direction: column;
