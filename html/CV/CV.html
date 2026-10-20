@@ -13,7 +13,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>CV — Emma Kerguillec</title>
   <meta property="og:type"        content="website">
   <meta property="og:site_name"   content="Emma Kerguillec — Portfolio">
@@ -25,6 +24,68 @@
   <meta name="twitter:title"       content="CV — Emma Kerguillec">
   <meta name="twitter:description" content="CV d'Emma Kerguillec, élève-ingénieure à l'ENSC Bordeaux INP.">
   <meta name="twitter:image"       content="https://ekerguillec.github.io/PORTFOLIO_EMMA_KERGUILLEC/images/MaPhotoCorrigee.png">
+
+  <!-- Styles du lecteur PDF (à déplacer dans style/pages/cv.css si tu préfères) -->
+  <style>
+    .cv-pdf-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 7rem 1.25rem 4rem;
+    }
+    .cv-pdf-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: .75rem;
+      margin-bottom: 1rem;
+    }
+    .cv-pdf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1.1rem;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      font-size: .85rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+    .cv-pdf-btn:hover,
+    .cv-pdf-btn:focus-visible {
+      opacity: .75;
+      transform: translateY(-1px);
+    }
+    .cv-pdf-frame {
+      width: 100%;
+      height: 85vh;
+      min-height: 600px;
+      border: 1px solid rgba(128, 128, 128, .35);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .cv-pdf-frame object {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .cv-pdf-fallback {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: #222;
+    }
+    .cv-pdf-fallback p { margin-bottom: 1rem; }
+    @media (max-width: 640px) {
+      .cv-pdf-wrapper { padding-top: 6rem; }
+      .cv-pdf-toolbar { justify-content: stretch; }
+      .cv-pdf-btn { flex: 1; justify-content: center; }
+      .cv-pdf-frame { height: 70vh; min-height: 420px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -69,7 +130,7 @@
                 <li><a class="dropdown-item" href="../Projets/Prothese.html">Prothèses Myoélectriques</a></li>
               </ul>
             </div>
-            <div class="nav-item dropdown">
+            <div class="nav-item dropdown dropdown-expanded">
               <a class="nav-link" href="../Experience/Experience.html">EXPERIENCE</a><button class="nav-caret" aria-expanded="false" aria-label="Sous-pages Expérience"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../Experience/Experience.html">Toutes les expériences</a></li>
@@ -135,187 +196,29 @@
     </nav>
   </header>
 
-  <!-- ══ CV ══ -->
-  <main class="cv-page-wrapper">
+  <!-- ══ CV (PDF intégré) ══ -->
+  <main class="cv-pdf-wrapper">
 
-    <div class="cv-toolbar">
-      <button class="cv-print-btn" onclick="window.print()">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-        Sauvegarder en PDF
-      </button>
+    <div class="cv-pdf-toolbar">
+      <a class="cv-pdf-btn" href="../../documents/CV.pdf" target="_blank" rel="noopener noreferrer">
+        Ouvrir dans un nouvel onglet
+      </a>
+      <a class="cv-pdf-btn" href="../../documents/CV.pdf" download="CV_Emma_Kerguillec.pdf">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Télécharger le PDF
+      </a>
     </div>
 
-    <div class="cv-card">
-
-      <!-- ZONE HAUTE -->
-      <div class="cv-top-left">
-        <div class="cv-photo-wrap">
-          <picture>
-            <source srcset="../../images/MaPhotoCorrigee.webp" type="image/webp">
-            <img src="../../images/MaPhotoCorrigee.png" alt="Emma Kerguillec">
-          </picture>
+    <div class="cv-pdf-frame">
+      <object data="../../documents/CV.pdf#view=FitH" type="application/pdf" aria-label="CV d'Emma Kerguillec au format PDF">
+        <!-- Affiché si le navigateur (ex. mobile) ne sait pas afficher un PDF intégré -->
+        <div class="cv-pdf-fallback">
+          <p>Ton navigateur ne peut pas afficher le PDF directement.</p>
+          <a class="cv-pdf-btn" href="../../documents/CV.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le CV (PDF)</a>
         </div>
-      </div>
-
-      <div class="cv-top-right">
-        <h1 class="cv-name">Emma KERGUILLEC</h1>
-        <p class="cv-title">Élève-ingénieure à l'ENSC — Bordeaux INP</p>
-        <p class="cv-stage">Stage d'application</p>
-        <p class="cv-dispo">12 à 16 semaines · disponible du 1 mai au 31 août 2027</p>
-        <p class="cv-tagline">Passionnée par l'humain et la technologie, pour des outils performants et intuitifs.</p>
-      </div>
-
-      <div class="cv-full-sep"></div>
-
-      <!-- SIDEBAR -->
-      <aside class="cv-sidebar">
-
-        <div class="cv-section">
-          <p class="cv-sb-h">Contact</p>
-          <ul class="cv-contact-list">
-            <li><span class="cv-ico"><i class="fa-solid fa-phone"></i></span><a id="cv-phone" href="#"></a></li>
-            <li><span class="cv-ico"><i class="fa-solid fa-envelope"></i></span><a id="cv-email" href="#"></a></li>
-            <li><span class="cv-ico"><i class="fa-brands fa-linkedin"></i></span>Emma KERGUILLEC</li>
-            <li><span class="cv-ico"><i class="fa-brands fa-github"></i></span>ekerguillec</li>
-            <li><span class="cv-ico"><i class="fa-solid fa-location-dot"></i></span>Talence (33)</li>
-            <li><span class="cv-ico"><i class="fa-solid fa-car"></i></span>Permis B + véhicule personnel</li>
-          </ul>
-        </div>
-
-        <div class="cv-section">
-          <p class="cv-sb-h">Savoir-faire</p>
-          <ul class="cv-skill-list">
-            <li><span class="cv-bullet">•</span>Prototypage 3D et découpe laser</li>
-            <li><span class="cv-bullet">•</span>Python, C#, HTML5/CSS3, JavaScript</li>
-            <li><span class="cv-bullet">•</span>React, PHP, SQL, MCD/MLD, APIs REST</li>
-            <li><span class="cv-bullet">•</span>Analyse de données &amp; statistiques</li>
-            <li><span class="cv-bullet">•</span>Gestion de projet</li>
-            <li><span class="cv-bullet">•</span>Méthodes agiles (Kanban, Scrum, MASK...)</li>
-            <li><span class="cv-bullet">•</span>UX UI Design</li>
-          </ul>
-        </div>
-
-        <div class="cv-section">
-          <p class="cv-sb-h">Savoir-être</p>
-          <ul class="cv-skill-list">
-            <li><span class="cv-bullet">•</span>Esprit d'analyse et de synthèse</li>
-            <li><span class="cv-bullet">•</span>Communication claire</li>
-            <li><span class="cv-bullet">•</span>Proactivité / Prise d'initiative</li>
-            <li><span class="cv-bullet">•</span>Travail en équipe pluridisciplinaire</li>
-            <li><span class="cv-bullet">•</span>Gestion efficace du temps et des priorités</li>
-          </ul>
-        </div>
-
-        <div class="cv-section">
-          <p class="cv-sb-h">Outils</p>
-          <div class="cv-tools">
-            <span class="cv-tool">Logiciel R</span>
-            <span class="cv-tool">MATLAB</span>
-            <span class="cv-tool">Git</span>
-            <span class="cv-tool">GitLab</span>
-            <span class="cv-tool">GitHub</span>
-            <span class="cv-tool">VS Code</span>
-            <span class="cv-tool">Figma</span>
-            <span class="cv-tool">G Suite</span>
-            <span class="cv-tool">MS Office</span>
-            <span class="cv-tool">LaTeX</span>
-          </div>
-        </div>
-
-        <div class="cv-section">
-          <p class="cv-sb-h">Langues</p>
-          <p class="cv-lang"><strong>Français</strong> – C2 (langue maternelle)</p>
-          <p class="cv-lang"><strong>Anglais</strong> – B2 (Certificat Cambridge)</p>
-        </div>
-
-      </aside>
-
-      <!-- MAIN -->
-      <main class="cv-main">
-
-        <div class="cv-section">
-          <p class="cv-main-h">Éducation</p>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">École nationale supérieure de Cognitique <span class="cv-entry-meta">| 2025 – 2028</span></div>
-              <p class="cv-detail">Sciences cognitives, informatique &amp; UX</p>
-            </div>
-          </div>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Cycle préparatoire de Bordeaux <span class="cv-entry-meta">| 2023 – 2025</span></div>
-              <p class="cv-detail">Classe préparatoire intégrée, déléguée</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-section">
-          <p class="cv-main-h">Projets</p>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Ombre Sensible <span class="cv-entry-meta">| 2025–2026</span></div>
-              <p>Conception d'un casque immersif simulant différents handicaps auditifs (surdité, acouphènes, hyperacousie).</p>
-              <p class="cv-detail">Captation et <strong>traitement du signal</strong> sonore en temps réel, modélisation des presets, <strong>développement logiciel</strong> en C#, conception 3D</p>
-            </div>
-          </div>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Poul'Pong <span class="cv-entry-meta">| 2025</span></div>
-              <p>Développement d'un Pong interactif contrôlé par voix et rythme cardiaque (Raspberry Pi Pico + capteurs).</p>
-              <p class="cv-detail">Programmation en Python, <strong>systèmes embarqués</strong>, traitement du signal, impression 3D et découpe laser</p>
-            </div>
-          </div>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Les prothèses de bras myoélectriques <span class="cv-entry-meta">| 2024–2025</span></div>
-              <p>Mémoire de fin d'étude sur la technologie et l'ingénierie des prothèses de bras myoélectriques.</p>
-              <p class="cv-detail"><strong>Veille et analyse</strong> scientifique, vulgarisation</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-section">
-          <p class="cv-main-h">Expérience</p>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Vice-Présidente <span class="cv-entry-meta">| <span class="cv-duration" data-start="2026-03-01" data-end-cap="2027-04-01">4 mois</span> | 2026</span></div>
-              <p class="cv-org">Forum Ingénib</p>
-              <p class="cv-detail">Organisation d'un forum entreprises-étudiants : <strong>gestion et coordination</strong> du forum, <strong>ressources humaines</strong> et relations avec les 80 entreprises partenaires.</p>
-            </div>
-          </div>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Comptable <span class="cv-entry-meta">| <span class="cv-duration" data-start="2026-01-01" data-end-cap="2027-02-01">6 mois</span> | 2026</span></div>
-              <p class="cv-org">i2c – Junior-Entreprise de l'ENSC</p>
-              <p class="cv-detail">Suivi comptable et financier d'une Junior-Entreprise : <strong>écritures comptables</strong>, rapprochements bancaires, contrôle de la TVA, <strong>facturation électronique</strong>...</p>
-            </div>
-          </div>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Presse écrite – Impression/Expédition <span class="cv-entry-meta">| 7 mois | 2025–2026</span></div>
-              <p class="cv-org">Le Télégramme</p>
-              <p class="cv-detail">Compréhension d'une <strong>chaîne de production</strong> complexe en milieu industriel</p>
-            </div>
-          </div>
-          <div class="cv-entry">
-            <span class="cv-entry-bullet">•</span>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">Service National Universel <span class="cv-entry-meta">| 2 semaines | 2022</span></div>
-              <p class="cv-detail">Engagement civique, esprit d'équipe, cohésion, sens du service</p>
-            </div>
-          </div>
-        </div>
-
-      </main>
+      </object>
     </div>
+
   </main>
 
   <!-- ══ FOOTER SITE ══ -->
@@ -357,10 +260,6 @@
   </footer>
 
   <script src="../../js/theme-toggle.js"></script>
-
   <script src="../../js/navbar.js"></script>
-  <script src="../../config/contact.js"></script>
-  <script src="../../js/contact-init.js"></script>
-  <script src="../../js/experience-duration.js"></script>
 </body>
 </html>
