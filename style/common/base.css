@@ -273,12 +273,20 @@ z-index:0;
     border-bottom: 1px solid var(--nav-link-border);
   }
 
-  /* Dropdown mobile : statique, sous le lien */
+    /* Dropdown mobile : lien + flèche sur la même ligne, sous-menu en dessous */
   .navbar .nav-item.dropdown {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: stretch;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .navbar .nav-item.dropdown > .nav-link {
+    flex: 1 1 0;
+    width: auto;
+    margin-top: 0;
+  }
+  .navbar .nav-item.dropdown::after {
+    display: none; /* pont de survol desktop, inutile (et gênant au toucher) en mobile */
   }
   .navbar .nav-item.dropdown > .dropdown-menu {
     position: static !important;
@@ -298,9 +306,10 @@ z-index:0;
   }
   .navbar .nav-item.dropdown.mobile-open > .dropdown-menu { display: block !important; }
   .nav-caret {
-    margin-left: auto;
+    margin-left: 0;
     padding: 10px 14px;
     min-height: 44px;
+    border-bottom: 1px solid var(--nav-link-border);
   }
 }
 
