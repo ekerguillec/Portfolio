@@ -2,15 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <script>
-      !(function () {
-        var t = null;
-        try {
-          t = localStorage.getItem("portfolio-theme");
-        } catch (e) {}
-        if (t !== "dark") document.documentElement.classList.add("light-mode");
-      })();
-    </script>
+    <script>!function(){var t=null;try{t=localStorage.getItem('portfolio-theme-v2')}catch(e){}if(t!=='dark')document.documentElement.classList.add('light-mode')}();</script>
     <script>
       if (window.location.hash) {
         window.__portfolioHash = window.location.hash;
